@@ -1,0 +1,35 @@
+import React from 'react'
+import Link from 'next/link'
+import styled from 'styled-components'
+
+const Button = styled.button`
+  background: ${({ theme }) => theme.color.lightGreen};
+  color: white;
+  text-transform: capitalize;
+  font-size: ${({ theme }) => theme.font.desktop.meta};
+  line-height: ${({ theme }) => theme.font.desktop.meta};
+  padding: 1.2rem 1.2rem;
+  border-radius: 3.2rem;
+  border: none;
+  outline: none;
+
+  &:hover {
+    cursor: pointer;
+  }
+`
+const Arrow = styled.span`
+  margin-left: 1.6rem;
+`
+
+const ButtonSecondary = ({ title, link }) => {
+  return (
+    <Link href={link}>
+      <Button>
+        {title}
+        <Arrow>&gt;</Arrow>
+      </Button>
+    </Link>
+  )
+}
+
+export default ButtonSecondary
