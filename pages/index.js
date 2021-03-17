@@ -4,6 +4,8 @@ import Nav from '../components/Nav'
 import HeroHeading from '../components/HeroHeading'
 import RecentWork from '../components/RecentWork'
 import HeadingAndText from '../components/HeadingAndText'
+import Footer from '../components/Footer'
+import Form from '../components/Form'
 
 export default function Home() {
   return (
@@ -28,7 +30,9 @@ export default function Home() {
               of learning something new!
             </p>
           </HeadingAndText>
+          <Form />
         </main>
+        <Footer />
       </Container>
     </>
   )

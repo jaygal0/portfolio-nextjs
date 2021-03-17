@@ -25,7 +25,7 @@ export const GridContainer = styled.section`
 
   &.align-center {
     align-items: center;
-    margin: 7.2rem 0;
+    margin: 7.2rem 1.6rem;
   }
 
   @media screen and (max-width: ${({ theme }) => theme.breakPoint.tablet}) {

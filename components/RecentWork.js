@@ -2,6 +2,7 @@ import React from 'react'
 import { GridContainer } from '../styles'
 import styled from 'styled-components'
 import ButtonSecondary from '../components/ButtonSecondary'
+import Masonry from './Masonry'
 
 const Wrapper = styled.div`
   grid-column: 3 / span 2;
@@ -16,7 +17,15 @@ const RecentWork = () => {
     <GridContainer>
       <Wrapper>
         <Text>recent work</Text>
-        <ButtonSecondary title="view work" link="/work" />
+        <Masonry
+          topLeftImg="/logo.svg"
+          topLeftLink="#"
+          btmLeftImg="/logo.svg"
+          btmLeftLink="#"
+          rightImg="/logo.svg"
+          rightLink="#"
+        />
+        <ButtonSecondary title="view work" link="/work" marginTop="3.2rem" />
       </Wrapper>
     </GridContainer>
   )

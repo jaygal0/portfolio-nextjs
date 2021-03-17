@@ -13,6 +13,10 @@ const Button = styled.button`
   border: none;
   outline: none;
 
+  &.margin-top {
+    margin-top: 3.2rem;
+  }
+
   &:hover {
     cursor: pointer;
   }
@@ -21,10 +25,10 @@ const Arrow = styled.span`
   margin-left: 1.6rem;
 `
 
-const ButtonSecondary = ({ title, link }) => {
+const ButtonSecondary = ({ title, link, marginTop }) => {
   return (
     <Link href={link}>
-      <Button>
+      <Button className={marginTop === '3.2rem' ? 'margin-top' : ''}>
         {title}
         <Arrow>&gt;</Arrow>
       </Button>
