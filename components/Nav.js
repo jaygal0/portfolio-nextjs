@@ -4,6 +4,7 @@ import Link from 'next/link'
 import { useRouter } from 'next/router'
 import data from '../data/nav'
 import Image from 'next/image'
+import uuid from 'react-uuid'
 
 const Menu = styled.div`
   position: fixed;
@@ -76,9 +77,9 @@ const Nav = () => {
         </Link>
         <Menu>
           {data.map((item) => {
-            const { id, text, link } = item
+            const { text, link } = item
             return (
-              <Link id={id} href={link}>
+              <Link key={uuid()} href={link}>
                 <List
                   className={router.pathname == link ? 'active' : ''}
                   onClick={showSidebar}
