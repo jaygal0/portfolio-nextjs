@@ -53,7 +53,7 @@ h3 {
 h4 {
   font-size: ${({ theme }) => theme.font.desktop.h4};
   line-height: ${({ theme }) => theme.lineHeight.desktop.h4};
-  margin-bottom: ${({ theme }) => theme.margin.desktop.bottom};
+  margin-bottom: 1.6rem;
   font-weight: 700;
 }
 h5 {
@@ -64,20 +64,32 @@ h5 {
     text-transform: capitalize;
     margin-bottom: ${({ theme }) => theme.margin.desktop.bottom};
 }
+
 p {
   font-size: ${({ theme }) => theme.font.desktop.p};
   line-height: ${({ theme }) => theme.lineHeight.desktop.p};
   margin-bottom: ${({ theme }) => theme.margin.desktop.bottom};
 }
+
 a {
   color: ${({ theme }) => theme.color.pink};
   &:hover {
   color: ${({ theme }) => theme.color.blue};
   }
 }
-input::-webkit-input-placeholder {
-  color: white;
+
+input {
+  font-size: ${({ theme }) => theme.font.desktop.p};
+  border-radius: 3.2rem;
+  outline:none;
+  border: none;
+  padding: .8rem 2.4rem;
+  width: 100%;
+
+::-webkit-input-placeholder {
+  color: black;
   opacity: .7;
+  }
 }
 `
 

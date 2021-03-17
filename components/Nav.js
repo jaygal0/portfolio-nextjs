@@ -31,13 +31,14 @@ const List = styled.a`
 
   &.active {
     color: ${({ theme }) => theme.color.darkGreen};
-    font-size: 2rem;
+    font-size: 1.8rem;
     font-weight: 700;
   }
   &:hover {
     cursor: pointer;
     color: ${({ theme }) => theme.color.lightGreen};
-    transition: ${({ theme }) => theme.transition.nav};
+    transition: 0.1s all linear;
+    font-size: 1.8rem;
   }
   @media screen and (max-width: ${({ theme }) => theme.breakPoint.phone}) {
     margin: 0;
