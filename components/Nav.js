@@ -23,9 +23,8 @@ const ImageContainer = styled.div`
     cursor: pointer;
   }
 `
-const List = styled.a`
+const List = styled.ul`
   text-transform: capitalize;
-  text-decoration: none;
   font-size: 1.6rem;
   margin-bottom: 1.6rem;
   color: ${({ theme }) => theme.color.black};
@@ -79,14 +78,16 @@ const Nav = () => {
           {data.map((item) => {
             const { text, link } = item
             return (
-              <Link key={uuid()} href={link}>
-                <List
-                  className={router.pathname == link ? 'active' : ''}
-                  onClick={showSidebar}
-                >
-                  {text}
-                </List>
-              </Link>
+              <div key={uuid()}>
+                <Link href={link}>
+                  <List
+                    className={router.pathname == link ? 'active' : ''}
+                    onClick={showSidebar}
+                  >
+                    {text}
+                  </List>
+                </Link>
+              </div>
             )
           })}
         </Menu>

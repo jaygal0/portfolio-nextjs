@@ -78,35 +78,38 @@ const Masonry = ({
   return (
     <MasonryWrapper>
       <SquareTopLeft>
-        <Link href={topLeftLink}>
+        <Link href={`/work/${topLeftLink}`}>
           <Image
             src={topLeftImg}
             alt=""
             quality={100}
             layout="fill"
             objectFit="cover"
+            className="border-image"
           />
         </Link>
       </SquareTopLeft>
       <SquareBottomLeft>
-        <Link href={btmLeftLink}>
+        <Link href={`/work/${btmLeftLink}`}>
           <Image
             src={btmLeftImg}
             alt=""
             quality={100}
             layout="fill"
             objectFit="cover"
+            className="border-image"
           />
         </Link>
       </SquareBottomLeft>
       <RectangleRight>
-        <Link href={rightLink}>
+        <Link href={`/work/${rightLink}`}>
           <Image
             src={rightImg}
             alt=""
             quality={100}
             layout="fill"
             objectFit="cover"
+            className="border-image"
           />
         </Link>
       </RectangleRight>

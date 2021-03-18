@@ -8,6 +8,11 @@ function MyApp({ Component, pageProps }) {
       <ThemeProvider theme={Theme}>
         <GlobalStyle />
         <Component {...pageProps} />
+        <style jsx global>{`
+          .border-image {
+            border-radius: 1.6rem;
+          }
+        `}</style>
       </ThemeProvider>
     </>
   )

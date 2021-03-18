@@ -27,7 +27,7 @@ export default function Skills() {
                 key={uuid()}
                 programName={programName}
                 subtitle={subtitle}
-                src={src}
+                src={`/${programName}.svg`}
                 level={level}
               />
             )

@@ -12,7 +12,6 @@ const SkillWrapper = styled.div`
 const ImageWrapper = styled.div`
   width: 15%;
   padding: 10%;
-  background: red;
   border-radius: 3.2rem;
   position: relative;
 `
@@ -21,11 +20,12 @@ const TextWrapper = styled.div`
   width: 100%;
 `
 const Subtitle = styled.p`
-  font-size: 1.2rem;
+  font-size: 1.6rem;
   text-transform: capitalize;
   margin-bottom: 0rem;
 `
 const ProgramName = styled.p`
+  font-size: 2.4rem;
   text-transform: capitalize;
   font-weight: bold;
   margin-bottom: 1.6rem;
@@ -33,7 +33,7 @@ const ProgramName = styled.p`
 const ProgressBar = styled.div`
   width: 100%;
   height: 2.4rem;
-  background: red;
+  background: ${({ theme }) => theme.color.grey};
   border-radius: 3.2rem;
   position: relative;
 `
@@ -43,31 +43,25 @@ const ProgressLevel = styled.div`
   height: 2.4rem;
   top: 0;
   left: 0;
-  background: blue;
+  background: ${({ theme }) => theme.color.lightGreen};
 
   &.five {
     width: 50%;
-    background: black;
   }
   &.six {
     width: 60%;
-    background: black;
   }
   &.seven {
     width: 70%;
-    background: black;
   }
   &.eight {
     width: 80%;
-    background: black;
   }
   &.nine {
     width: 90%;
-    background: black;
   }
   &.nine-five {
     width: 95%;
-    background: black;
   }
 `
 

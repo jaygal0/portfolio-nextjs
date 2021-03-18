@@ -22,8 +22,8 @@ const RecentWork = () => {
           topLeftLink="#"
           btmLeftImg="/logo.svg"
           btmLeftLink="#"
-          rightImg="/logo.svg"
-          rightLink="#"
+          rightImg="/tmi.gif"
+          rightLink="tmi"
         />
         <ButtonSecondary title="view work" link="/work" marginTop="3.2rem" />
       </Wrapper>
