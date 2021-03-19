@@ -16,19 +16,19 @@ const TextWrapper = styled.div`
 `
 
 export default function Detail({}) {
-  const { tmi } = data
+  const { reload } = data
   return (
     <>
       <Metadata />
       <Container>
         <Nav />
         <main>
-          <PortfolioHero src={tmi.img} />
-          <ProjectInfo title={tmi.title} text={tmi.text} />
-          <ProjectApps apps={tmi.appsUsed} />
+          <PortfolioHero src={reload.img} />
+          <ProjectInfo title={reload.title} text={reload.text} />
+          <ProjectApps apps={reload.appsUsed} />
           <GridContainer>
             <TextWrapper>
-              <h5>sketching out the idea</h5>
+              <h5>building a media production company</h5>
               <p>
                 Lorem ipsum dolor sit amet consectetur adipisicing elit.
                 Inventore pariatur, reprehenderit cum ea error beatae illo minus
@@ -42,21 +42,7 @@ export default function Detail({}) {
                 className="border-image"
                 quality={100}
               />
-              <h5>designing the wireframes</h5>
-              <p>
-                Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                Inventore pariatur, reprehenderit cum ea error beatae illo minus
-                consequatur sunt aliquid, quisquam, magnam veniam fugiat labore
-                tempora dolore incidunt magni facilis.
-              </p>
-              <Image
-                src="/tmi-banner.png"
-                width={3031}
-                height={1840}
-                className="border-image"
-                quality={100}
-              />
-              <h5>building a design system</h5>
+              <h5>designing decks</h5>
               <p>
                 Lorem ipsum dolor sit amet consectetur adipisicing elit.
                 Inventore pariatur, reprehenderit cum ea error beatae illo minus
@@ -75,7 +61,7 @@ export default function Detail({}) {
                 title="view the design system"
                 link="https://www.figma.com/proto/tvcmGFjKuqSfHL5yHEb8Iy/Testing-My-Ideas?node-id=640%3A0&viewport=315%2C656%2C0.4032875597476959&scaling=contain"
               />
-              <h5>creating the prototype</h5>
+              <h5>designing products</h5>
               <p>
                 Lorem ipsum dolor sit amet consectetur adipisicing elit.
                 Inventore pariatur, reprehenderit cum ea error beatae illo minus

@@ -16,16 +16,16 @@ const TextWrapper = styled.div`
 `
 
 export default function Detail({}) {
-  const { tmi } = data
+  const { input } = data
   return (
     <>
       <Metadata />
       <Container>
         <Nav />
         <main>
-          <PortfolioHero src={tmi.img} />
-          <ProjectInfo title={tmi.title} text={tmi.text} />
-          <ProjectApps apps={tmi.appsUsed} />
+          <PortfolioHero src={input.img} />
+          <ProjectInfo title={input.title} text={input.text} />
+          <ProjectApps apps={input.appsUsed} />
           <GridContainer>
             <TextWrapper>
               <h5>sketching out the idea</h5>

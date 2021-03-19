@@ -78,7 +78,7 @@ const Masonry = ({
   return (
     <MasonryWrapper>
       <SquareTopLeft>
-        <Link href={`/work/${topLeftLink}`}>
+        <Link href={topLeftLink}>
           <Image
             src={topLeftImg}
             alt=""
@@ -90,7 +90,7 @@ const Masonry = ({
         </Link>
       </SquareTopLeft>
       <SquareBottomLeft>
-        <Link href={`/work/${btmLeftLink}`}>
+        <Link href={btmLeftLink}>
           <Image
             src={btmLeftImg}
             alt=""
@@ -102,7 +102,7 @@ const Masonry = ({
         </Link>
       </SquareBottomLeft>
       <RectangleRight>
-        <Link href={`/work/${rightLink}`}>
+        <Link href={rightLink}>
           <Image
             src={rightImg}
             alt=""

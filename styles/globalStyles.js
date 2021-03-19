@@ -62,7 +62,7 @@ h5 {
     font-weight: 700;
     color: ${({ theme }) => theme.color.darkBlue};
     text-transform: capitalize;
-    margin-bottom: 1.6rem;
+    margin: 1.6rem 0;
 }
 
 p {

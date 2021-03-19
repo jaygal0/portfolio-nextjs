@@ -11,7 +11,9 @@ const AppWrapper = styled.div`
   color: white;
   padding: 3.2rem;
   border-radius: 3.2rem;
-  margin-bottom: 3.2rem;
+  margin-bottom: 1.6rem;
+  /* display: flex; */
+  /* flex-direction: column; */
 `
 const Title = styled.p`
   font-weight: bold;
@@ -53,7 +55,6 @@ const ProjectApps = ({ apps }) => {
                   src={`/${item}.svg`}
                   alt={`logo of ${item}`}
                   layout="fill"
-                  objectFit="cover"
                   quality={75}
                 />
               </App>

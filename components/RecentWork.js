@@ -19,11 +19,11 @@ const RecentWork = () => {
         <Text>recent work</Text>
         <Masonry
           topLeftImg="/logo.svg"
-          topLeftLink="#"
+          topLeftLink="/work/input"
           btmLeftImg="/logo.svg"
-          btmLeftLink="#"
+          btmLeftLink="/work/bind"
           rightImg="/tmi.gif"
-          rightLink="tmi"
+          rightLink="/work/tmi"
         />
         <ButtonSecondary title="view work" link="/work" marginTop="3.2rem" />
       </Wrapper>

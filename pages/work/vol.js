@@ -16,19 +16,19 @@ const TextWrapper = styled.div`
 `
 
 export default function Detail({}) {
-  const { tmi } = data
+  const { vol } = data
   return (
     <>
       <Metadata />
       <Container>
         <Nav />
         <main>
-          <PortfolioHero src={tmi.img} />
-          <ProjectInfo title={tmi.title} text={tmi.text} />
-          <ProjectApps apps={tmi.appsUsed} />
+          <PortfolioHero src={vol.img} />
+          <ProjectInfo title={vol.title} text={vol.text} />
+          <ProjectApps apps={vol.appsUsed} />
           <GridContainer>
             <TextWrapper>
-              <h5>sketching out the idea</h5>
+              <h5>designing social media assets</h5>
               <p>
                 Lorem ipsum dolor sit amet consectetur adipisicing elit.
                 Inventore pariatur, reprehenderit cum ea error beatae illo minus
@@ -42,21 +42,7 @@ export default function Detail({}) {
                 className="border-image"
                 quality={100}
               />
-              <h5>designing the wireframes</h5>
-              <p>
-                Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                Inventore pariatur, reprehenderit cum ea error beatae illo minus
-                consequatur sunt aliquid, quisquam, magnam veniam fugiat labore
-                tempora dolore incidunt magni facilis.
-              </p>
-              <Image
-                src="/tmi-banner.png"
-                width={3031}
-                height={1840}
-                className="border-image"
-                quality={100}
-              />
-              <h5>building a design system</h5>
+              <h5>designing decks</h5>
               <p>
                 Lorem ipsum dolor sit amet consectetur adipisicing elit.
                 Inventore pariatur, reprehenderit cum ea error beatae illo minus

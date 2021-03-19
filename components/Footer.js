@@ -37,6 +37,7 @@ const ATag = styled.a`
 const NoTag = styled.p`
   font-size: ${({ theme }) => theme.font.desktop.p};
   line-height: ${({ theme }) => theme.lineHeight.desktop.p};
+  text-transform: capitalize;
 `
 
 const Footer = () => {
@@ -54,8 +55,8 @@ const Footer = () => {
           <ATag href="mailto:hi@joshuagalinato.com">hi@joshuagalinato.com</ATag>
         </ContactWrapper>
         <AllRightsWrapper>
-          <Text>designed &amp; coded by</Text>
-          <NoTag>duhhh, me of course!</NoTag>
+          <Text>all rights reserved</Text>
+          <NoTag>copyright &copy; 2021</NoTag>
         </AllRightsWrapper>
       </GridContainer>
     </FooterWrapper>

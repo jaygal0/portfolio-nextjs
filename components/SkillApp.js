@@ -77,7 +77,7 @@ const SkillApp = ({ src, subtitle, programName, level }) => {
     <GridContainer>
       <SkillWrapper>
         <ImageWrapper>
-          <Image src={src} layout="fill" objectFit="cover" quality={100} />
+          <Image src={src} layout="fill" quality={100} />
         </ImageWrapper>
         <TextWrapper>
           <Subtitle>{subtitle}</Subtitle>

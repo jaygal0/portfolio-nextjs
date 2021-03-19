@@ -1,0 +1,11 @@
+.border-image {
+  border-radius: 1.6rem;
+  margin: 3.2rem;
+}
+
+.image {
+  margin-bottom: 1.6rem;
+}
+.image img {
+  border-radius: 1.6rem;
+}

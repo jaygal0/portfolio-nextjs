@@ -10,16 +10,17 @@ const Portfolio = () => {
     <GridContainer>
       <Masonry
         topLeftImg="/logo.svg"
-        topLeftLink="#"
+        topLeftLink="/work/input"
         btmLeftImg="/logo.svg"
-        btmLeftLink="#"
+        btmLeftLink="/work/bind"
         rightImg="/logo.svg"
-        rightLink="#"
+        rightLink="/work/tmi"
       />
       <PortfolioFlex>
-        <PortfolioSquare href="#" src="/logo.svg" />
-        <PortfolioSquare href="#" src="/logo.svg" />
-        <PortfolioRectangle href="#" src="/logo.svg" />
+        <PortfolioRectangle href="/work/vol" src="/logo.svg" />
+        <PortfolioSquare href="/work/reload-sessions" src="/logo.svg" />
+        <PortfolioSquare href="/work/kawaii-corner-shop" src="/logo.svg" />
+        <PortfolioRectangle href="work/photos" src="/logo.svg" />
       </PortfolioFlex>
     </GridContainer>
   )
