@@ -27,27 +27,28 @@ export default function Detail({}) {
           <ProjectApps apps={photos.appsUsed} />
           <GridContainer>
             <TextWrapper>
-              <h5>designing illustration assets</h5>
-              <p>
-                Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                Inventore pariatur, reprehenderit cum ea error beatae illo minus
-                consequatur sunt aliquid, quisquam, magnam veniam fugiat labore
-                tempora dolore incidunt magni facilis.
-              </p>
               <div className="image">
                 <Image
-                  src="/tmi-banner.png"
-                  width={3031}
-                  height={1840}
+                  src="/photos-forest.jpg"
+                  width={5760}
+                  height={3840}
                   className="border-image"
-                  quality={100}
                 />
               </div>
               <div className="image">
                 <Image
-                  src="/tmi-banner.png"
-                  width={3031}
-                  height={1840}
+                  src="/photos-reload.jpg"
+                  width={5635}
+                  height={3757}
+                  className="border-image"
+                />
+              </div>
+
+              <div className="image">
+                <Image
+                  src="/photos-leo.jpg"
+                  width={5452}
+                  height={3635}
                   className="border-image"
                   quality={100}
                 />
@@ -55,91 +56,73 @@ export default function Detail({}) {
 
               <div className="image">
                 <Image
-                  src="/tmi-banner.png"
-                  width={3031}
-                  height={1840}
+                  src="/photos-snowball.jpg"
+                  width={5106}
+                  height={3404}
                   className="border-image"
-                  quality={100}
                 />
               </div>
 
               <div className="image">
                 <Image
-                  src="/tmi-banner.png"
-                  width={3031}
-                  height={1840}
+                  src="/photos-israel.jpg"
+                  width={5706}
+                  height={3840}
                   className="border-image"
-                  quality={100}
                 />
               </div>
 
               <div className="image">
                 <Image
-                  src="/tmi-banner.png"
-                  width={3031}
-                  height={1840}
+                  src="/photos-coconut.jpg"
+                  width={5616}
+                  height={3744}
                   className="border-image"
-                  quality={100}
                 />
               </div>
 
               <div className="image">
                 <Image
-                  src="/tmi-banner.png"
-                  width={3031}
-                  height={1840}
+                  src="/photos-tori-kelly.jpg"
+                  width={5616}
+                  height={3744}
                   className="border-image"
-                  quality={100}
                 />
               </div>
 
               <div className="image">
                 <Image
-                  src="/tmi-banner.png"
-                  width={3031}
-                  height={1840}
+                  src="/photos-friends.jpg"
+                  width={5760}
+                  height={3840}
                   className="border-image"
-                  quality={100}
                 />
               </div>
 
               <div className="image">
                 <Image
-                  src="/tmi-banner.png"
-                  width={3031}
-                  height={1840}
+                  src="/photos-joshua-tree.jpg"
+                  width={5760}
+                  height={3840}
                   className="border-image"
-                  quality={100}
                 />
               </div>
 
               <div className="image">
                 <Image
-                  src="/tmi-banner.png"
-                  width={3031}
-                  height={1840}
+                  src="/photos-sax.jpg"
+                  width={5760}
+                  height={3840}
                   className="border-image"
-                  quality={100}
                 />
               </div>
 
               <div className="image">
                 <Image
-                  src="/tmi-banner.png"
-                  width={3031}
-                  height={1840}
+                  src="/photos-ebony.jpg"
+                  width={5760}
+                  height={3840}
                   className="border-image"
-                  quality={100}
-                />
-              </div>
-
-              <div className="image">
-                <Image
-                  src="/tmi-banner.png"
-                  width={3031}
-                  height={1840}
-                  className="border-image"
-                  quality={100}
                 />
               </div>
             </TextWrapper>

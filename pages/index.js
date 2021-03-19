@@ -6,6 +6,7 @@ import RecentWork from '../components/RecentWork'
 import HeadingAndText from '../components/HeadingAndText'
 import Footer from '../components/Footer'
 import Form from '../components/Form'
+import Face from '../components/Face'
 
 export default function Home() {
   return (
@@ -17,7 +18,9 @@ export default function Home() {
           <HeroHeading
             title="i design, code &amp; solve problems"
             subtitle="hi, i'm josh"
-          />
+          >
+            <Face />
+          </HeroHeading>
           <RecentWork />
           <HeadingAndText title="creative problem solver">
             <p>

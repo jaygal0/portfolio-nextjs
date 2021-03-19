@@ -2,6 +2,7 @@ import React from 'react'
 import styled from 'styled-components'
 import { GridContainer } from '../styles'
 import Link from 'next/link'
+import moment from 'moment'
 
 const FooterWrapper = styled.footer`
   margin-top: 9.6rem;
@@ -55,8 +56,8 @@ const Footer = () => {
           <ATag href="mailto:hi@joshuagalinato.com">hi@joshuagalinato.com</ATag>
         </ContactWrapper>
         <AllRightsWrapper>
-          <Text>all rights reserved</Text>
-          <NoTag>copyright &copy; 2021</NoTag>
+          <Text>copyright &copy; {moment().format('YYYY')}</Text>
+          <NoTag>all rights reserved</NoTag>
         </AllRightsWrapper>
       </GridContainer>
     </FooterWrapper>

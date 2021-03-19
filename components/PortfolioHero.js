@@ -14,7 +14,13 @@ const PortfolioHero = ({ src }) => {
   return (
     <GridContainer>
       <ImageWrapper>
-        <Image src={src} layout="fill" quality={100} className="border-image" />
+        <Image
+          src={src}
+          layout="fill"
+          objectFit="cover"
+          quality={100}
+          className="border-image"
+        />
       </ImageWrapper>
     </GridContainer>
   )

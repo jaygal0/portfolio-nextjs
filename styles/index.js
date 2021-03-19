@@ -27,6 +27,10 @@ export const GridContainer = styled.section`
     align-items: center;
     margin: 7.2rem 1.6rem;
   }
+  &.align-center-hero {
+    align-items: center;
+    margin: 7.2rem 1.6rem;
+  }
   &.form-margin {
     margin-top: 10.8rem;
   }

@@ -6,7 +6,6 @@ import Image from 'next/image'
 const RectangleStyling = styled.div`
   width: 100%;
   padding-top: 50%;
-  background: red;
   border-radius: 3.2rem;
   position: relative;
   top: 0;
@@ -24,7 +23,13 @@ const PortfolioRectangle = ({ href, src }) => {
   return (
     <Link href={href}>
       <RectangleStyling>
-        <Image src={src} layout="fill" objectFit="cover" quality={100} />
+        <Image
+          className="border-image"
+          src={src}
+          layout="fill"
+          objectFit="cover"
+          quality={100}
+        />
       </RectangleStyling>
     </Link>
   )

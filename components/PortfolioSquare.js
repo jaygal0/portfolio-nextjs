@@ -6,7 +6,6 @@ import Image from 'next/image'
 const SquareStyling = styled.div`
   width: calc(52% - 3.3rem);
   padding-top: 50%;
-  background: red;
   border-radius: 3.2rem;
   position: relative;
   top: 0;
