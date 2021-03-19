@@ -5,7 +5,21 @@
 
 .image {
   margin-bottom: 1.6rem;
+  position: relative;
+  top: 0;
+  left: 0;
+  transition: 0.2s ease-in all;
+  border-radius: 1.6rem;
 }
+
+.image:hover {
+  cursor: zoom-in;
+  box-shadow: 10px 10px 0 -3px #68c4b8;
+  top: -7px;
+  left: -7px;
+  border-radius: 1.6rem;
+}
+
 .image img {
   border-radius: 1.6rem;
 }

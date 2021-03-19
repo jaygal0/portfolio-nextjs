@@ -52,7 +52,6 @@ const SquareBottomLeft = styled.div`
 const RectangleRight = styled.div`
   grid-column: 2 / span 1;
   grid-row: 1 / span 2;
-  background: grey;
   border-radius: 3.2rem;
   position: relative;
   top: 0;
