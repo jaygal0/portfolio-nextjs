@@ -12,14 +12,6 @@
   border-radius: 1.6rem;
 }
 
-.image:hover {
-  cursor: zoom-in;
-  box-shadow: 10px 10px 0 -3px #68c4b8;
-  top: -7px;
-  left: -7px;
-  border-radius: 1.6rem;
-}
-
 .image img {
   border-radius: 1.6rem;
 }

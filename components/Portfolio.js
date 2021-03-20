@@ -17,7 +17,7 @@ const Portfolio = () => {
         rightLink="/work/tmi"
       />
       <PortfolioFlex>
-        <PortfolioRectangle href="/work/vol" src="/logo.svg" />
+        <PortfolioRectangle href="/work/vol" src="/vol-banner.jpg" />
         <PortfolioSquare href="/work/reload-sessions" src="/logo.svg" />
         <PortfolioSquare href="/work/kawaii-corner-shop" src="/logo.svg" />
         <PortfolioRectangle href="work/photos" src="/photos-ebony.jpg" />

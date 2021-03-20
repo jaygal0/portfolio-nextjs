@@ -36,7 +36,6 @@ const App = styled.div`
 `
 
 const ProjectApps = ({ apps }) => {
-  console.log(apps)
   return (
     <GridContainer>
       <AppWrapper>
