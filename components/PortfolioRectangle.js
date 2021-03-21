@@ -11,6 +11,7 @@ const RectangleStyling = styled.div`
   top: 0;
   left: 0;
   transition: 0.2s ease-in all;
+  background: ${({ theme }) => theme.color.grey};
 
   &:hover {
     cursor: pointer;

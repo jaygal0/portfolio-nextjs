@@ -22,6 +22,7 @@ const SquareTopLeft = styled.div`
   top: 0;
   left: 0;
   transition: 0.2s ease-in all;
+  background: ${({ theme }) => theme.color.grey};
 
   &:hover {
     cursor: pointer;
@@ -40,6 +41,7 @@ const SquareBottomLeft = styled.div`
   top: 0;
   left: 0;
   transition: 0.2s ease-in all;
+  background: ${({ theme }) => theme.color.grey};
 
   &:hover {
     cursor: pointer;
@@ -57,6 +59,7 @@ const RectangleRight = styled.div`
   top: 0;
   left: 0;
   transition: 0.2s ease-in all;
+  background: ${({ theme }) => theme.color.grey};
 
   &:hover {
     cursor: pointer;

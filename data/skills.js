@@ -85,6 +85,11 @@ const skills = [
     level: 'eight',
   },
   {
+    programName: 'styled components',
+    subtitle: '',
+    level: 'seven',
+  },
+  {
     programName: 'visual studio code',
     subtitle: '',
     level: 'nine',

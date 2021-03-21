@@ -1,3 +1,4 @@
+import React, { useState } from 'react'
 import Metadata from '../../components/Metadata'
 import { Container, GridContainer } from '../../styles'
 import Nav from '../../components/Nav'
@@ -9,6 +10,7 @@ import data from '../../data/work'
 import ProjectApps from '../../components/ProjectApps'
 import styled from 'styled-components'
 import Image from 'next/image'
+import FsLightbox from 'fslightbox-react'
 
 const TextWrapper = styled.div`
   grid-column: 3 / span 8;
@@ -26,6 +28,8 @@ const ImgWrapper = styled.div`
 `
 
 export default function Detail({}) {
+  const [asset, setAsset] = useState(false)
+  const [deck, setDeck] = useState(false)
   const { vol } = data
   return (
     <>
@@ -42,16 +46,24 @@ export default function Detail({}) {
               <p>
                 By creating interactive, creative and entertaining posts (such
                 as the example below), we were able to leverage Instagram and
-                built a large following that spanned over 100,000 followers. We
+                build a large following that spanned over 100,000 followers. We
                 were constantly coming up with new ideas for posts and since I
                 was the only designer on the team, it was up to me to create
                 each one of them.
               </p>
-              <Image
-                src="/vol-phone-assets-1.jpg"
-                width={5333}
-                height={3000}
-                className="border-image"
+              <div className="image" onClick={() => setAsset(!asset)}>
+                <Image
+                  src="/vol-phone-assets-1.jpg"
+                  width={5333}
+                  height={3000}
+                  className="border-image"
+                />
+              </div>
+              <FsLightbox
+                toggler={asset}
+                sources={[
+                  '/_next/image?url=%2Fvol-phone-assets-1.jpg&w=3840&q=75',
+                ]}
               />
               <GifWrapper>
                 <ImgWrapper>
@@ -85,7 +97,17 @@ export default function Detail({}) {
                 and brought in a lot of revenue to the company. Below is just
                 one example of the successful decks that I had to design.
               </p>
-              <div className="image">
+              <FsLightbox
+                toggler={deck}
+                sources={[
+                  'http://localhost:3000/_next/image?url=%2Fvol-deck-1.jpg&w=3840&q=75',
+                  'http://localhost:3000/_next/image?url=%2Fvol-deck-2.jpg&w=3840&q=75',
+                  'http://localhost:3000/_next/image?url=%2Fvol-deck-3.jpg&w=3840&q=75',
+                  'http://localhost:3000/_next/image?url=%2Fvol-deck-4.jpg&w=3840&q=75',
+                  'http://localhost:3000/_next/image?url=%2Fvol-deck-5.jpg&w=3840&q=75',
+                ]}
+              />
+              <div className="image" onClick={() => setDeck(!deck)}>
                 <Image
                   src="/vol-deck-1.jpg"
                   width={3508}
@@ -93,7 +115,7 @@ export default function Detail({}) {
                   className="border-image"
                 />
               </div>
-              <div className="image">
+              <div className="image" onClick={() => setDeck(!deck)}>
                 <Image
                   src="/vol-deck-2.jpg"
                   width={3508}
@@ -101,7 +123,7 @@ export default function Detail({}) {
                   className="border-image"
                 />
               </div>
-              <div className="image">
+              <div className="image" onClick={() => setDeck(!deck)}>
                 <Image
                   src="/vol-deck-3.jpg"
                   width={3508}
@@ -109,7 +131,7 @@ export default function Detail({}) {
                   className="border-image"
                 />
               </div>
-              <div className="image">
+              <div className="image" onClick={() => setDeck(!deck)}>
                 <Image
                   src="/vol-deck-4.jpg"
                   width={3508}
@@ -117,7 +139,7 @@ export default function Detail({}) {
                   className="border-image"
                 />
               </div>
-              <div className="image">
+              <div className="image" onClick={() => setDeck(!deck)}>
                 <Image
                   src="/vol-deck-5.jpg"
                   width={3508}

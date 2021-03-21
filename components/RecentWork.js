@@ -18,7 +18,7 @@ const RecentWork = () => {
       <Wrapper>
         <Text>recent work</Text>
         <Masonry
-          topLeftImg="/logo.svg"
+          topLeftImg="/input-mockup.png"
           topLeftLink="/work/input"
           btmLeftImg="/logo.svg"
           btmLeftLink="/work/bind"

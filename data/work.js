@@ -2,14 +2,16 @@ export default {
   tmi: {
     title: 'testing my ideas',
     text:
-      'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Diam sit amet nisl suscipit adipiscing. Elit pellentesque habitant morbi tristique senectus et netus et malesuada. Nisl tincidunt eget nullam non nisi est. Vel orci porta non pulvinar neque. Non quam lacus suspendisse faucibus interdum posuere lorem ipsum.',
+      "Testing My Ideas is a personal blog that I designed and built from scratch. I wanted to create a blog to hold myself accountable to designing, building, and testing out products. For every new product that I release, I will measure it's performance and move on from the idea if I can see that it's failing.",
     img: '/tmi-banner.png',
     appsUsed: [
       'contentful',
       'figma',
+      'html',
       'illustrator',
       'next.js',
       'react',
+      'styled components',
       'visual studio code',
     ],
   },
@@ -30,8 +32,8 @@ export default {
   input: {
     title: 'input',
     text:
-      'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Diam sit amet nisl suscipit adipiscing. Elit pellentesque habitant morbi tristique senectus et netus et malesuada. Nisl tincidunt eget nullam non nisi est. Vel orci porta non pulvinar neque. Non quam lacus suspendisse faucibus interdum posuere lorem ipsum.',
-    img: '/bind-banner.png',
+      "Input, was a project where I was scratching my own itch. Since I love to learn new skills (no matter how random), I decided to take on the challenge of learning Korean. Since I've had previous experience of learning languages, I knew that it was important to increase my data input of a language. With this thinking, I designed an app to help me learn new words, as well as get better at typing in another language.",
+    img: '/input-banner.png',
     appsUsed: [
       'css',
       'figma',
@@ -65,8 +67,8 @@ export default {
   kawaii: {
     title: 'kawaii corner shop ltd',
     text:
-      'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Diam sit amet nisl suscipit adipiscing. Elit pellentesque habitant morbi tristique senectus et netus et malesuada. Nisl tincidunt eget nullam non nisi est. Vel orci porta non pulvinar neque. Non quam lacus suspendisse faucibus interdum posuere lorem ipsum.',
-    img: '/bind-banner.png',
+      "Kawaii Corner Shop is an eCommerce store selling 'cute' items. The store was in need of a total rebrand as well as a handful of assets for their social media accounts. Working closely with the company I was able to rebrand and design social media assets for their personal use.",
+    img: '/kawaii-banner.png',
     appsUsed: ['illustrator', 'photoshop'],
   },
   photos: {

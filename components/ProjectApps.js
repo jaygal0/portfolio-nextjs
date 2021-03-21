@@ -23,8 +23,9 @@ const Title = styled.p`
 const Text = styled.p``
 const FlexAppWrapper = styled.div`
   display: flex;
-  justify-content: space-between;
-  align-content: space-between;
+  gap: 1.6rem;
+  /* justify-content: space-between; */
+  /* align-content: space-between; */
   flex-wrap: wrap;
   margin-top: 3.2rem;
 `

@@ -1,4 +1,4 @@
-import React, { useRef, useEffect } from 'react'
+import React, { useState } from 'react'
 import Metadata from '../../components/Metadata'
 import { Container, GridContainer } from '../../styles'
 import Nav from '../../components/Nav'
@@ -10,7 +10,7 @@ import data from '../../data/work'
 import ProjectApps from '../../components/ProjectApps'
 import styled from 'styled-components'
 import Image from 'next/image'
-import ButtonSecondaryExternal from '../../components/ButtonSecondaryExternal'
+import FsLightbox from 'fslightbox-react'
 
 const TextWrapper = styled.div`
   grid-column: 3 / span 8;
@@ -18,6 +18,9 @@ const TextWrapper = styled.div`
 
 export default function Detail({}) {
   const { reload } = data
+  const [toggler, setToggler] = useState(false)
+  const [deck, setDeck] = useState(false)
+  const [videos, setVideos] = useState(false)
 
   return (
     <>
@@ -37,27 +40,26 @@ export default function Detail({}) {
                 filmed in exotic spots across the world. Below are just a
                 handful of videos that I had worked on.
               </p>
-              <div className="image">
+              <FsLightbox
+                toggler={videos}
+                sources={[
+                  'https://www.youtube.com/watch?v=bZStXj9B2_U',
+                  'https://www.youtube.com/watch?v=PaoZHxYxK90',
+                ]}
+              />
+              <div className="image" onClick={() => setVideos(!videos)}>
                 <Image
-                  src="/vol-deck-3.jpg"
-                  width={3508}
-                  height={2481}
+                  src="/reload-showreel.gif"
+                  width={1280}
+                  height={720}
                   className="border-image"
                 />
               </div>
-              <div className="image">
+              <div className="image" onClick={() => setVideos(!videos)}>
                 <Image
-                  src="/vol-deck-4.jpg"
-                  width={3508}
-                  height={2481}
-                  className="border-image"
-                />
-              </div>
-              <div className="image">
-                <Image
-                  src="/vol-deck-5.jpg"
-                  width={3508}
-                  height={2481}
+                  src="/reload-surie.gif"
+                  width={1280}
+                  height={720}
                   className="border-image"
                 />
               </div>
@@ -67,9 +69,20 @@ export default function Detail({}) {
                 for the growth of Reload Sessions. Each deck had to uphold a
                 high level of quality as well as information in order to gain
                 the readers trust. Fortunately, each deck went down well with
-                our clients and I was able to work on some creative projects.
+                our clients and I was able to work on a few creative projects.
               </p>
-              <div className="image">
+              <FsLightbox
+                toggler={deck}
+                sources={[
+                  '/_next/image?url=%2Freload-deck-1.jpg&w=3840&q=75',
+                  '/_next/image?url=%2Freload-deck-2.jpg&w=3840&q=75',
+                  '/_next/image?url=%2Freload-deck-3.jpg&w=3840&q=75',
+                  '/_next/image?url=%2Freload-deck-4.jpg&w=3840&q=75',
+                  '/_next/image?url=%2Freload-deck-5.jpg&w=3840&q=75',
+                  '/_next/image?url=%2Freload-deck-6.jpg&w=3840&q=75',
+                ]}
+              />
+              <div className="image" onClick={() => setDeck(!deck)}>
                 <Image
                   src="/reload-deck-1.jpg"
                   width={3308}
@@ -77,7 +90,7 @@ export default function Detail({}) {
                   className="border-image"
                 />
               </div>
-              <div className="image">
+              <div className="image" onClick={() => setDeck(!deck)}>
                 <Image
                   src="/reload-deck-2.jpg"
                   width={3308}
@@ -85,23 +98,24 @@ export default function Detail({}) {
                   className="border-image"
                 />
               </div>
-              <div className="image">
+              <div className="image" onClick={() => setDeck(!deck)}>
                 <Image
                   src="/reload-deck-3.jpg"
                   width={3308}
                   height={2339}
                   className="border-image"
                 />
-              </div>{' '}
-              <div className="image">
+              </div>
+              <div className="image" onClick={() => setDeck(!deck)}>
                 <Image
                   src="/reload-deck-4.jpg"
                   width={3400}
                   height={2200}
                   className="border-image"
+                  onClick={() => setDeck1(!deck1)}
                 />
               </div>
-              <div className="image">
+              <div className="image" onClick={() => setDeck(!deck)}>
                 <Image
                   src="/reload-deck-5.jpg"
                   width={3400}
@@ -109,7 +123,7 @@ export default function Detail({}) {
                   className="border-image"
                 />
               </div>
-              <div className="image">
+              <div className="image" onClick={() => setDeck(!deck)}>
                 <Image
                   src="/reload-deck-6.jpg"
                   width={3400}
@@ -117,10 +131,6 @@ export default function Detail({}) {
                   className="border-image"
                 />
               </div>
-              <ButtonSecondaryExternal
-                title="view the design system"
-                link="https://www.figma.com/proto/tvcmGFjKuqSfHL5yHEb8Iy/Testing-My-Ideas?node-id=640%3A0&viewport=315%2C656%2C0.4032875597476959&scaling=contain"
-              />
             </TextWrapper>
           </GridContainer>
           <Form />
