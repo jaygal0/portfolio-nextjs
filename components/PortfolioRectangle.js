@@ -15,7 +15,7 @@ const RectangleStyling = styled.div`
 
   &:hover {
     cursor: pointer;
-    box-shadow: 10px 10px 0 -3px ${({ theme }) => theme.color.lightGreen};
+    box-shadow: 15px 15px 0 -3px ${({ theme }) => theme.color.lightGreen};
     top: -7px;
     left: -7px;
   }

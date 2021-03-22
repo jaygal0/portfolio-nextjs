@@ -18,8 +18,14 @@ export default {
   bind: {
     title: 'bind',
     text:
-      'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Diam sit amet nisl suscipit adipiscing. Elit pellentesque habitant morbi tristique senectus et netus et malesuada. Nisl tincidunt eget nullam non nisi est. Vel orci porta non pulvinar neque. Non quam lacus suspendisse faucibus interdum posuere lorem ipsum.',
-    img: '/bind-banner.png',
+      "There was a time when my parents weren't the best with computers. Since I understood the importance of staying up-to-date with technology, I didn't want my parents to fall by the wayside, and so I set time aside to tutor them with one-on-one lessons. Out of those lessons came an idea to design and develop a game to help them learn essential keyboard shortcuts.",
+    img: {
+      banner: '/bind-banner.png',
+      sketch: '/bind-sketches.jpg',
+      wireframe: '/bind-wireframe.jpg',
+      mockup: '/bind-mockup.png',
+      thumbnail: '/bind-thumbnail.png',
+    },
     appsUsed: [
       'css',
       'figma',
@@ -28,6 +34,7 @@ export default {
       'javascript',
       'visual studio code',
     ],
+    link: 'https://bind-app.netlify.app/',
   },
   input: {
     title: 'input',

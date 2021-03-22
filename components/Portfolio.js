@@ -11,7 +11,7 @@ const Portfolio = () => {
       <Masonry
         topLeftImg="/input-mockup.png"
         topLeftLink="/work/input"
-        btmLeftImg="/logo.svg"
+        btmLeftImg="/bind-thumbnail.png"
         btmLeftLink="/work/bind"
         rightImg="/tmi.gif"
         rightLink="/work/tmi"

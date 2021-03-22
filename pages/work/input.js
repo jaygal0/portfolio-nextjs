@@ -14,10 +14,6 @@ import ButtonSecondaryExternal from '../../components/ButtonSecondaryExternal'
 const TextWrapper = styled.div`
   grid-column: 3 / span 8;
 `
-const ButtonFlex = styled.div`
-  display: flex;
-  gap: 1.6rem;
-`
 
 export default function Detail({}) {
   const { input } = data

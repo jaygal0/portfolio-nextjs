@@ -17,7 +17,7 @@ const skills = [
   {
     programName: 'css',
     subtitle: '',
-    level: 'eight',
+    level: 'nine',
   },
   {
     programName: 'figma',
@@ -37,7 +37,7 @@ const skills = [
   {
     programName: 'html',
     subtitle: '',
-    level: 'eight',
+    level: 'nine',
   },
   {
     programName: 'illustrator',

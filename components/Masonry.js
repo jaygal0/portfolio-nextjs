@@ -26,7 +26,7 @@ const SquareTopLeft = styled.div`
 
   &:hover {
     cursor: pointer;
-    box-shadow: 10px 10px 0 -3px ${({ theme }) => theme.color.lightGreen};
+    box-shadow: 15px 15px 0 -3px ${({ theme }) => theme.color.lightGreen};
     top: -7px;
     left: -7px;
   }
@@ -45,7 +45,7 @@ const SquareBottomLeft = styled.div`
 
   &:hover {
     cursor: pointer;
-    box-shadow: 10px 10px 0 -3px ${({ theme }) => theme.color.lightGreen};
+    box-shadow: 15px 15px 0 -3px ${({ theme }) => theme.color.lightGreen};
     /* -webkit-transform: scale(1.05); */
     top: -7px;
     left: -7px;
@@ -63,7 +63,7 @@ const RectangleRight = styled.div`
 
   &:hover {
     cursor: pointer;
-    box-shadow: 10px 10px 0 -3px ${({ theme }) => theme.color.lightGreen};
+    box-shadow: 15px 15px 0 -3px ${({ theme }) => theme.color.lightGreen};
     top: -7px;
     left: -7px;
   }
