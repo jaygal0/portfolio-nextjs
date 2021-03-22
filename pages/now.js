@@ -2,18 +2,18 @@ import Metadata from '../components/Metadata'
 import { Container } from '../styles'
 import Nav from '../components/Nav'
 import HeroHeading from '../components/HeroHeading'
+import Now from '../components/Now'
 import Footer from '../components/Footer'
-import Form from '../components/Form'
 
-export default function Now() {
+export default function NowPage() {
   return (
     <>
       <Metadata />
       <Container>
         <Nav />
         <main>
-          <HeroHeading title="what am i up to right now?" subtitle="/now" />
-          <Form />
+          <HeroHeading title="what i'm doing now" subtitle="/now" />
+          <Now />
         </main>
         <Footer />
       </Container>

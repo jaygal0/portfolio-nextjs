@@ -55,6 +55,7 @@ h4 {
   line-height: ${({ theme }) => theme.lineHeight.desktop.h4};
   margin-bottom: 1.6rem;
   font-weight: 700;
+  text-transform: capitalize;
 }
 h5 {
     font-size: ${({ theme }) => theme.font.desktop.h5};
@@ -72,9 +73,10 @@ p {
 }
 
 a {
-  color: ${({ theme }) => theme.color.pink};
+  color: ${({ theme }) => theme.color.green};
+  text-decoration: none;
   &:hover {
-  color: ${({ theme }) => theme.color.blue};
+  color: ${({ theme }) => theme.color.lightGreen};
   }
 }
 
@@ -90,6 +92,23 @@ input {
   color: black;
   opacity: .7;
   }
+}
+
+blockquote {
+  background: ${({ theme }) => theme.color.grey};
+  padding: 2.4rem;
+  margin-bottom: 2.4rem;
+}
+blockquote p {
+  margin-bottom: 1.6rem;
+}
+
+ul {
+  margin-bottom: 3.2rem;
+}
+ul li {
+font-size: ${({ theme }) => theme.font.desktop.p};
+line-height: ${({ theme }) => theme.lineHeight.desktop.p};
 }
 `
 

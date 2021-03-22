@@ -69,7 +69,7 @@ const ProgressLevel = styled.div`
 
 const LineBreak = styled.div`
   grid-column: 3 / span 8;
-  border-bottom: 0.5px solid ${({ theme }) => theme.color.grey};
+  border-bottom: 0.1px solid ${({ theme }) => theme.color.line};
   width: 100%;
   margin: 3.2rem 0;
 `

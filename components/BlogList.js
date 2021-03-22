@@ -2,6 +2,7 @@ import React from 'react'
 import { GridContainer } from '../styles'
 import styled from 'styled-components'
 import ButtonSecondary from './ButtonSecondary'
+import Link from 'next/link'
 
 const BlogWrapper = styled.article`
   grid-column: 3 / span 8;
@@ -12,6 +13,11 @@ const BlogWrapper = styled.article`
 `
 const Heading = styled.h3`
   grid-column: 1 / span 5;
+  &:hover {
+    cursor: pointer;
+    color: ${({ theme }) => theme.color.green};
+    transition: ${({ theme }) => theme.transition.link};
+  }
 `
 const TextWrapper = styled.p`
   grid-column: 6 / span 3;
@@ -25,7 +31,7 @@ const Published = styled.p`
 const Snippet = styled.p``
 const LineBreak = styled.div`
   grid-column: 3 / span 8;
-  border-bottom: 0.1px solid grey;
+  border-bottom: 0.1px solid ${({ theme }) => theme.color.line};
   margin: 3.2rem 0;
 `
 
@@ -33,11 +39,21 @@ const BlogList = ({ heading, subheading, published, snippet }) => {
   return (
     <GridContainer>
       <BlogWrapper>
-        <Heading>{heading}</Heading>
+        <Link
+          href={`blog/${heading.replace(/ /g, '-').replace(/[^-\w\s]/gi, '')}`}
+        >
+          <Heading>{heading}</Heading>
+        </Link>
         <TextWrapper>
           <Published>published: {published}</Published>
-          <Snippet>{snippet}</Snippet>
-          <ButtonSecondary title="read more" link="#" />
+          <h5>{subheading}</h5>
+          <Snippet>{`${snippet.substr(0, 100)}...`}</Snippet>
+          <ButtonSecondary
+            title="read more"
+            link={`blog/${heading
+              .replace(/ /g, '-')
+              .replace(/[^-\w\s]/gi, '')}`}
+          />
         </TextWrapper>
       </BlogWrapper>
       <LineBreak />

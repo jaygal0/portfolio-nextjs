@@ -15,6 +15,8 @@ const Button = styled.button`
 
   &:hover {
     cursor: pointer;
+    background: ${({ theme }) => theme.color.darkGreen};
+    transition: ${({ theme }) => theme.transition.buttons};
   }
 `
 const Arrow = styled.span`

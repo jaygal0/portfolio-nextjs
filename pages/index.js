@@ -1,7 +1,7 @@
 import Metadata from '../components/Metadata'
 import { Container } from '../styles'
 import Nav from '../components/Nav'
-import HeroHeading from '../components/HeroHeading'
+import HeroHeadingIndex from '../components/HeroHeadingIndex'
 import RecentWork from '../components/RecentWork'
 import HeadingAndText from '../components/HeadingAndText'
 import Footer from '../components/Footer'
@@ -15,12 +15,9 @@ export default function Home() {
       <Container>
         <Nav />
         <main>
-          <HeroHeading
-            title="i design, code &amp; solve problems"
-            subtitle="hi, i'm josh"
-          >
+          <HeroHeadingIndex>
             <Face />
-          </HeroHeading>
+          </HeroHeadingIndex>
           <RecentWork />
           <HeadingAndText title="creative problem solver">
             <p>
