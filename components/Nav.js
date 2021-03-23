@@ -12,6 +12,15 @@ const Menu = styled.div`
   flex-direction: column;
   margin-left: 3.2rem;
   margin-top: 30vh;
+
+  @media screen and (max-width: ${({ theme }) => theme.breakPoint.tablet}) {
+    position: absolute;
+    flex-direction: row;
+    top: 4rem;
+    right: 1.6rem;
+    margin-left: 0;
+    margin-top: 0;
+  }
 `
 const ImageContainer = styled.div`
   margin: 3.2rem 0 0 3.2rem;
@@ -23,17 +32,27 @@ const ImageContainer = styled.div`
     cursor: pointer;
   }
 `
-const List = styled.ul`
+const List = styled.li`
   text-transform: capitalize;
   font-size: 1.6rem;
   margin-bottom: 1.6rem;
   color: ${({ theme }) => theme.color.black};
+  list-style: none;
+
+  @media screen and (max-width: ${({ theme }) => theme.breakPoint.tablet}) {
+    margin: 1.6rem;
+  }
 
   &.active {
     color: ${({ theme }) => theme.color.darkGreen};
     font-size: 1.8rem;
     font-weight: 700;
+
+    @media screen and (max-width: ${({ theme }) => theme.breakPoint.tablet}) {
+      font-size: 1.6rem;
+    }
   }
+
   &:hover {
     cursor: pointer;
     color: ${({ theme }) => theme.color.lightGreen};

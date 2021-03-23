@@ -12,8 +12,10 @@ const AppWrapper = styled.div`
   padding: 3.2rem;
   border-radius: 3.2rem;
   margin-bottom: 1.6rem;
-  /* display: flex; */
-  /* flex-direction: column; */
+
+  @media screen and (max-width: ${({ theme }) => theme.breakPoint.tablet}) {
+    grid-column: 1 / -1;
+  }
 `
 const Title = styled.p`
   font-weight: bold;

@@ -9,6 +9,10 @@ const SkillWrapper = styled.div`
   grid-column: 3 / span 8;
   display: flex;
   align-items: center;
+
+  @media screen and (max-width: ${({ theme }) => theme.breakPoint.tablet}) {
+    grid-column: 1 / -1;
+  }
 `
 
 const ImageWrapper = styled.div`
@@ -72,6 +76,10 @@ const LineBreak = styled.div`
   border-bottom: 0.1px solid ${({ theme }) => theme.color.line};
   width: 100%;
   margin: 3.2rem 0;
+
+  @media screen and (max-width: ${({ theme }) => theme.breakPoint.tablet}) {
+    grid-column: 1 / -1;
+  }
 `
 
 const SkillApp = ({ src, subtitle, programName, level }) => {

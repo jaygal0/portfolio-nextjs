@@ -14,10 +14,8 @@ body {
   letter-spacing: 0.05rem;
 }
 main {
-  @media screen and (max-width: ${({ theme }) => theme.breakPoint.phone}) {
-    overflow: hidden;
-  }
 }
+
 h1 {
   font-size: ${({ theme }) => theme.font.desktop.h1};
   line-height: ${({ theme }) => theme.lineHeight.desktop.h1};
@@ -25,7 +23,8 @@ h1 {
   color: ${({ theme }) => theme.color.black};
   text-transform: capitalize;
   font-weight: 900;
-  @media screen and (max-width: ${({ theme }) => theme.breakPoint.phone}) {
+
+  @media screen and (max-width: ${({ theme }) => theme.breakPoint.phoneLarge}) {
   font-size: ${({ theme }) => theme.font.phone.h1};
   line-height: ${({ theme }) => theme.lineHeight.phone.h1};
   }
@@ -109,6 +108,10 @@ ul {
 ul li {
 font-size: ${({ theme }) => theme.font.desktop.p};
 line-height: ${({ theme }) => theme.lineHeight.desktop.p};
+
+  @media screen and (max-width: ${({ theme }) => theme.breakPoint.tablet}) {
+    list-style: none;
+      }
 }
 `
 

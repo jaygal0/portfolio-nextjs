@@ -3,9 +3,9 @@ import Metadata from '../../components/Metadata'
 import { Container } from '../../styles'
 import Nav from '../../components/Nav'
 import Footer from '../../components/Footer'
-import Form from '../../components/Form'
 import Post from '../../components/Post'
 import data from '../../data/blog'
+import FormBox from '../../components/FormBox'
 
 export default function Blog() {
   return (
@@ -242,7 +242,7 @@ export default function Blog() {
               you’ll see a major difference within 3 months’ time.
             </p>
           </Post>
-          <Form />
+          <FormBox />
         </main>
         <Footer />
       </Container>

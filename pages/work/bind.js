@@ -2,7 +2,7 @@ import Metadata from '../../components/Metadata'
 import { Container, GridContainer } from '../../styles'
 import Nav from '../../components/Nav'
 import Footer from '../../components/Footer'
-import Form from '../../components/Form'
+import FormBox from '../../components/FormBox'
 import PortfolioHero from '../../components/PortfolioHero'
 import ProjectInfo from '../../components/ProjectInfo'
 import data from '../../data/work'
@@ -13,6 +13,10 @@ import ButtonSecondaryExternal from '../../components/ButtonSecondaryExternal'
 
 const TextWrapper = styled.div`
   grid-column: 3 / span 8;
+
+  @media screen and (max-width: ${({ theme }) => theme.breakPoint.tablet}) {
+    grid-column: 1 / -1;
+  }
 `
 
 export default function Detail({}) {
@@ -76,7 +80,7 @@ export default function Detail({}) {
               <ButtonSecondaryExternal title="view the app" link={bind.link} />
             </TextWrapper>
           </GridContainer>
-          <Form />
+          <FormBox />
         </main>
         <Footer />
       </Container>

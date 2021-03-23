@@ -11,6 +11,24 @@ const MasonryWrapper = styled.div`
   grid-gap: 3.2rem;
   height: 82.2rem;
   width: 82.2rem;
+
+  @media screen and (max-width: ${({ theme }) =>
+      theme.breakPoint.desktopSmall}) {
+    height: 65rem;
+    width: 65rem;
+  }
+  @media screen and (max-width: ${({ theme }) => theme.breakPoint.tablet}) {
+    grid-column: 1 / -1;
+    height: 73rem;
+    width: 73rem;
+  }
+  @media screen and (max-width: ${({ theme }) => theme.breakPoint.phoneLarge}) {
+    grid-column: 1 / -1;
+    height: 73rem;
+    width: 73rem;
+    grid-template-columns: 1fr;
+    grid-template-rows: repeat(3, min-content);
+  }
 `
 const SquareTopLeft = styled.div`
   grid-column: 1 / span 1;
@@ -79,8 +97,8 @@ const Masonry = ({
 }) => {
   return (
     <MasonryWrapper>
-      <SquareTopLeft>
-        <Link href={topLeftLink}>
+      <Link href={topLeftLink}>
+        <SquareTopLeft>
           <Image
             src={topLeftImg}
             alt=""
@@ -89,10 +107,10 @@ const Masonry = ({
             objectFit="cover"
             className="border-image"
           />
-        </Link>
-      </SquareTopLeft>
-      <SquareBottomLeft>
-        <Link href={btmLeftLink}>
+        </SquareTopLeft>
+      </Link>
+      <Link href={btmLeftLink}>
+        <SquareBottomLeft>
           <Image
             src={btmLeftImg}
             alt=""
@@ -101,10 +119,10 @@ const Masonry = ({
             objectFit="cover"
             className="border-image"
           />
-        </Link>
-      </SquareBottomLeft>
-      <RectangleRight>
-        <Link href={rightLink}>
+        </SquareBottomLeft>
+      </Link>
+      <Link href={rightLink}>
+        <RectangleRight>
           <Image
             src={rightImg}
             alt=""
@@ -113,8 +131,8 @@ const Masonry = ({
             objectFit="cover"
             className="border-image"
           />
-        </Link>
-      </RectangleRight>
+        </RectangleRight>
+      </Link>
     </MasonryWrapper>
   )
 }

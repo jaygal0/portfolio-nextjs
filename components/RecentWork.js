@@ -5,7 +5,11 @@ import ButtonSecondary from '../components/ButtonSecondary'
 import Masonry from './Masonry'
 
 const Wrapper = styled.div`
-  grid-column: 3 / span 2;
+  grid-column: 3 / span 8;
+
+  @media screen and (max-width: ${({ theme }) => theme.breakPoint.tablet}) {
+    grid-column: 1 / -1;
+  }
 `
 const Text = styled.p`
   text-transform: capitalize;

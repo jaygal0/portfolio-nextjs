@@ -2,16 +2,20 @@ import Metadata from '../../components/Metadata'
 import { Container, GridContainer } from '../../styles'
 import Nav from '../../components/Nav'
 import Footer from '../../components/Footer'
-import Form from '../../components/Form'
 import PortfolioHero from '../../components/PortfolioHero'
 import ProjectInfo from '../../components/ProjectInfo'
 import data from '../../data/work'
 import ProjectApps from '../../components/ProjectApps'
 import styled from 'styled-components'
 import Image from 'next/image'
+import FormBox from '../../components/FormBox'
 
 const ImgWrapper = styled.div`
   grid-column: 3 / span 8;
+
+  @media screen and (max-width: ${({ theme }) => theme.breakPoint.tablet}) {
+    grid-column: 1 / -1;
+  }
 `
 
 export default function Detail({}) {
@@ -32,7 +36,7 @@ export default function Detail({}) {
                   src="/photos-forest.jpg"
                   width={5760}
                   height={3840}
-                  className="border-image"
+                  className="border-image image"
                 />
               </div>
               <div className="image">
@@ -127,7 +131,7 @@ export default function Detail({}) {
               </div>
             </ImgWrapper>
           </GridContainer>
-          <Form />
+          <FormBox />
         </main>
         <Footer />
       </Container>

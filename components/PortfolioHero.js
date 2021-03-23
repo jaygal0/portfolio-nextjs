@@ -8,6 +8,13 @@ const ImageWrapper = styled.div`
   width: 100%;
   padding: 30%;
   position: relative;
+  background: ${({ theme }) => theme.color.grey};
+  border-radius: 3.2rem;
+
+  @media screen and (max-width: ${({ theme }) => theme.breakPoint.tablet}) {
+    grid-column: 1 / -1;
+    margin-top: 8rem;
+  }
 `
 
 const PortfolioHero = ({ src }) => {

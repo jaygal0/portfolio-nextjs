@@ -9,7 +9,7 @@ export default {
   },
   font: {
     phone: {
-      h1: '6.4rem',
+      h1: '10.4rem',
       h2: '3.2rem',
       h3: '4.8rem',
       h4: '2.4rem',
@@ -32,7 +32,7 @@ export default {
   },
   lineHeight: {
     phone: {
-      h1: '7.2rem',
+      h1: '11.2rem',
       h2: '4.8rem',
       h3: '5.6rem',
       h4: '2.4rem',
@@ -64,8 +64,8 @@ export default {
   },
   borderRadius: '1.6rem',
   breakPoint: {
-    phone: '376px',
-    tablet: '835px',
-    desktop: '375px',
+    desktopSmall: '1024px',
+    tablet: '768px',
+    phoneLarge: '426px',
   },
 }

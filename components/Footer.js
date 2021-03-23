@@ -9,12 +9,24 @@ const FooterWrapper = styled.footer`
 `
 const NameWrapper = styled.div`
   grid-column: 3 / span 2;
+
+  @media screen and (max-width: ${({ theme }) => theme.breakPoint.tablet}) {
+    grid-column: 1 / span 4;
+  }
 `
 const ContactWrapper = styled.div`
   grid-column: 6 / span 2;
+
+  @media screen and (max-width: ${({ theme }) => theme.breakPoint.tablet}) {
+    grid-column: 6 / span 3;
+  }
 `
 const AllRightsWrapper = styled.div`
   grid-column: 9 / span 2;
+
+  @media screen and (max-width: ${({ theme }) => theme.breakPoint.tablet}) {
+    grid-column: 10 / span 3;
+  }
 `
 const Text = styled.p`
   font-size: ${({ theme }) => theme.font.desktop.p};
@@ -28,6 +40,7 @@ const ATag = styled.a`
   line-height: ${({ theme }) => theme.lineHeight.desktop.p};
   text-decoration: none;
   color: black;
+  text-transform: capitalize;
 
   &:hover {
     cursor: pointer;
@@ -48,12 +61,12 @@ const Footer = () => {
         <NameWrapper>
           <Text>joshua galinato</Text>
           <Link href="/now">
-            <ATag>/now</ATag>
+            <ATag>what i'm doing now</ATag>
           </Link>
         </NameWrapper>
         <ContactWrapper>
           <Text>contact</Text>
-          <ATag href="mailto:hi@joshuagalinato.com">hi@joshuagalinato.com</ATag>
+          <ATag href="mailto:hi@joshuagalinato.com">email me</ATag>
         </ContactWrapper>
         <AllRightsWrapper>
           <Text>copyright &copy; {moment().format('YYYY')}</Text>

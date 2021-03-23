@@ -6,8 +6,8 @@ import Nav from '../components/Nav'
 import HeroHeading from '../components/HeroHeading'
 import Footer from '../components/Footer'
 import SkillApp from '../components/SkillApp'
-import Form from '../components/Form'
 import data from '../data/skills'
+import FormBox from '../components/FormBox'
 
 export default function Skills() {
   return (
@@ -32,7 +32,7 @@ export default function Skills() {
               />
             )
           })}
-          <Form />
+          <FormBox />
         </main>
         <Footer />
       </Container>

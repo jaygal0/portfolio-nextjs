@@ -5,8 +5,8 @@ import HeroHeadingIndex from '../components/HeroHeadingIndex'
 import RecentWork from '../components/RecentWork'
 import HeadingAndText from '../components/HeadingAndText'
 import Footer from '../components/Footer'
-import Form from '../components/Form'
 import Face from '../components/Face'
+import FormBox from '../components/FormBox'
 
 export default function Home() {
   return (
@@ -30,7 +30,7 @@ export default function Home() {
               of learning something new!
             </p>
           </HeadingAndText>
-          <Form />
+          <FormBox />
         </main>
         <Footer />
       </Container>

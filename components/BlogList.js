@@ -10,6 +10,10 @@ const BlogWrapper = styled.article`
   grid-template-columns: repeat(8, 1fr);
   grid-column-gap: 3.2rem;
   align-items: center;
+
+  @media screen and (max-width: ${({ theme }) => theme.breakPoint.tablet}) {
+    grid-column: 1 / -1;
+  }
 `
 const Heading = styled.h3`
   grid-column: 1 / span 5;
@@ -19,7 +23,7 @@ const Heading = styled.h3`
     transition: ${({ theme }) => theme.transition.link};
   }
 `
-const TextWrapper = styled.p`
+const TextWrapper = styled.div`
   grid-column: 6 / span 3;
 `
 const Published = styled.p`
@@ -33,6 +37,10 @@ const LineBreak = styled.div`
   grid-column: 3 / span 8;
   border-bottom: 0.1px solid ${({ theme }) => theme.color.line};
   margin: 3.2rem 0;
+
+  @media screen and (max-width: ${({ theme }) => theme.breakPoint.tablet}) {
+    grid-column: 1 / -1;
+  }
 `
 
 const BlogList = ({ heading, subheading, published, snippet }) => {

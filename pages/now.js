@@ -12,7 +12,7 @@ export default function NowPage() {
       <Container>
         <Nav />
         <main>
-          <HeroHeading title="what i'm doing now" subtitle="/now" />
+          <HeroHeading title="what i'm doing now" subtitle="joshua galinato" />
           <Now />
         </main>
         <Footer />

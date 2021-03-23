@@ -2,7 +2,6 @@ import Metadata from '../../components/Metadata'
 import { Container, GridContainer } from '../../styles'
 import Nav from '../../components/Nav'
 import Footer from '../../components/Footer'
-import Form from '../../components/Form'
 import PortfolioHero from '../../components/PortfolioHero'
 import ProjectInfo from '../../components/ProjectInfo'
 import data from '../../data/work'
@@ -10,9 +9,14 @@ import ProjectApps from '../../components/ProjectApps'
 import styled from 'styled-components'
 import Image from 'next/image'
 import ButtonSecondaryExternal from '../../components/ButtonSecondaryExternal'
+import FormBox from '../../components/FormBox'
 
 const TextWrapper = styled.div`
   grid-column: 3 / span 8;
+
+  @media screen and (max-width: ${({ theme }) => theme.breakPoint.tablet}) {
+    grid-column: 1 / -1;
+  }
 `
 const ButtonFlex = styled.div`
   display: flex;
@@ -119,7 +123,7 @@ export default function Detail({}) {
               />
             </TextWrapper>
           </GridContainer>
-          <Form />
+          <FormBox />
         </main>
         <Footer />
       </Container>

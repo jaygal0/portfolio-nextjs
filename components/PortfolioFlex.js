@@ -8,6 +8,10 @@ const FlexWrapper = styled.div`
   justify-content: space-between;
   margin-top: 3.2rem;
   gap: 3.2rem;
+
+  @media screen and (max-width: ${({ theme }) => theme.breakPoint.tablet}) {
+    grid-column: 1 / -1;
+  }
 `
 
 const PortfolioFlex = ({ children }) => {

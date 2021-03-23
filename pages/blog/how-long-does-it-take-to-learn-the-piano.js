@@ -1,9 +1,9 @@
 import React from 'react'
 import Metadata from '../../components/Metadata'
 import { Container } from '../../styles'
+import FormBox from '../../components/FormBox'
 import Nav from '../../components/Nav'
 import Footer from '../../components/Footer'
-import Form from '../../components/Form'
 import Post from '../../components/Post'
 import data from '../../data/blog'
 
@@ -365,7 +365,7 @@ export default function Blog() {
               better!
             </p>
           </Post>
-          <Form />
+          <FormBox />
         </main>
         <Footer />
       </Container>

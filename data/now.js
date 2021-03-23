@@ -1,15 +1,12 @@
 export default {
   update: {
     day: '22nd',
-    month: 'march',
+    month: 'March',
     year: '2021',
   },
   location: {
     city: 'gothenburg',
     country: 'sweden',
   },
-  book: {
-    title: '',
-    author: '',
-  },
+  book: ['Game Theory by Unknown'],
 }

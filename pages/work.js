@@ -3,7 +3,7 @@ import { Container } from '../styles'
 import Nav from '../components/Nav'
 import HeroHeading from '../components/HeroHeading'
 import Footer from '../components/Footer'
-import Form from '../components/Form'
+import FormBox from '../components/FormBox'
 import Portfolio from '../components/Portfolio'
 
 export default function Work() {
@@ -18,7 +18,7 @@ export default function Work() {
             subtitle="an ever-growing portfolio"
           />
           <Portfolio />
-          <Form />
+          <FormBox />
         </main>
         <Footer />
       </Container>

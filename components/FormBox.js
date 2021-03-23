@@ -11,6 +11,10 @@ const FormWrapper = styled.section`
   flex-direction: column;
   align-items: center;
   padding: 4.8rem 0;
+
+  @media screen and (max-width: ${({ theme }) => theme.breakPoint.tablet}) {
+    grid-column: 1 / -1;
+  }
 `
 const TitleWrapper = styled.div`
   text-align: center;
@@ -21,7 +25,7 @@ const FormContainer = styled.form`
   display: flex;
   flex-direction: column;
 `
-const NameAndEmailWrapper = styled.form`
+const NameAndEmailWrapper = styled.div`
   display: flex;
 `
 const Name = styled.input`
@@ -30,7 +34,6 @@ const Name = styled.input`
 const TextArea = styled.textarea`
   width: 100%;
   margin: 2.4rem 0;
-  text-transform: capitalize;
   border-radius: 1.2rem;
   outline: none;
   border: none;
@@ -51,13 +54,17 @@ const Button = styled.button`
   /* align-self: flex-end; */
   transition: ${({ theme }) => theme.transition.link};
 
+  &:focus {
+    background: ${({ theme }) => theme.color.lightGreen};
+  }
+
   &:hover {
     cursor: pointer;
     background: ${({ theme }) => theme.color.lightGreen};
   }
 `
 
-const Form = () => {
+const FormBox = () => {
   return (
     <GridContainer className="form-margin">
       <FormWrapper>
@@ -65,22 +72,25 @@ const Form = () => {
           <h4>let's connect!</h4>
           <p>Fill in the form and let's create some magic</p>
         </TitleWrapper>
-        <FormContainer action="#" id="connect">
+        <FormContainer
+          action="https://getform.io/f/47044ea9-307a-48c4-9768-6d0775db5e10"
+          method="POST"
+          name="email-form"
+        >
           <NameAndEmailWrapper>
-            <Name type="text" id="firstName" placeholder="First name" />
-            <input type="email" id="email" placeholder="Email" />
+            <Name type="text" name="name" placeholder="First name" />
+            <input type="email" name="email" placeholder="Email" />
           </NameAndEmailWrapper>
           <TextArea
-            id="textArea"
-            form="connect"
+            name="message"
             placeholder="What's on your mind?"
             rows={15}
           ></TextArea>
-          <Button>submit</Button>
+          <Button type="submit">submit</Button>
         </FormContainer>
       </FormWrapper>
     </GridContainer>
   )
 }
 
-export default Form
+export default FormBox

@@ -3,7 +3,6 @@ import Metadata from '../../components/Metadata'
 import { Container, GridContainer } from '../../styles'
 import Nav from '../../components/Nav'
 import Footer from '../../components/Footer'
-import Form from '../../components/Form'
 import PortfolioHero from '../../components/PortfolioHero'
 import ProjectInfo from '../../components/ProjectInfo'
 import data from '../../data/work'
@@ -11,15 +10,25 @@ import ProjectApps from '../../components/ProjectApps'
 import styled from 'styled-components'
 import Image from 'next/image'
 import FsLightbox from 'fslightbox-react'
+import FormBox from '../../components/FormBox'
 
 const TextWrapper = styled.div`
   grid-column: 3 / span 8;
+
+  @media screen and (max-width: ${({ theme }) => theme.breakPoint.tablet}) {
+    grid-column: 1 / -1;
+  }
 `
 const SquareFlexWrapper = styled.div`
   display: flex;
   flex-wrap: wrap;
   gap: 1.6rem;
   margin-top: 4rem;
+
+  @media screen and (max-width: ${({ theme }) =>
+      theme.breakPoint.desktopSmall}) {
+    gap: 1.2rem;
+  }
 `
 const Square = styled.div`
   width: 49%;
@@ -115,7 +124,7 @@ export default function Detail({}) {
               </SquareFlexWrapper>
             </TextWrapper>
           </GridContainer>
-          <Form />
+          <FormBox />
         </main>
         <Footer />
       </Container>

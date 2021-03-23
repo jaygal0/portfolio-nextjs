@@ -3,8 +3,8 @@ import Metadata from '../../components/Metadata'
 import { Container } from '../../styles'
 import Nav from '../../components/Nav'
 import Footer from '../../components/Footer'
-import Form from '../../components/Form'
 import Post from '../../components/Post'
+import FormBox from '../../components/FormBox'
 import data from '../../data/blog'
 
 export default function Blog() {
@@ -276,7 +276,7 @@ export default function Blog() {
               off in the right journey.
             </p>
           </Post>
-          <Form />
+          <FormBox />
         </main>
         <Footer />
       </Container>

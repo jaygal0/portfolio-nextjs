@@ -5,7 +5,7 @@ import { Container } from '../styles'
 import Nav from '../components/Nav'
 import HeroHeading from '../components/HeroHeading'
 import Footer from '../components/Footer'
-import Form from '../components/Form'
+import FormBox from '../components/FormBox'
 import BlogList from '../components/BlogList'
 import data from '../data/blog'
 
@@ -32,7 +32,7 @@ export default function Blog() {
               />
             )
           })}
-          <Form />
+          <FormBox />
         </main>
         <Footer />
       </Container>

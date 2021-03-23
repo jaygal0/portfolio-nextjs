@@ -6,15 +6,10 @@ export const Container = styled.div`
   max-width: 128rem;
 
   @media screen and (max-width: ${({ theme }) => theme.breakPoint.tablet}) {
-    grid-template-columns: repeat(6, 1fr);
-    grid-template-rows: repeat(2, min-content);
-    grid-column-gap: 3.2rem;
-  }
-  @media screen and (max-width: ${({ theme }) => theme.breakPoint.phone}) {
-    grid-template-columns: repeat(4, 1fr);
-    grid-template-rows: repeat(2, min-content);
-    grid-column-gap: 1.6rem;
     margin-bottom: 4.8rem;
+  }
+
+  @media screen and (max-width: ${({ theme }) => theme.breakPoint.phone}) {
   }
 `
 export const GridContainer = styled.section`
@@ -36,8 +31,6 @@ export const GridContainer = styled.section`
   }
 
   @media screen and (max-width: ${({ theme }) => theme.breakPoint.tablet}) {
-    grid-template-columns: repeat(6, 1fr);
-    grid-template-rows: repeat(2, min-content);
     grid-column-gap: 3.2rem;
   }
   @media screen and (max-width: ${({ theme }) => theme.breakPoint.phone}) {
