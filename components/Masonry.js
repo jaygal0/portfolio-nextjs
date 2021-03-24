@@ -23,11 +23,10 @@ const MasonryWrapper = styled.div`
     width: 73rem;
   }
   @media screen and (max-width: ${({ theme }) => theme.breakPoint.phoneLarge}) {
-    grid-column: 1 / -1;
-    height: 73rem;
-    width: 73rem;
-    grid-template-columns: 1fr;
-    grid-template-rows: repeat(3, min-content);
+    display: flex;
+    width: 100%;
+    flex-wrap: wrap;
+    height: min-content;
   }
 `
 const SquareTopLeft = styled.div`
@@ -48,6 +47,11 @@ const SquareTopLeft = styled.div`
     top: -7px;
     left: -7px;
   }
+
+  @media screen and (max-width: ${({ theme }) => theme.breakPoint.phoneLarge}) {
+    width: 100%;
+    padding-top: 100%;
+  }
 `
 const SquareBottomLeft = styled.div`
   grid-column: 1 / span 1;
@@ -64,9 +68,13 @@ const SquareBottomLeft = styled.div`
   &:hover {
     cursor: pointer;
     box-shadow: 15px 15px 0 -3px ${({ theme }) => theme.color.lightGreen};
-    /* -webkit-transform: scale(1.05); */
     top: -7px;
     left: -7px;
+  }
+
+  @media screen and (max-width: ${({ theme }) => theme.breakPoint.phoneLarge}) {
+    width: 100%;
+    padding-top: 100%;
   }
 `
 const RectangleRight = styled.div`
@@ -84,6 +92,11 @@ const RectangleRight = styled.div`
     box-shadow: 15px 15px 0 -3px ${({ theme }) => theme.color.lightGreen};
     top: -7px;
     left: -7px;
+  }
+
+  @media screen and (max-width: ${({ theme }) => theme.breakPoint.phoneLarge}) {
+    width: 100%;
+    padding-top: 100%;
   }
 `
 

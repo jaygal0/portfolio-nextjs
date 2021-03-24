@@ -19,6 +19,11 @@ const SquareStyling = styled.div`
     top: -7px;
     left: -7px;
   }
+
+  @media screen and (max-width: ${({ theme }) => theme.breakPoint.phoneLarge}) {
+    width: 100%;
+    padding-top: 100%;
+  }
 `
 const PortfolioSquare = ({ href, src }) => {
   return (

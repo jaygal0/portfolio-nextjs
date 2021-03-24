@@ -13,6 +13,11 @@ const NameWrapper = styled.div`
   @media screen and (max-width: ${({ theme }) => theme.breakPoint.tablet}) {
     grid-column: 1 / span 4;
   }
+
+  @media screen and (max-width: ${({ theme }) => theme.breakPoint.tablet}) {
+    margin-top: 1.6rem;
+    grid-column: 1 / -1;
+  }
 `
 const ContactWrapper = styled.div`
   grid-column: 6 / span 2;
@@ -20,12 +25,20 @@ const ContactWrapper = styled.div`
   @media screen and (max-width: ${({ theme }) => theme.breakPoint.tablet}) {
     grid-column: 6 / span 3;
   }
+  @media screen and (max-width: ${({ theme }) => theme.breakPoint.tablet}) {
+    margin-top: 1.6rem;
+    grid-column: 1 / -1;
+  }
 `
 const AllRightsWrapper = styled.div`
   grid-column: 9 / span 2;
 
   @media screen and (max-width: ${({ theme }) => theme.breakPoint.tablet}) {
     grid-column: 10 / span 3;
+  }
+  @media screen and (max-width: ${({ theme }) => theme.breakPoint.tablet}) {
+    margin-top: 1.6rem;
+    grid-column: 1 / -1;
   }
 `
 const Text = styled.p`

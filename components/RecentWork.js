@@ -10,6 +10,9 @@ const Wrapper = styled.div`
   @media screen and (max-width: ${({ theme }) => theme.breakPoint.tablet}) {
     grid-column: 1 / -1;
   }
+
+  @media screen and (max-width: ${({ theme }) => theme.breakPoint.phoneLarge}) {
+  }
 `
 const Text = styled.p`
   text-transform: capitalize;

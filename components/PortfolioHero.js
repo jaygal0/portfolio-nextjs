@@ -13,7 +13,12 @@ const ImageWrapper = styled.div`
 
   @media screen and (max-width: ${({ theme }) => theme.breakPoint.tablet}) {
     grid-column: 1 / -1;
-    margin-top: 8rem;
+    margin-top: 3rem;
+  }
+
+  @media screen and (max-width: ${({ theme }) => theme.breakPoint.tablet}) {
+    grid-column: 1 / -1;
+    margin-top: 3rem;
   }
 `
 

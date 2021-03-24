@@ -23,6 +23,9 @@ const ImageWrapper = styled.div`
   @media screen and (max-width: ${({ theme }) => theme.breakPoint.tablet}) {
     transform: translate(8rem, -9rem);
   }
+  @media screen and (max-width: ${({ theme }) => theme.breakPoint.phoneLarge}) {
+    transform: translate(6rem, -22rem);
+  }
 `
 
 const HeroHeading = ({ title, subtitle, children }) => {

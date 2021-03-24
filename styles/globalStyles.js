@@ -28,6 +28,11 @@ h1 {
   font-size: ${({ theme }) => theme.font.phone.h1};
   line-height: ${({ theme }) => theme.lineHeight.phone.h1};
   }
+  @media screen and (max-width: ${({ theme }) =>
+    theme.breakPoint.phoneMedium}) {
+  font-size: ${({ theme }) => theme.font.phone.h1Medium};
+  line-height: ${({ theme }) => theme.lineHeight.phone.h1Medium};
+  }
 }
  
 h2 {
@@ -38,9 +43,10 @@ h2 {
   color: ${({ theme }) => theme.color.lightGreen};
   font-weight: 400;
   
-  @media screen and (max-width: ${({ theme }) => theme.breakPoint.phone}) {
+  @media screen and (max-width: ${({ theme }) => theme.breakPoint.phoneLarge}) {
   font-size: ${({ theme }) => theme.font.phone.h2};
   line-height: ${({ theme }) => theme.lineHeight.phone.h2};
+  margin-bottom: 1.6rem;
   }
 }
 h3 {
@@ -48,6 +54,11 @@ h3 {
     line-height: ${({ theme }) => theme.lineHeight.desktop.h3};
     text-transform: capitalize;
     font-weight: 900;
+
+  @media screen and (max-width: ${({ theme }) => theme.breakPoint.phoneLarge}) {
+  font-size: ${({ theme }) => theme.font.phone.h3};
+  line-height: ${({ theme }) => theme.lineHeight.phone.h3};
+  }
 }
 h4 {
   font-size: ${({ theme }) => theme.font.desktop.h4};

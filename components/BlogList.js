@@ -14,6 +14,10 @@ const BlogWrapper = styled.article`
   @media screen and (max-width: ${({ theme }) => theme.breakPoint.tablet}) {
     grid-column: 1 / -1;
   }
+  @media screen and (max-width: ${({ theme }) => theme.breakPoint.tablet}) {
+    display: flex;
+    flex-direction: column;
+  }
 `
 const Heading = styled.h3`
   grid-column: 1 / span 5;

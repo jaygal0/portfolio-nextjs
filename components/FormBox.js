@@ -19,6 +19,11 @@ const FormWrapper = styled.section`
 const TitleWrapper = styled.div`
   text-align: center;
   color: white;
+
+  @media screen and (max-width: ${({ theme }) =>
+      theme.breakPoint.phoneMedium}) {
+    margin: 0 1.6rem;
+  }
 `
 const FormContainer = styled.form`
   width: 85%;
@@ -27,9 +32,17 @@ const FormContainer = styled.form`
 `
 const NameAndEmailWrapper = styled.div`
   display: flex;
+
+  @media screen and (max-width: ${({ theme }) => theme.breakPoint.phoneLarge}) {
+    flex-direction: column;
+  }
 `
 const Name = styled.input`
   margin-right: 3.2rem;
+
+  @media screen and (max-width: ${({ theme }) => theme.breakPoint.phoneLarge}) {
+    margin-bottom: 2.4rem;
+  }
 `
 const TextArea = styled.textarea`
   width: 100%;
@@ -41,6 +54,11 @@ const TextArea = styled.textarea`
   font-family: 'Inter', sans-serif;
   font-size: 1.6rem;
   resize: none;
+
+  @media screen and (max-width: ${({ theme }) => theme.breakPoint.phoneLarge}) {
+    margin-bottom: 2.4rem;
+    max-height: 20rem;
+  }
 `
 const Button = styled.button`
   padding: 0.8rem 2.4rem;

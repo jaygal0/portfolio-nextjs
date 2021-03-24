@@ -23,7 +23,15 @@ const ImageWrapper = styled.div`
   @media screen and (max-width: ${({ theme }) => theme.breakPoint.tablet}) {
     transform: translate(8rem, -9rem);
   }
+  @media screen and (max-width: ${({ theme }) => theme.breakPoint.phoneLarge}) {
+    transform: translate(6rem, -22rem);
+  }
+  @media screen and (max-width: ${({ theme }) =>
+      theme.breakPoint.phoneMedium}) {
+    transform: translate(4rem, -22rem);
+  }
 `
+
 const Josh = styled.span`
   background: ${({ theme }) => theme.color.lightGreen};
   color: white;
