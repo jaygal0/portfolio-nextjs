@@ -57,6 +57,8 @@ export default {
     link: 'all 0.2s ease-in-out',
     buttons: 'all 0.5s ease-in',
     images: 'all .2s ease-in-out',
+    scrollAppear: 'all .2s ease-in-out',
+    scrollDisappear: 'all .1s ease-out',
   },
   margin: {
     desktop: {

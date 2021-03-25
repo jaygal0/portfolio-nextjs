@@ -8,11 +8,13 @@
     "start": "next start"
   },
   "dependencies": {
+    "@n8tb1t/use-scroll-position": "^2.0.3",
     "gsap": "^3.6.0",
     "moment": "^2.29.1",
     "next": "10.0.9",
     "react": "17.0.1",
     "react-dom": "17.0.1",
+    "react-scroll": "^1.8.2",
     "react-uuid": "^1.0.2",
     "styled-components": "^5.2.1"
   },

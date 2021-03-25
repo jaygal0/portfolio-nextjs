@@ -7,6 +7,7 @@ import HeadingAndText from '../components/HeadingAndText'
 import Footer from '../components/Footer'
 import Face from '../components/Face'
 import FormBox from '../components/FormBox'
+import Scroll from '../components/Scroll'
 
 export default function Home() {
   return (
