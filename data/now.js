@@ -1,6 +1,6 @@
 export default {
   update: {
-    day: '22nd',
+    day: '25th',
     month: 'March',
     year: '2021',
   },
@@ -8,5 +8,5 @@ export default {
     city: 'gothenburg',
     country: 'sweden',
   },
-  book: ['Game Theory by Unknown'],
+  book: ['Introducing Game Theory - Ivan Pastine'],
 }

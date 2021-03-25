@@ -81,7 +81,7 @@ export default {
   photos: {
     title: 'a collection of photos',
     text:
-      'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Diam sit amet nisl suscipit adipiscing. Elit pellentesque habitant morbi tristique senectus et netus et malesuada. Nisl tincidunt eget nullam non nisi est. Vel orci porta non pulvinar neque. Non quam lacus suspendisse faucibus interdum posuere lorem ipsum.',
+      "Below are a few photos that I've taken on several different projects throughout my career. From the Alps to the Sahara desert, I've been fortunate enough to shoot at a variety of different locations.",
     img: '/photos-sahara-walk.jpg',
     appsUsed: ['lightroom classic', 'photoshop'],
   },

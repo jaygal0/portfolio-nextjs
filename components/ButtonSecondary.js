@@ -6,7 +6,7 @@ const Button = styled.button`
   background: ${({ theme }) => theme.color.lightGreen};
   color: white;
   text-transform: capitalize;
-  font-size: ${({ theme }) => theme.font.desktop.meta};
+  font-size: 1.4rem;
   line-height: ${({ theme }) => theme.font.desktop.meta};
   padding: 1.2rem 1.2rem;
   border-radius: 3.2rem;

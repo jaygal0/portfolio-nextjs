@@ -1,3 +1,4 @@
+import React, { useState } from 'react'
 import Metadata from '../../components/Metadata'
 import { Container, GridContainer } from '../../styles'
 import Nav from '../../components/Nav'
@@ -9,6 +10,7 @@ import ProjectApps from '../../components/ProjectApps'
 import styled from 'styled-components'
 import Image from 'next/image'
 import FormBox from '../../components/FormBox'
+import FsLightbox from 'fslightbox-react'
 
 const ImgWrapper = styled.div`
   grid-column: 3 / span 8;
@@ -20,6 +22,7 @@ const ImgWrapper = styled.div`
 
 export default function Detail({}) {
   const { photos } = data
+  const [showPhotos, setShowPhotos] = useState(false)
   return (
     <>
       <Metadata title="A Collection Of Photos" />
@@ -31,7 +34,7 @@ export default function Detail({}) {
           <ProjectApps apps={photos.appsUsed} />
           <GridContainer>
             <ImgWrapper>
-              <div className="image">
+              <div className="image" onClick={() => setShowPhotos(!showPhotos)}>
                 <Image
                   src="/photos-forest.jpg"
                   width={5760}
@@ -39,7 +42,7 @@ export default function Detail({}) {
                   className="border-image image"
                 />
               </div>
-              <div className="image">
+              <div className="image" onClick={() => setShowPhotos(!showPhotos)}>
                 <Image
                   src="/photos-reload.jpg"
                   width={5635}
@@ -48,7 +51,7 @@ export default function Detail({}) {
                 />
               </div>
 
-              <div className="image">
+              <div className="image" onClick={() => setShowPhotos(!showPhotos)}>
                 <Image
                   src="/photos-leo.jpg"
                   width={5452}
@@ -58,7 +61,7 @@ export default function Detail({}) {
                 />
               </div>
 
-              <div className="image">
+              <div className="image" onClick={() => setShowPhotos(!showPhotos)}>
                 <Image
                   src="/photos-snowball.jpg"
                   width={5106}
@@ -67,7 +70,7 @@ export default function Detail({}) {
                 />
               </div>
 
-              <div className="image">
+              <div className="image" onClick={() => setShowPhotos(!showPhotos)}>
                 <Image
                   src="/photos-israel.jpg"
                   width={5706}
@@ -76,7 +79,7 @@ export default function Detail({}) {
                 />
               </div>
 
-              <div className="image">
+              <div className="image" onClick={() => setShowPhotos(!showPhotos)}>
                 <Image
                   src="/photos-coconut.jpg"
                   width={5616}
@@ -85,7 +88,7 @@ export default function Detail({}) {
                 />
               </div>
 
-              <div className="image">
+              <div className="image" onClick={() => setShowPhotos(!showPhotos)}>
                 <Image
                   src="/photos-tori-kelly.jpg"
                   width={5616}
@@ -94,7 +97,7 @@ export default function Detail({}) {
                 />
               </div>
 
-              <div className="image">
+              <div className="image" onClick={() => setShowPhotos(!showPhotos)}>
                 <Image
                   src="/photos-friends.jpg"
                   width={5760}
@@ -103,7 +106,7 @@ export default function Detail({}) {
                 />
               </div>
 
-              <div className="image">
+              <div className="image" onClick={() => setShowPhotos(!showPhotos)}>
                 <Image
                   src="/photos-joshua-tree.jpg"
                   width={5760}
@@ -112,7 +115,7 @@ export default function Detail({}) {
                 />
               </div>
 
-              <div className="image">
+              <div className="image" onClick={() => setShowPhotos(!showPhotos)}>
                 <Image
                   src="/photos-sax.jpg"
                   width={5760}
@@ -121,7 +124,7 @@ export default function Detail({}) {
                 />
               </div>
 
-              <div className="image">
+              <div className="image" onClick={() => setShowPhotos(!showPhotos)}>
                 <Image
                   src="/photos-ebony.jpg"
                   width={5760}
@@ -130,6 +133,22 @@ export default function Detail({}) {
                 />
               </div>
             </ImgWrapper>
+            <FsLightbox
+              toggler={showPhotos}
+              sources={[
+                '/_next/image?url=%2Fphotos-forest.jpg&w=3840&q=75',
+                '/_next/image?url=%2Fphotos-reload.jpg&w=3840&q=75',
+                '/_next/image?url=%2Fphotos-leo.jpg&w=3840&q=75',
+                '/_next/image?url=%2Fphotos-snowball.jpg&w=3840&q=75',
+                '/_next/image?url=%2Fphotos-israel.jpg&w=3840&q=75',
+                '/_next/image?url=%2Fphotos-coconut.jpg&w=3840&q=75',
+                '/_next/image?url=%2Fphotos-tori-kelly.jpg&w=3840&q=75',
+                '/_next/image?url=%2Fphotos-friends.jpg&w=3840&q=75',
+                '/_next/image?url=%2Fphotos-joshua-tree.jpg&w=3840&q=75',
+                '/_next/image?url=%2Fphotos-sax.jpg&w=3840&q=75',
+                '/_next/image?url=%2Fphotos-ebony.jpg&w=3840&q=75',
+              ]}
+            />
           </GridContainer>
           <FormBox />
         </main>

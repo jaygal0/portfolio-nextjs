@@ -100,7 +100,7 @@ export default function Detail({}) {
 
                 <ButtonSecondaryExternal
                   title="view the mobile prototype"
-                  link="https://www.figma.com/proto/tvcmGFjKuqSfHL5yHEb8Iy/Testing-My-Ideas?node-id=555%3A2827&viewport=526%2C410%2C0.10814894735813141&scaling=scale-down"
+                  link="https://www.figma.com/proto/tvcmGFjKuqSfHL5yHEb8Iy/Testing-My-Ideas?node-id=555%3A2147&viewport=359%2C1602%2C1.0690228939056396&scaling=scale-down"
                 />
               </ButtonFlex>
 

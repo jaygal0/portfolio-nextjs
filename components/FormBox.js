@@ -88,7 +88,9 @@ const FormBox = () => {
       <FormWrapper>
         <TitleWrapper>
           <h4>let's connect!</h4>
-          <p>Fill in the form and let's create some magic</p>
+          <p>
+            Say hi, or let me know of a cool project you'd like me to work on.
+          </p>
         </TitleWrapper>
         <FormContainer
           action="https://getform.io/f/47044ea9-307a-48c4-9768-6d0775db5e10"

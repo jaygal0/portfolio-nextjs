@@ -22,7 +22,6 @@ const TextWrapper = styled.div`
 
 export default function Detail({}) {
   const { reload } = data
-  const [toggler, setToggler] = useState(false)
   const [deck, setDeck] = useState(false)
   const [videos, setVideos] = useState(false)
 
