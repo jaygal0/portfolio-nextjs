@@ -28,7 +28,7 @@ export default function Detail({}) {
 
   return (
     <>
-      <Metadata />
+      <Metadata title="Reload Sessions Ltd" />
       <Container>
         <Nav />
         <main>

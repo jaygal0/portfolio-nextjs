@@ -9,7 +9,10 @@ import Portfolio from '../components/Portfolio'
 export default function Work() {
   return (
     <>
-      <Metadata />
+      <Metadata
+        title="Work"
+        desc="An online portfolio of Joshua Galinato's work"
+      />
       <Container>
         <Nav />
         <main>

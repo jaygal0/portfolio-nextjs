@@ -43,7 +43,7 @@ export default function Detail({}) {
 
   return (
     <>
-      <Metadata />
+      <Metadata title="Kawaii Corner Shop" />
       <Container>
         <Nav />
         <main>

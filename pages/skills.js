@@ -12,7 +12,10 @@ import FormBox from '../components/FormBox'
 export default function Skills() {
   return (
     <>
-      <Metadata />
+      <Metadata
+        title="Skills"
+        desc="An on-going list of the skills Joshua Galinato has learned throughout the years."
+      />
       <Container>
         <Nav />
         <main>

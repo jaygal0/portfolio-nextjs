@@ -27,7 +27,7 @@ export default function Detail({}) {
   const { tmi } = data
   return (
     <>
-      <Metadata />
+      <Metadata title="Testing My Ideas" />
       <Container>
         <Nav />
         <main>

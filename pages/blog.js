@@ -12,7 +12,10 @@ import data from '../data/blog'
 export default function Blog() {
   return (
     <>
-      <Metadata />
+      <Metadata
+        title="Blog"
+        desc="A space for me to get all the thoughts out of my head."
+      />
       <Container>
         <Nav />
         <main>

@@ -22,7 +22,7 @@ export default function Detail({}) {
   const { photos } = data
   return (
     <>
-      <Metadata />
+      <Metadata title="A Collection Of Photos" />
       <Container>
         <Nav />
         <main>

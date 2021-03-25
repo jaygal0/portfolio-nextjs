@@ -10,7 +10,10 @@ import data from '../../data/blog'
 export default function Blog() {
   return (
     <>
-      <Metadata />
+      <Metadata
+        title="How long does it take to learn the piano"
+        desc="An article that outlines how long it takes to play the piano"
+      />
       <Container>
         <Nav />
         <main>

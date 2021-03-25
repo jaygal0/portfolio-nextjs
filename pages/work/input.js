@@ -23,7 +23,7 @@ export default function Detail({}) {
   const { input } = data
   return (
     <>
-      <Metadata />
+      <Metadata title="Input" />
       <Container>
         <Nav />
         <main>

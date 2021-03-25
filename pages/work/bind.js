@@ -23,7 +23,7 @@ export default function Detail({}) {
   const { bind } = data
   return (
     <>
-      <Metadata />
+      <Metadata title="Bind" />
       <Container>
         <Nav />
         <main>

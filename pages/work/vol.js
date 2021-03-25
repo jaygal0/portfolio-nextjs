@@ -37,7 +37,7 @@ export default function Detail({}) {
   const { vol } = data
   return (
     <>
-      <Metadata />
+      <Metadata title="Vegans of LDN" />
       <Container>
         <Nav />
         <main>

@@ -8,7 +8,7 @@ import Footer from '../components/Footer'
 export default function NowPage() {
   return (
     <>
-      <Metadata />
+      <Metadata title="Now" desc="What Joshua Galinato is doing now" />
       <Container>
         <Nav />
         <main>

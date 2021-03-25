@@ -11,7 +11,7 @@ import FormBox from '../components/FormBox'
 export default function Home() {
   return (
     <>
-      <Metadata />
+      <Metadata desc="The online portfolio and central hub of Joshua Galinato" />
       <Container>
         <Nav />
         <main>

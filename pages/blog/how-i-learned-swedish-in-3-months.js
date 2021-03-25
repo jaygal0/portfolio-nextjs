@@ -10,7 +10,10 @@ import FormBox from '../../components/FormBox'
 export default function Blog() {
   return (
     <>
-      <Metadata />
+      <Metadata
+        title="How I Learned Swedish In 3 Months"
+        desc="How Joshua Galinato learned Swedish in 3 months"
+      />
       <Container>
         <Nav />
         <main>
