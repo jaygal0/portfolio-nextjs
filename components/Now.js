@@ -104,10 +104,19 @@ const Now = () => {
           {timerYears === 0 ? null : `${timerYears} years`}
           {timerMonths > 12 ? null : `, ${timerMonths} months`}
           {timerMonths > 1 ? null : `, ${timerDays} days`}
-          {timerHours === 0 ? null : `, ${timerHours} hours`}
-          {timerMinutes === 0 ? null : `, ${timerMinutes} minutes`}
-          {timerSeconds === 0 ? null : ` and ${timerSeconds} seconds`} left
+          {(timerHours === 0 && ' ') ||
+            (timerHours === 1 && `, ${timerHours} hour`) ||
+            `, ${timerHours} hours`}
+          {(timerMinutes === 0 && ' ') ||
+            (timerMinutes === 1 && `, ${timerMinutes} minute`) ||
+            `, ${timerMinutes} minutes`}
+          {(timerSeconds === 0 && ' ') ||
+            (timerSeconds === 1 && `, ${timerSeconds} second `) ||
+            `, ${timerSeconds} seconds `}
           until I kick the bucket.
+          {/* {timerSeconds === 0 ? null : ` and ${timerSeconds} seconds`} left */}
+          {/* {timerMinutes === 0 ? null : `, ${timerMinutes} minutes`} */}
+          {/* {timerHours === 0 ? null : `, ${timerHours} hours`} */}
         </p>
         <Updated>
           Data taken from{' '}
