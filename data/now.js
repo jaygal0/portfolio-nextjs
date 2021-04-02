@@ -1,12 +1,12 @@
 export default {
   update: {
-    day: '29th',
-    month: 'March',
+    day: '2nd',
+    month: 'April',
     year: '2021',
   },
   location: {
-    city: 'gothenburg',
+    city: 'partille',
     country: 'sweden',
   },
-  book: ['Introducing Game Theory - Ivan Pastine'],
+  book: ['The Great Mental Models Volume - Shane Parrish'],
 }

@@ -112,7 +112,7 @@ const Now = () => {
             `, ${timerMinutes} minutes`}
           {(timerSeconds === 0 && ' ') ||
             (timerSeconds === 1 && `, ${timerSeconds} second `) ||
-            `, ${timerSeconds} seconds `}
+            ` & ${timerSeconds} seconds `}
           until I kick the bucket.
           {/* {timerSeconds === 0 ? null : ` and ${timerSeconds} seconds`} left */}
           {/* {timerMinutes === 0 ? null : `, ${timerMinutes} minutes`} */}
