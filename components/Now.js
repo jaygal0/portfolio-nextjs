@@ -23,11 +23,11 @@ const Updated = styled.p`
   margin-top: -1.6rem;
 `
 
-const Now = () => {
+const Now = ({ chessRating }) => {
   // To figure out my age
-  const { update, location, book, projects } = data
+  const { update, location, books, projects } = data
   let a = moment(new Date())
-  let b = moment([1989, 6, 30])
+  let b = moment([1989, 5, 30])
 
   let years = a.diff(b, 'year')
   b.add(years, 'years')
@@ -111,17 +111,14 @@ const Now = () => {
             (timerMinutes === 1 && `, ${timerMinutes} minute`) ||
             `, ${timerMinutes} minutes`}
           {(timerSeconds === 0 && ' ') ||
-            (timerSeconds === 1 && `, ${timerSeconds} second `) ||
+            (timerSeconds === 1 && ` & ${timerSeconds} second `) ||
             ` & ${timerSeconds} seconds `}
           until I kick the bucket.
-          {/* {timerSeconds === 0 ? null : ` and ${timerSeconds} seconds`} left */}
-          {/* {timerMinutes === 0 ? null : `, ${timerMinutes} minutes`} */}
-          {/* {timerHours === 0 ? null : `, ${timerHours} hours`} */}
         </p>
         <Updated>
           Data taken from{' '}
           <a href="https://www.death-clock.org/" target="_blank">
-            this site.
+            death-clock.org.
           </a>
         </Updated>
 
@@ -129,12 +126,43 @@ const Now = () => {
         <Location>
           {location.city}, {location.country}
         </Location>
-        <h5>reading</h5>
+        <h5>pastime</h5>
+        <p>I enjoy reading books as well as playing chess.</p>
+        <h6>reading</h6>
         <ul>
-          {book.map((item) => {
-            return <li key={uuid()}>{item}</li>
+          {books.map((item) => {
+            const { title, link } = item
+            return (
+              <li key={uuid()}>
+                <a href={link} target="_blank">
+                  {title}
+                </a>
+              </li>
+            )
           })}
         </ul>
+        <h6>chess rating</h6>
+        <p>Rapid: {chessRating}</p>
+        <Updated>
+          Live updates from{' '}
+          <a href="https://lichess.org" target="_blank">
+            lichess.org
+          </a>
+        </Updated>
+        {/* Add once let's chat now now now is up and running */}
+        {/* <h5>projects</h5>
+        <ul>
+          {projects.map((item) => {
+            const { title, link } = item
+            return (
+              <li key={uuid()}>
+                <a href={link} target="_blank">
+                  {title}
+                </a>
+              </li>
+            )
+          })}
+        </ul> */}
         <NowDetail />
         <Updated>
           Last updated on {update.month} {update.day}, {update.year}. Inspired
@@ -146,6 +174,25 @@ const Now = () => {
       </NowWrapper>
     </GridContainer>
   )
+}
+
+export async function getStaticProps(context) {
+  const res = await fetch(`https://lichess.org/api/account`, {
+    headers: {
+      Authorization: `Bearer ${process.env.ACCESS_TOKEN}`,
+    },
+  })
+  const data = await res.json()
+
+  if (!data) {
+    return {
+      notFound: true,
+    }
+  }
+
+  return {
+    props: { data }, // will be passed to the page component as props
+  }
 }
 
 export default Now

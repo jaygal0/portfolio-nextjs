@@ -71,9 +71,16 @@ h5 {
     font-size: ${({ theme }) => theme.font.desktop.h5};
     line-height: ${({ theme }) => theme.lineHeight.desktop.h5};
     font-weight: 700;
-    color: ${({ theme }) => theme.color.darkBlue};
     text-transform: capitalize;
     margin: 1.6rem 0;
+}
+h6 {
+    font-size: ${({ theme }) => theme.font.desktop.h6};
+    line-height: ${({ theme }) => theme.lineHeight.desktop.h6};
+    font-weight: 500;
+    text-transform: capitalize;
+    margin: 1.6rem 0;
+    text-decoration: underline;
 }
 
 p {
