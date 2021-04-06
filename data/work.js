@@ -85,4 +85,11 @@ export default {
     img: '/photos-sahara-walk.jpg',
     appsUsed: ['lightroom classic', 'photoshop'],
   },
+  five: {
+    title: '5',
+    text:
+      '5 is a personal project that tackles the difficult concept of the circle of fifths in music. Since I struggle with remembering certain keys and scales, I wanted to build an app that will help me understand music theory better.',
+    img: '/5-banner.png',
+    appsUsed: ['figma', 'illustrator'],
+  },
 }

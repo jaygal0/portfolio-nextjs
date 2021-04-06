@@ -27,8 +27,8 @@ const RecentWork = () => {
         <Masonry
           topLeftImg="/input-mockup.png"
           topLeftLink="/work/input"
-          btmLeftImg="/bind-thumbnail.png"
-          btmLeftLink="/work/bind"
+          btmLeftImg="/5-prototype.gif"
+          btmLeftLink="/work/5"
           rightImg="/tmi.gif"
           rightLink="/work/tmi"
         />
