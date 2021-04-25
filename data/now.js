@@ -1,6 +1,6 @@
 export default {
   update: {
-    day: '19th',
+    day: '25th',
     month: 'April',
     year: '2021',
   },
