@@ -1,18 +1,17 @@
 export default {
   update: {
-    day: '25th',
-    month: 'April',
+    day: '2nd',
+    month: 'May',
     year: '2021',
   },
   location: {
-    city: 'partille',
+    city: 'Gothenburg',
     country: 'sweden',
   },
   books: [
     {
-      title: 'The Great Mental Models Volume 1 - Shane Parrish',
-      link:
-        'https://www.amazon.com/Great-Mental-Models-Thinking-Concepts-ebook/dp/B07P79P8ST',
+      title: 'I Will Teach You To Be Rich - Ramit Sethi',
+      link: 'https://www.amazon.com/Will-Teach-You-Be-Rich/dp/0761147489',
     },
   ],
   projects: [
@@ -21,4 +20,9 @@ export default {
       link: '',
     },
   ],
+  job: {
+    title: 'UX/UI Designer',
+    company: 'Star Republic',
+    website: 'https://www.starrepublic.com/en/',
+  },
 }

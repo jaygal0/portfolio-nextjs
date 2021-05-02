@@ -25,7 +25,7 @@ const Updated = styled.p`
 
 const Now = ({ chessRating }) => {
   // To figure out my age
-  const { update, location, books, projects } = data
+  const { update, location, books, projects, job } = data
   let a = moment(new Date())
   let b = moment([1989, 5, 30])
 
@@ -126,8 +126,14 @@ const Now = ({ chessRating }) => {
         <Location>
           {location.city}, {location.country}
         </Location>
+        <h5>day job</h5>
+        <p>
+          {job.title} at{' '}
+          <a href={job.website} target="_blank">
+            {job.company}
+          </a>
+        </p>
         <h5>pastime</h5>
-        <p>I enjoy reading books as well as playing chess.</p>
         <h6>reading</h6>
         <ul>
           {books.map((item) => {

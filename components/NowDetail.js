@@ -3,8 +3,11 @@ import React from 'react'
 const NowDetail = () => {
   return (
     <>
-      <h5>new opportunities</h5>
-      <p>Starting my new job tomorrow, hoping everything will go smoothly!</p>
+      <h5>settling into my new role</h5>
+      <p>
+        Finished the first week in my new job, it went well and I'm slowly
+        settling into my new environment.
+      </p>
     </>
   )
 }
