@@ -5,8 +5,7 @@ const NowDetail = () => {
     <>
       <h5>settling into my new role</h5>
       <p>
-        Finished the first week in my new job, it went well and I'm slowly
-        settling into my new environment.
+        Finished the first few weeks at my new job, I've still got a lot to learn but I'm enjoying the entire experience.
       </p>
     </>
   )
