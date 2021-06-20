@@ -1,7 +1,7 @@
 export default {
   update: {
-    day: '30th',
-    month: 'May',
+    day: '20th',
+    month: 'June',
     year: '2021',
   },
   location: {
@@ -10,8 +10,9 @@ export default {
   },
   books: [
     {
-      title: 'I Will Teach You To Be Rich - Ramit Sethi',
-      link: 'https://www.amazon.com/Will-Teach-You-Be-Rich/dp/0761147489',
+      title:
+        'Six Easy Pieces: Essentials of Physics Explained - Richard P. Feynman',
+      link: 'https://www.amazon.com/Six-Easy-Pieces-Essentials-Explained/dp/0465025277#:~:text=Six%20Easy%20Pieces%2C%20taken%20from,of%20physics%20to%20other%20topics.',
     },
   ],
   projects: [
