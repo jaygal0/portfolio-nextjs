@@ -27,7 +27,7 @@ const Now = ({ chessRating }) => {
   // To figure out my age
   const { update, location, books, projects, job } = data
   let a = moment(new Date())
-  let b = moment([1989, 5, 30])
+  let b = moment([1989, 6, 30])
 
   let years = a.diff(b, 'year')
   b.add(years, 'years')
@@ -117,7 +117,7 @@ const Now = ({ chessRating }) => {
         </p>
         <Updated>
           Data taken from{' '}
-          <a href="https://www.death-clock.org/" target="_blank">
+          <a href='https://www.death-clock.org/' target='_blank'>
             death-clock.org.
           </a>
         </Updated>
@@ -129,7 +129,7 @@ const Now = ({ chessRating }) => {
         <h5>day job</h5>
         <p>
           {job.title} at{' '}
-          <a href={job.website} target="_blank">
+          <a href={job.website} target='_blank'>
             {job.company}
           </a>
         </p>
@@ -140,7 +140,7 @@ const Now = ({ chessRating }) => {
             const { title, link } = item
             return (
               <li key={uuid()}>
-                <a href={link} target="_blank">
+                <a href={link} target='_blank'>
                   {title}
                 </a>
               </li>
@@ -151,7 +151,7 @@ const Now = ({ chessRating }) => {
         <p>Rapid: {chessRating}</p>
         <Updated>
           Live updates from{' '}
-          <a href="https://lichess.org" target="_blank">
+          <a href='https://lichess.org' target='_blank'>
             lichess.org
           </a>
         </Updated>
@@ -173,7 +173,7 @@ const Now = ({ chessRating }) => {
         <Updated>
           Last updated on {update.month} {update.day}, {update.year}. Inspired
           by{' '}
-          <a href="https://sive.rs/nowff" target="_blank">
+          <a href='https://sive.rs/nowff' target='_blank'>
             Derek Sivers
           </a>
         </Updated>

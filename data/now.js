@@ -1,7 +1,7 @@
 export default {
   update: {
-    day: '27th',
-    month: 'June',
+    day: '4th',
+    month: 'July',
     year: '2021',
   },
   location: {
@@ -10,9 +10,8 @@ export default {
   },
   books: [
     {
-      title:
-        'Six Easy Pieces: Essentials of Physics Explained - Richard P. Feynman',
-      link: 'https://www.amazon.com/Six-Easy-Pieces-Essentials-Explained/dp/0465025277#:~:text=Six%20Easy%20Pieces%2C%20taken%20from,of%20physics%20to%20other%20topics.',
+      title: 'The Millionaire Fastlane - MJ DeMarco',
+      link: 'https://www.amazon.com/Millionaire-Fastlane-Crack-Wealth-Lifetime/dp/0984358102',
     },
   ],
   projects: [
