@@ -3,13 +3,9 @@ import React from 'react'
 const NowDetail = () => {
   return (
     <>
-      <h5>it's football time</h5>
+      <h5>A working holiday</h5>
       <p>
-        It's the Euros and I thought I'd embrace the moment and start playing
-        football myself, I've joined a local football team and I'm slowly
-        shaking off the rust. I'd rather be playing basketball, but since it's
-        not a popular sport here in Sweden I thought I'd keep healthy by playing
-        football instead.
+        It's vacation time. I don't plan to do anything special. It'll be a combination of working on my projects, learning new skills and spending the rest of my time with the people that are close to me.
       </p>
     </>
   )
