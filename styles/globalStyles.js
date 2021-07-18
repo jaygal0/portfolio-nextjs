@@ -87,6 +87,7 @@ p {
   font-size: ${({ theme }) => theme.font.desktop.p};
   line-height: ${({ theme }) => theme.lineHeight.desktop.p};
   margin-bottom: ${({ theme }) => theme.margin.desktop.bottom};
+
 }
 
 a {
@@ -126,6 +127,7 @@ ul {
 ul li {
 font-size: ${({ theme }) => theme.font.desktop.p};
 line-height: ${({ theme }) => theme.lineHeight.desktop.p};
+margin-bottom: .8rem;
 
   @media screen and (max-width: ${({ theme }) => theme.breakPoint.tablet}) {
     list-style: none;

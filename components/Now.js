@@ -23,7 +23,7 @@ const Updated = styled.p`
   margin-top: -1.6rem;
 `
 
-const Now = ({ chessRating }) => {
+const Now = ({ rapidRating, blitzRating }) => {
   // To figure out my age
   const { update, location, books, projects, job } = data
   let a = moment(new Date())
@@ -148,7 +148,10 @@ const Now = ({ chessRating }) => {
           })}
         </ul>
         <h6>chess rating</h6>
-        <p>Rapid: {chessRating}</p>
+        <ul>
+          <li>Blitz: {blitzRating}</li>
+          <li>Rapid: {rapidRating}</li>
+        </ul>
         <Updated>
           Live updates from{' '}
           <a href='https://lichess.org' target='_blank'>
