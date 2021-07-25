@@ -1,6 +1,6 @@
 export default {
   update: {
-    day: '18th',
+    day: '25th',
     month: 'July',
     year: '2021',
   },
@@ -10,8 +10,8 @@ export default {
   },
   books: [
     {
-      title: 'The Millionaire Fastlane - MJ DeMarco',
-      link: 'https://www.amazon.com/Millionaire-Fastlane-Crack-Wealth-Lifetime/dp/0984358102',
+      title: 'Unreasonable Success And How To Achieve It - Richard Koch',
+      link: 'https://www.amazon.com/Unreasonable-Success-How-Achieve-Unlocking/dp/1642011363',
     },
   ],
   projects: [
