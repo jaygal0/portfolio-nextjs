@@ -30,7 +30,7 @@ const PortfolioHero = ({ src }) => {
           src={src}
           layout="fill"
           objectFit="cover"
-          quality={100}
+          quality={75}
           className="border-image"
         />
       </ImageWrapper>

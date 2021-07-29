@@ -18,9 +18,12 @@ const NowWrapper = styled.div`
 const Location = styled.p`
   text-transform: capitalize;
 `
+const ChessList = styled.ul`
+  margin-bottom: 1.6rem;
+`
 const Updated = styled.p`
   font-size: ${({ theme }) => theme.font.desktop.meta};
-  margin-top: -1.6rem;
+  margin-top: 1.6rem;
 `
 
 const Now = ({ rapidRating, blitzRating }) => {
@@ -117,7 +120,7 @@ const Now = ({ rapidRating, blitzRating }) => {
         </p>
         <Updated>
           Data taken from{' '}
-          <a href='https://www.death-clock.org/' target='_blank'>
+          <a href="https://www.death-clock.org/" target="_blank">
             death-clock.org.
           </a>
         </Updated>
@@ -129,7 +132,7 @@ const Now = ({ rapidRating, blitzRating }) => {
         <h5>day job</h5>
         <p>
           {job.title} at{' '}
-          <a href={job.website} target='_blank'>
+          <a href={job.website} target="_blank">
             {job.company}
           </a>
         </p>
@@ -140,7 +143,7 @@ const Now = ({ rapidRating, blitzRating }) => {
             const { title, link } = item
             return (
               <li key={uuid()}>
-                <a href={link} target='_blank'>
+                <a href={link} target="_blank">
                   {title}
                 </a>
               </li>
@@ -148,13 +151,13 @@ const Now = ({ rapidRating, blitzRating }) => {
           })}
         </ul>
         <h6>chess rating</h6>
-        <ul>
+        <ChessList>
           <li>Blitz: {blitzRating}</li>
           <li>Rapid: {rapidRating}</li>
-        </ul>
+        </ChessList>
         <Updated>
           Live updates from{' '}
-          <a href='https://lichess.org' target='_blank'>
+          <a href="https://lichess.org" target="_blank">
             lichess.org
           </a>
         </Updated>
@@ -176,7 +179,7 @@ const Now = ({ rapidRating, blitzRating }) => {
         <Updated>
           Last updated on {update.month} {update.day}, {update.year}. Inspired
           by{' '}
-          <a href='https://sive.rs/nowff' target='_blank'>
+          <a href="https://sive.rs/nowff" target="_blank">
             Derek Sivers
           </a>
         </Updated>

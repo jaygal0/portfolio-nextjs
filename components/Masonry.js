@@ -115,7 +115,7 @@ const Masonry = ({
           <Image
             src={topLeftImg}
             alt=""
-            quality={100}
+            quality={75}
             layout="fill"
             objectFit="cover"
             className="border-image"
@@ -127,7 +127,7 @@ const Masonry = ({
           <Image
             src={btmLeftImg}
             alt=""
-            quality={100}
+            quality={75}
             layout="fill"
             objectFit="cover"
             className="border-image"
@@ -139,7 +139,7 @@ const Masonry = ({
           <Image
             src={rightImg}
             alt=""
-            quality={100}
+            quality={75}
             layout="fill"
             objectFit="cover"
             className="border-image"

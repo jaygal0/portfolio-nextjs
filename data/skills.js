@@ -17,12 +17,18 @@ const skills = [
   {
     programName: 'css',
     subtitle: '',
-    level: 'nine',
+    level: 'nine-five',
   },
+  {
+    programName: 'express.js',
+    subtitle: '',
+    level: 'five',
+  },
+
   {
     programName: 'figma',
     subtitle: '',
-    level: 'nine',
+    level: 'nine-five',
   },
   {
     programName: 'git',
@@ -37,7 +43,7 @@ const skills = [
   {
     programName: 'html',
     subtitle: '',
-    level: 'nine',
+    level: 'nine-five',
   },
   {
     programName: 'illustrator',
@@ -52,7 +58,7 @@ const skills = [
   {
     programName: 'javascript',
     subtitle: '',
-    level: 'eight',
+    level: 'nine-five',
   },
   {
     programName: 'lightroom classic',
@@ -60,14 +66,29 @@ const skills = [
     level: 'seven',
   },
   {
+    programName: 'mongoDB',
+    subtitle: '',
+    level: 'five',
+  },
+  {
     programName: 'next.js',
     subtitle: '',
-    level: 'seven',
+    level: 'nine',
+  },
+  {
+    programName: 'node.js',
+    subtitle: '',
+    level: 'five',
   },
   {
     programName: 'photoshop',
     subtitle: 'adobe',
     level: 'nine-five',
+  },
+  {
+    programName: 'postman',
+    subtitle: '',
+    level: 'five',
   },
   {
     programName: 'premiere pro',
@@ -77,22 +98,22 @@ const skills = [
   {
     programName: 'react',
     subtitle: '',
-    level: 'seven',
+    level: 'nine',
   },
   {
     programName: 'sass',
     subtitle: '',
-    level: 'eight',
+    level: 'nine',
   },
   {
     programName: 'styled components',
     subtitle: '',
-    level: 'seven',
+    level: 'nine',
   },
   {
     programName: 'visual studio code',
     subtitle: '',
-    level: 'nine',
+    level: 'nine-five',
   },
   {
     programName: 'wordpress',

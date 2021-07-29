@@ -47,25 +47,18 @@ const LineBreak = styled.div`
   }
 `
 
-const BlogList = ({ heading, subheading, published, snippet }) => {
+const BlogList = ({ heading, subheading, published, snippet, slug }) => {
   return (
     <GridContainer>
       <BlogWrapper>
-        <Link
-          href={`blog/${heading.replace(/ /g, '-').replace(/[^-\w\s]/gi, '')}`}
-        >
+        <Link href={`blog/${slug}`}>
           <Heading>{heading}</Heading>
         </Link>
         <TextWrapper>
           <Published>published: {published}</Published>
           <h5>{subheading}</h5>
-          <Snippet>{`${snippet.substr(0, 100)}...`}</Snippet>
-          <ButtonSecondary
-            title="read more"
-            link={`blog/${heading
-              .replace(/ /g, '-')
-              .replace(/[^-\w\s]/gi, '')}`}
-          />
+          <Snippet>{`${snippet.substr(0, 70)} ...`}</Snippet>
+          <ButtonSecondary title="read more" link={`blog/${slug}`} />
         </TextWrapper>
       </BlogWrapper>
       <LineBreak />

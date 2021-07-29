@@ -7,9 +7,12 @@ import HeroHeading from '../components/HeroHeading'
 import Footer from '../components/Footer'
 import FormBox from '../components/FormBox'
 import BlogList from '../components/BlogList'
-import data from '../data/blog'
+import fs from 'fs'
+import path from 'path'
+import matter from 'gray-matter'
+import { sortByDate } from '../utils'
 
-export default function Blog() {
+export default function Blog({ posts }) {
   return (
     <>
       <Metadata
@@ -20,18 +23,18 @@ export default function Blog() {
         <Nav />
         <main>
           <HeroHeading
-            title="writing what's in my head"
-            subtitle="capturing my thoughts"
+            title="my space to write"
+            subtitle="a writing playground"
           />
-          {data.map((item) => {
-            const { heading, subheading, published, snippet } = item
+          {posts.map((item) => {
             return (
               <BlogList
                 key={uuid()}
-                heading={heading}
-                subheading={subheading}
-                published={published}
-                snippet={snippet}
+                heading={item.frontmatter.title}
+                subheading={item.frontmatter.subtitle}
+                published={item.frontmatter.date}
+                snippet={item.frontmatter.excerpt}
+                slug={item.slug}
               />
             )
           })}
@@ -41,4 +44,34 @@ export default function Blog() {
       </Container>
     </>
   )
+}
+
+export async function getStaticProps() {
+  // Get files from the posts dir
+  const files = fs.readdirSync(path.join('posts'))
+
+  // Get slug and frontmatter from posts
+  const posts = files.map((filename) => {
+    // Create slug
+    const slug = filename.replace('.md', '')
+
+    // Get frontmatter
+    const markdownWithMeta = fs.readFileSync(
+      path.join('posts', filename),
+      'utf-8'
+    )
+
+    const { data: frontmatter } = matter(markdownWithMeta)
+
+    return {
+      slug,
+      frontmatter,
+    }
+  })
+
+  return {
+    props: {
+      posts: posts.sort(sortByDate),
+    },
+  }
 }

@@ -86,7 +86,7 @@ h6 {
 p {
   font-size: ${({ theme }) => theme.font.desktop.p};
   line-height: ${({ theme }) => theme.lineHeight.desktop.p};
-  margin-bottom: ${({ theme }) => theme.margin.desktop.bottom};
+  margin-bottom: 1.6rem;
 
 }
 

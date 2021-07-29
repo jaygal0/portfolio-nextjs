@@ -6,7 +6,6 @@ import Now from '../components/Now'
 import Footer from '../components/Footer'
 
 export default function NowPage({ data }) {
-  console.log(data);
   return (
     <>
       <Metadata title="Now" desc="What Joshua Galinato is doing now" />
@@ -14,7 +13,10 @@ export default function NowPage({ data }) {
         <Nav />
         <main>
           <HeroHeading title="what i'm doing now" subtitle="joshua galinato" />
-          <Now rapidRating={data.perfs.rapid.rating} blitzRating={data.perfs.blitz.rating} />
+          <Now
+            rapidRating={data.perfs.rapid.rating}
+            blitzRating={data.perfs.blitz.rating}
+          />
         </main>
         <Footer />
       </Container>
