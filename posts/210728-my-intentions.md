@@ -1,5 +1,5 @@
 ---
-title: 'what are my itentions?'
+title: 'what are my intentions?'
 subtitle: 'what do i want to do with this space?'
 date: 'July 29, 2021'
 excerpt: "I miss writing. I don't do it as often as I should, nor do I have a decent excuse for it."
