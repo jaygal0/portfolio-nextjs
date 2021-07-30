@@ -12,7 +12,7 @@ import path from 'path'
 import matter from 'gray-matter'
 import { sortByDate } from '../utils'
 
-export default function Blog({ posts }) {
+export default function Blog({ posts, content }) {
   return (
     <>
       <Metadata
@@ -23,7 +23,7 @@ export default function Blog({ posts }) {
         <Nav />
         <main>
           <HeroHeading
-            title="my space to write"
+            title="my space to think"
             subtitle="a writing playground"
           />
           {posts.map((item) => {
@@ -33,7 +33,7 @@ export default function Blog({ posts }) {
                 heading={item.frontmatter.title}
                 subheading={item.frontmatter.subtitle}
                 published={item.frontmatter.date}
-                snippet={item.frontmatter.excerpt}
+                snippet={`${item.content.substr(0, 70)}...`}
                 slug={item.slug}
               />
             )
@@ -61,11 +61,12 @@ export async function getStaticProps() {
       'utf-8'
     )
 
-    const { data: frontmatter } = matter(markdownWithMeta)
+    const { data: frontmatter, content } = matter(markdownWithMeta)
 
     return {
       slug,
       frontmatter,
+      content,
     }
   })
 

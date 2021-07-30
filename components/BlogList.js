@@ -57,7 +57,7 @@ const BlogList = ({ heading, subheading, published, snippet, slug }) => {
         <TextWrapper>
           <Published>published: {published}</Published>
           <h5>{subheading}</h5>
-          <Snippet>{`${snippet.substr(0, 70)} ...`}</Snippet>
+          <Snippet>{snippet}</Snippet>
           <ButtonSecondary title="read more" link={`blog/${slug}`} />
         </TextWrapper>
       </BlogWrapper>
