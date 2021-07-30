@@ -8,6 +8,7 @@ import { Container, GridContainer } from '../../styles'
 import Footer from '../../components/Footer'
 import Nav from '../../components/Nav'
 import styled from 'styled-components'
+import BirthdayPosts from '../../components/BirthdayPosts'
 
 const Body = styled.div`
   grid-column: 3 / span 8;
@@ -15,7 +16,7 @@ const Body = styled.div`
 `
 
 export default function PostPage({
-  frontmatter: { title, date, subtitle },
+  frontmatter: { title, date, subtitle, tags },
   slug,
   content,
 }) {
@@ -28,6 +29,7 @@ export default function PostPage({
           <Post heading={title} subheading={subtitle} published={date} />
           <GridContainer>
             <Body dangerouslySetInnerHTML={{ __html: marked(content) }}></Body>
+            {tags.includes('birthday') && <BirthdayPosts />}
           </GridContainer>
         </main>
         <Footer />

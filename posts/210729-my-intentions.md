@@ -2,6 +2,7 @@
 title: 'what are my intentions?'
 subtitle: 'what do i want to do with this space?'
 date: 'July 29, 2021'
+tags: 'weekly'
 ---
 
 I miss writing.
