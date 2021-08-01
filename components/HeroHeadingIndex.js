@@ -37,6 +37,7 @@ const ImageWrapper = styled.div`
 const Josh = styled.span`
   color: ${({ theme }) => theme.color.white};
   background: ${({ theme }) => theme.color.lightGreen};
+  transition: ${({ theme }) => theme.transition.link};
   &:hover {
     background: none;
     border-bottom: solid 3px ${({ theme }) => theme.color.lightGreen};
@@ -44,14 +45,8 @@ const Josh = styled.span`
     cursor: pointer;
   }
 `
-const NoTag = styled.a`
-  text-decoration: none;
-`
-const NoTagHeading = styled.a`
-  text-decoration: none;
-  color: ${({ theme }) => theme.color.black};
-`
 const Design = styled.span`
+  transition: ${({ theme }) => theme.transition.link};
   &:hover {
     font-family: 'Lora', serif;
     color: ${({ theme }) => theme.color.darkGreen};
@@ -68,6 +63,7 @@ const Code = styled.span`
   }
 `
 const SolveProblems = styled.span`
+  transition: ${({ theme }) => theme.transition.link};
   &:hover {
     -webkit-text-stroke-width: 1px;
     -webkit-text-stroke-color: ${({ theme }) => theme.color.green};
@@ -88,17 +84,17 @@ const HeroHeadingIndex = ({ children }) => {
         </h2>
         <h1>
           i{' '}
-          <NoTagHeading href="/work">
+          <Link href="/work">
             <Design>design</Design>
-          </NoTagHeading>
+          </Link>
           ,{' '}
-          <NoTagHeading href="/work">
+          <Link href="/work">
             <Code>code</Code>
-          </NoTagHeading>{' '}
+          </Link>{' '}
           &amp;{' '}
-          <NoTagHeading href="/work">
+          <Link href="/work">
             <SolveProblems>solve problems</SolveProblems>
-          </NoTagHeading>
+          </Link>
         </h1>
       </TitleWrapper>
       <ImageWrapper>{children}</ImageWrapper>
