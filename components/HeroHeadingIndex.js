@@ -1,6 +1,8 @@
 import React from 'react'
 import { GridContainer } from '../styles'
 import styled from 'styled-components'
+import Link from 'next/link'
+import theme from '../styles/theme'
 
 const TitleWrapper = styled.div`
   margin: 3.2rem 0 9.6rem 0;
@@ -33,10 +35,11 @@ const ImageWrapper = styled.div`
 `
 
 const Josh = styled.span`
+  color: ${({ theme }) => theme.color.white};
   background: ${({ theme }) => theme.color.lightGreen};
-  color: white;
   &:hover {
     background: none;
+    border-bottom: solid 3px ${({ theme }) => theme.color.lightGreen};
     color: ${({ theme }) => theme.color.lightGreen};
     cursor: pointer;
   }
@@ -78,10 +81,10 @@ const HeroHeadingIndex = ({ children }) => {
     <GridContainer className={'align-center-hero'}>
       <TitleWrapper>
         <h2>
-          hi, i'm{' '}
-          <NoTag href="/now">
-            <Josh>josh</Josh>
-          </NoTag>
+          hi, I'm{' '}
+          <Link href="/now">
+            <Josh>Joshua Galinato</Josh>
+          </Link>
         </h2>
         <h1>
           i{' '}

@@ -4,6 +4,7 @@ export default {
     green: '#28786D',
     lightGreen: '#68C4B8',
     black: '#1C1C1C',
+    white: '#FFFF',
     grey: '#F5F5F5',
     line: '#E5E5E5',
   },
