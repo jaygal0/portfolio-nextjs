@@ -5,7 +5,6 @@ import RecentWork from '../components/RecentWork'
 import HeadingAndText from '../components/HeadingAndText'
 import Footer from '../components/Footer'
 import Face from '../components/Face'
-import FormBox from '../components/FormBox'
 
 export default function Home() {
   return (
