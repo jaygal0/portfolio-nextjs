@@ -77,7 +77,9 @@ export default function Detail({}) {
           <ButtonSecondaryExternal title="view the app" link={bind.link} />
         </TextWrapper>
       </main>
-      <Footer />
+      <footer>
+        <Footer />
+      </footer>
     </>
   )
 }

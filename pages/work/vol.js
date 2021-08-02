@@ -136,7 +136,9 @@ export default function Detail({}) {
           </div>
         </TextWrapper>
       </main>
-      <Footer />
+      <footer>
+        <Footer />
+      </footer>
     </>
   )
 }

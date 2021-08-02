@@ -13,7 +13,7 @@ import FormBox from '../../components/FormBox'
 const TextWrapper = styled.div`
   grid-column: 3 / span 8;
 
-  @media screen and (max-width: ${({ theme }) => theme.breakPoint.tablet}) {
+  @media screen and (max-width: ${({ theme }) => theme.breakPoint.phoneLarge}) {
     grid-column: 1 / -1;
   }
 `
@@ -99,7 +99,9 @@ export default function Detail({}) {
           />
         </TextWrapper>
       </main>
-      <Footer />
+      <footer>
+        <Footer />
+      </footer>
     </>
   )
 }

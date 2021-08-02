@@ -121,7 +121,9 @@ export default function Detail({}) {
           </SquareFlexWrapper>
         </TextWrapper>
       </main>
-      <Footer />
+      <footer>
+        <Footer />
+      </footer>
     </>
   )
 }

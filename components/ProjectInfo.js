@@ -3,7 +3,6 @@ import styled from 'styled-components'
 import { Wrapper } from '../styles'
 
 const Title = styled.h3`
-  grid-column: 3 / span 8;
   margin: 3.2rem 0 2.4rem 0;
 
   @media screen and (max-width: ${({ theme }) => theme.breakPoint.tablet}) {
@@ -11,8 +10,6 @@ const Title = styled.h3`
   }
 `
 const Text = styled.p`
-  grid-column: 3 / span 8;
-
   @media screen and (max-width: ${({ theme }) => theme.breakPoint.tablet}) {
     grid-column: 1 / -1;
   }

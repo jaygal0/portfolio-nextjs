@@ -147,7 +147,9 @@ export default function Detail({}) {
           ]}
         />
       </main>
-      <Footer />
+      <footer>
+        <Footer />
+      </footer>
     </>
   )
 }

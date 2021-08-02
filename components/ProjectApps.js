@@ -12,7 +12,7 @@ const AppWrapper = styled.div`
   border-radius: 3.2rem;
   margin-bottom: 1.6rem;
 
-  @media screen and (max-width: ${({ theme }) => theme.breakPoint.tablet}) {
+  @media screen and (max-width: ${({ theme }) => theme.breakPoint.phoneLarge}) {
     grid-column: 1 / -1;
   }
 `
@@ -25,8 +25,6 @@ const Text = styled.p``
 const FlexAppWrapper = styled.div`
   display: flex;
   gap: 1.6rem;
-  /* justify-content: space-between; */
-  /* align-content: space-between; */
   flex-wrap: wrap;
   margin-top: 3.2rem;
 `
