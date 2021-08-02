@@ -185,11 +185,58 @@ margin-bottom: .8rem;
     list-style: none;
       }
 }
+ol {
+font-size: ${({ theme }) => theme.font.desktop.p};
+}
+ol li {
+ margin-bottom : 1.6rem ;
+}
 
+// For the button order in the blog list
 .order {
     @media screen and (max-width: ${({ theme }) => theme.breakPoint.tablet}) {
           order: 4;
+  }
 }
+// For the cookie consent 
+.CookieConsent {
+  display: flex;
+  flex-direction: column;
+  width: 300px;
+  padding: 1.6rem;
+  background: ${({ theme }) => theme.color.lightGreen};
+  position: fixed;
+  left: 0; 
+  bottom: 0;
+  font-size: ${({ theme }) => theme.font.desktop.p};
+  line-height: ${({ theme }) => theme.lineHeight.desktop.p};
+  margin: 1.6rem;
+  border-radius: ${({ theme }) => theme.borderRadius};
+
+  @media screen and (max-width: ${({ theme }) => theme.breakPoint.tablet}) {
+  width: 70%;
+  left: 50%;
+  bottom: 50%;
+  transform: translate(-50%, 0%);
+  }
+  @media screen and (max-width: ${({ theme }) => theme.breakPoint.phoneLarge}) {
+  width: 90%;
+  left: 50%;
+  bottom: 50%;
+  transform: translate(-50%, 0%);
+  z-index: 99;
+  margin: 0;
+  }
+}
+#rcc-confirm-button {
+  background: ${({ theme }) => theme.color.darkGreen};
+  color: ${({ theme }) => theme.color.white};
+  border-radius: ${({ theme }) => theme.borderRadius};
+  font-size: ${({ theme }) => theme.font.desktop.p};
+  padding: .8rem;
+  margin-top: ${({ theme }) => theme.margin.desktop.top};
+  width: 100%;
+  border: none;
 }
 `
 
