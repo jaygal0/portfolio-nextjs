@@ -1,5 +1,4 @@
 import Metadata from '../components/Metadata'
-import { Container } from '../styles'
 import Nav from '../components/Nav'
 import HeroHeading from '../components/HeroHeading'
 import Now from '../components/Now'

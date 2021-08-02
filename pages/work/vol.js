@@ -9,7 +9,6 @@ import ProjectApps from '../../components/ProjectApps'
 import styled from 'styled-components'
 import Image from 'next/image'
 import FsLightbox from 'fslightbox-react'
-import FormBox from '../../components/FormBox'
 
 const TextWrapper = styled.div`
   grid-column: 3 / span 8;

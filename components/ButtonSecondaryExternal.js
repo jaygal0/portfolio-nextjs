@@ -22,7 +22,6 @@ const Button = styled.button`
 const Arrow = styled.span`
   margin-left: 1.6rem;
 `
-
 const ButtonSecondaryExternal = ({ title, link, marginTop }) => {
   return (
     <a href={link} target="_blank">
