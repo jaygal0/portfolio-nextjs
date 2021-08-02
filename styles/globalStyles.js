@@ -13,7 +13,48 @@ body {
   font-weight: 400;
   letter-spacing: 0.05rem;
 }
+#__next {
+  margin: 3.2rem auto;
+  margin-bottom: 9.6rem;
+  max-width: 128rem;
+
+  @media screen and (max-width: ${({ theme }) => theme.breakPoint.tablet}) {
+    margin-bottom: 4.8rem;
+  }
+
+  @media screen and (max-width: ${({ theme }) => theme.breakPoint.phone}) {
+  }
+}
+header {
+
+  margin: 0 1.6rem;
+}
 main {
+  display: grid;
+  grid-template-columns: repeat(12, 1fr);
+  grid-column-gap: 3.2rem;
+  margin: 0 1.6rem;
+
+  @media screen and (max-width: ${({ theme }) => theme.breakPoint.tablet}) {
+    grid-column-gap: 3.2rem;
+  }
+  @media screen and (max-width: ${({ theme }) => theme.breakPoint.phoneLarge}) {
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: repeat(2, min-content);
+    grid-column-gap: 1.6rem;
+  }
+}
+footer {
+  display: grid;
+  grid-template-columns: repeat(12, 1fr);
+  grid-column-gap: 3.2rem;
+  margin: 0 1.6rem;
+
+  @media screen and (max-width: ${({ theme }) => theme.breakPoint.phoneLarge}) {
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: repeat(2, min-content);
+    grid-column-gap: 1.6rem;
+  }
 }
 
 h1 {
@@ -24,7 +65,7 @@ h1 {
   text-transform: capitalize;
   font-weight: 900;
 
-  @media screen and (max-width: ${({ theme }) => theme.breakPoint.phoneLarge}) {
+  @media screen and (max-width: ${({ theme }) => theme.breakPoint.tablet}) {
   font-size: ${({ theme }) => theme.font.phone.h1};
   line-height: ${({ theme }) => theme.lineHeight.phone.h1};
   }
@@ -33,7 +74,12 @@ h1 {
   font-size: ${({ theme }) => theme.font.phone.h1Medium};
   line-height: ${({ theme }) => theme.lineHeight.phone.h1Medium};
   }
+  @media screen and (max-width: ${({ theme }) => theme.breakPoint.phoneSmall}) {
+  font-size: 5.6rem;
+  line-height: calc(5.6rem + .8rem);
+  }
 }
+
  
 h2 {
   font-size: ${({ theme }) => theme.font.desktop.h2};
@@ -43,9 +89,15 @@ h2 {
   color: ${({ theme }) => theme.color.lightGreen};
   font-weight: 400;
   
-  @media screen and (max-width: ${({ theme }) => theme.breakPoint.phoneLarge}) {
+  @media screen and (max-width: ${({ theme }) => theme.breakPoint.tablet}) {
   font-size: ${({ theme }) => theme.font.phone.h2};
   line-height: ${({ theme }) => theme.lineHeight.phone.h2};
+  margin-bottom: 1.6rem;
+  }
+  @media screen and (max-width: ${({ theme }) =>
+    theme.breakPoint.phoneMedium}) {
+  font-size: 2.4rem; 
+  line-height: 3.2rem;
   margin-bottom: 1.6rem;
   }
 }
@@ -55,7 +107,7 @@ h3 {
     text-transform: capitalize;
     font-weight: 900;
 
-  @media screen and (max-width: ${({ theme }) => theme.breakPoint.phoneLarge}) {
+  @media screen and (max-width: ${({ theme }) => theme.breakPoint.tablet}) {
   font-size: ${({ theme }) => theme.font.phone.h3};
   line-height: ${({ theme }) => theme.lineHeight.phone.h3};
   }
@@ -132,6 +184,12 @@ margin-bottom: .8rem;
   @media screen and (max-width: ${({ theme }) => theme.breakPoint.tablet}) {
     list-style: none;
       }
+}
+
+.order {
+    @media screen and (max-width: ${({ theme }) => theme.breakPoint.tablet}) {
+          order: 4;
+}
 }
 `
 

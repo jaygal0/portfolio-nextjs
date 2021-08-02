@@ -59,7 +59,7 @@ const ImageContainer = styled.div`
   }
 
   @media screen and (max-width: ${({ theme }) => theme.breakPoint.phoneLarge}) {
-    margin: 3.2rem 0 0 1.6rem;
+    margin: 3.2rem 0 0 0;
   }
 `
 const List = styled.li`

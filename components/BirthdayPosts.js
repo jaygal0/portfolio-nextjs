@@ -5,7 +5,6 @@ import styled from 'styled-components'
 const PostWrapper = styled.div`
   font-size: ${({ theme }) => theme.font.desktop.p};
   line-height: ${({ theme }) => theme.font.desktop.p};
-  grid-column: 3 / span 8;
   margin-top: 3.2rem;
   display: flex;
   align-items: center;

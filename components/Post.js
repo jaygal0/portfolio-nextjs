@@ -1,5 +1,5 @@
 import React from 'react'
-import { GridContainer } from '../styles'
+import { GridContainer, Wrapper } from '../styles'
 import styled from 'styled-components'
 
 const PostWrapper = styled.div`
@@ -21,14 +21,12 @@ const Subheading = styled.h2`
 
 const Post = ({ heading, subheading, published, children }) => {
   return (
-    <GridContainer>
-      <PostWrapper>
-        <Heading>{heading}</Heading>
-        <Subheading>{subheading}</Subheading>
-        <p>{`Published: ${published}`}</p>
-        {children}
-      </PostWrapper>
-    </GridContainer>
+    <Wrapper>
+      <Heading>{heading}</Heading>
+      <Subheading>{subheading}</Subheading>
+      <p>{`Published: ${published}`}</p>
+      {children}
+    </Wrapper>
   )
 }
 

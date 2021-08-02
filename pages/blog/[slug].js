@@ -4,15 +4,14 @@ import matter from 'gray-matter'
 import marked from 'marked'
 import Metadata from '../../components/Metadata'
 import Post from '../../components/Post'
-import { Container, GridContainer } from '../../styles'
+import { Wrapper } from '../../styles'
 import Footer from '../../components/Footer'
 import Nav from '../../components/Nav'
 import styled from 'styled-components'
 import BirthdayPosts from '../../components/BirthdayPosts'
 
 const Body = styled.div`
-  grid-column: 3 / span 8;
-  margin-top: 3.2rem;
+  margin-top: -3.2rem;
 `
 
 export default function PostPage({
@@ -23,17 +22,17 @@ export default function PostPage({
   return (
     <>
       <Metadata title={title} />
-      <Container>
-        <Nav />
-        <main>
-          <Post heading={title} subheading={subtitle} published={date} />
-          <GridContainer>
-            <Body dangerouslySetInnerHTML={{ __html: marked(content) }}></Body>
-            {tags.includes('birthday') && <BirthdayPosts />}
-          </GridContainer>
-        </main>
+      <Nav />
+      <main>
+        <Post heading={title} subheading={subtitle} published={date} />
+        <Wrapper>
+          <Body dangerouslySetInnerHTML={{ __html: marked(content) }}></Body>
+          {tags.includes('birthday') && <BirthdayPosts />}
+        </Wrapper>
+      </main>
+      <footer>
         <Footer />
-      </Container>
+      </footer>
     </>
   )
 }

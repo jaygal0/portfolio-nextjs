@@ -1,5 +1,4 @@
 import Metadata from '../components/Metadata'
-import { Container } from '../styles'
 import Nav from '../components/Nav'
 import HeroHeading from '../components/HeroHeading'
 import Footer from '../components/Footer'
@@ -13,18 +12,17 @@ export default function Work() {
         title="Work"
         desc="An online portfolio of Joshua Galinato's work"
       />
-      <Container>
-        <Nav />
-        <main>
-          <HeroHeading
-            title="work &amp; personal projects"
-            subtitle="an ever-growing portfolio"
-          />
-          <Portfolio />
-          <FormBox />
-        </main>
+      <Nav />
+      <main>
+        <HeroHeading
+          title="work &amp; personal projects"
+          subtitle="an ever-growing portfolio"
+        />
+        <Portfolio />
+      </main>
+      <footer>
         <Footer />
-      </Container>
+      </footer>
     </>
   )
 }

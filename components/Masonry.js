@@ -4,23 +4,19 @@ import Image from 'next/image'
 import Link from 'next/link'
 
 const MasonryWrapper = styled.div`
-  grid-column: 3 / span 8;
+  width: 100%;
   display: grid;
   grid-template-columns: repeat(2, 1fr);
   grid-template-rows: repeat(2, 1fr);
   grid-gap: 3.2rem;
   height: 82.2rem;
-  width: 82.2rem;
 
   @media screen and (max-width: ${({ theme }) =>
       theme.breakPoint.desktopSmall}) {
     height: 65rem;
-    width: 65rem;
   }
   @media screen and (max-width: ${({ theme }) => theme.breakPoint.tablet}) {
-    grid-column: 1 / -1;
-    height: 73rem;
-    width: 73rem;
+    height: 46rem;
   }
   @media screen and (max-width: ${({ theme }) => theme.breakPoint.phoneLarge}) {
     display: flex;

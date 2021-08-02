@@ -1,6 +1,6 @@
 ---
-title: 'what are my intentions?'
-subtitle: 'what do i want to do with this space?'
+title: 'what to write about'
+subtitle: 'figuring out my intentions'
 date: 'July 29, 2021'
 tags: 'weekly'
 ---

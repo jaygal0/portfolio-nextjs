@@ -71,6 +71,8 @@ export default {
   },
   borderRadius: '1.6rem',
   breakPoint: {
+    desktop4K: '2561px',
+    desktopLarge: '1441px',
     desktopSmall: '1024px',
     tablet: '768px',
     phoneLarge: '426px',

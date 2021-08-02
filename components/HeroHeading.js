@@ -1,15 +1,10 @@
 import React from 'react'
-import { GridContainer } from '../styles'
+import { GridContainer, Wrapper } from '../styles'
 import styled from 'styled-components'
 
 const TitleWrapper = styled.div`
   margin: 3.2rem 0 9.6rem 0;
-  grid-column: 3 / span 6;
-  grid-row: 1;
-
-  @media screen and (max-width: ${({ theme }) => theme.breakPoint.tablet}) {
-    grid-column: 1 / -1;
-  }
+  width: 80%;
 `
 const ImageWrapper = styled.div`
   grid-column: 6 / span 5;
@@ -30,13 +25,13 @@ const ImageWrapper = styled.div`
 
 const HeroHeading = ({ title, subtitle, children }) => {
   return (
-    <GridContainer className={'align-center-hero'}>
+    <Wrapper>
       <TitleWrapper>
         <h2>{subtitle}</h2>
         <h1>{title}</h1>
       </TitleWrapper>
       <ImageWrapper>{children}</ImageWrapper>
-    </GridContainer>
+    </Wrapper>
   )
 }
 

@@ -1,36 +1,38 @@
 import React from 'react'
-import { GridContainer } from '../styles'
+import { Wrapper } from '../styles'
 import styled from 'styled-components'
 import Link from 'next/link'
 import theme from '../styles/theme'
 
 const TitleWrapper = styled.div`
+  flex: 2;
   margin: 3.2rem 0 9.6rem 0;
-  grid-column: 3 / span 6;
-  grid-row: 1;
 
   @media screen and (max-width: ${({ theme }) => theme.breakPoint.tablet}) {
-    grid-column: 1 / -1;
+    margin: 3.2rem 0 5.6em 0;
+  }
+  @media screen and (max-width: ${({ theme }) => theme.breakPoint.phoneSmall}) {
+    margin: 3.2rem 0 3.2em 0;
   }
 `
 const ImageWrapper = styled.div`
-  grid-column: 6 / span 5;
-  grid-row: 1;
+  width: 62%;
+  position: absolute;
+  top: 0;
+  right: 0;
   z-index: -1;
+  transform: translate(1rem, 7rem);
 
   @media screen and (max-width: ${({ theme }) =>
       theme.breakPoint.desktopSmall}) {
-    transform: translateX(3rem);
+    width: 50%;
+    transform: translate(2rem, 18rem);
   }
   @media screen and (max-width: ${({ theme }) => theme.breakPoint.tablet}) {
-    transform: translate(8rem, -9rem);
+    transform: translate(1rem, 17rem);
   }
   @media screen and (max-width: ${({ theme }) => theme.breakPoint.phoneLarge}) {
-    transform: translate(6rem, -22rem);
-  }
-  @media screen and (max-width: ${({ theme }) =>
-      theme.breakPoint.phoneMedium}) {
-    transform: translate(4rem, -22rem);
+    display: none;
   }
 `
 
@@ -74,7 +76,7 @@ const SolveProblems = styled.span`
 
 const HeroHeadingIndex = ({ children }) => {
   return (
-    <GridContainer className={'align-center-hero'}>
+    <Wrapper className={'align-center-hero'}>
       <TitleWrapper>
         <h2>
           hi, I'm{' '}
@@ -87,18 +89,21 @@ const HeroHeadingIndex = ({ children }) => {
           <Link href="/work">
             <Design>design</Design>
           </Link>
-          ,{' '}
+          , <br />
           <Link href="/work">
             <Code>code</Code>
           </Link>{' '}
-          &amp;{' '}
+          &amp; <br />
           <Link href="/work">
-            <SolveProblems>solve problems</SolveProblems>
+            <SolveProblems>
+              solve
+              <br /> problems
+            </SolveProblems>
           </Link>
         </h1>
       </TitleWrapper>
       <ImageWrapper>{children}</ImageWrapper>
-    </GridContainer>
+    </Wrapper>
   )
 }
 

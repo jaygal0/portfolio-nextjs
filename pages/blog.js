@@ -19,29 +19,28 @@ export default function Blog({ posts, content }) {
         title="Blog"
         desc="A space for me to get all the thoughts out of my head."
       />
-      <Container>
-        <Nav />
-        <main>
-          <HeroHeading
-            title="my space to think"
-            subtitle="a writing playground"
-          />
-          {posts.map((item) => {
-            return (
-              <BlogList
-                key={uuid()}
-                heading={item.frontmatter.title}
-                subheading={item.frontmatter.subtitle}
-                published={item.frontmatter.date}
-                snippet={`${item.content.substr(0, 70)}...`}
-                slug={item.slug}
-              />
-            )
-          })}
-          <FormBox />
-        </main>
+      <Nav />
+      <main>
+        <HeroHeading
+          title="my space to think"
+          subtitle="a writing playground"
+        />
+        {posts.map((item) => {
+          return (
+            <BlogList
+              key={uuid()}
+              heading={item.frontmatter.title}
+              subheading={item.frontmatter.subtitle}
+              published={item.frontmatter.date}
+              snippet={`${item.content.substr(0, 70)}...`}
+              slug={item.slug}
+            />
+          )
+        })}
+      </main>
+      <footer>
         <Footer />
-      </Container>
+      </footer>
     </>
   )
 }

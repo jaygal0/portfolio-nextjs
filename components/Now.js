@@ -1,19 +1,10 @@
 import React, { useEffect, useRef, useState } from 'react'
-import { GridContainer } from '../styles'
+import { Wrapper } from '../styles'
 import styled from 'styled-components'
 import data from '../data/now'
 import NowDetail from './NowDetail'
 import moment from 'moment'
 import uuid from 'react-uuid'
-
-const NowWrapper = styled.div`
-  grid-column: 3 / span 8;
-
-  @media screen and (max-width: ${({ theme }) =>
-      theme.breakPoint.desktopSmall}) {
-    grid-column: 1 / -1;
-  }
-`
 
 const Location = styled.p`
   text-transform: capitalize;
@@ -89,80 +80,79 @@ const Now = ({ rapidRating, blitzRating }) => {
   })
 
   return (
-    <GridContainer>
-      <NowWrapper>
-        <h5>age</h5>
-        <p>
-          {years === 0 ? null : `${years} years`}
-          {months === 0 ? null : `, ${months} months`}{' '}
-          {days === 0 ? null : `& ${days} days`} old.
-        </p>
+    <Wrapper>
+      <h5>age</h5>
+      <p>
+        {years === 0 ? null : `${years} years`}
+        {months === 0 ? null : `, ${months} months`}{' '}
+        {days === 0 ? null : `& ${days} days`} old.
+      </p>
 
-        <h5>countdown</h5>
-        <p>
-          A simple reminder that I'm not going to be here forever and to
-          appreciate what I have now:
-        </p>
-        <p>
-          {timerYears === 0 ? null : `${timerYears} years`}
-          {timerMonths > 12 ? null : `, ${timerMonths} months`}
-          {timerMonths > 1 ? null : `, ${timerDays} days`}
-          {(timerHours === 0 && ' ') ||
-            (timerHours === 1 && `, ${timerHours} hour`) ||
-            `, ${timerHours} hours`}
-          {(timerMinutes === 0 && ' ') ||
-            (timerMinutes === 1 && `, ${timerMinutes} minute`) ||
-            `, ${timerMinutes} minutes`}
-          {(timerSeconds === 0 && ' ') ||
-            (timerSeconds === 1 && ` & ${timerSeconds} second `) ||
-            ` & ${timerSeconds} seconds `}
-          until I kick the bucket.
-        </p>
-        <Updated>
-          Data taken from{' '}
-          <a href="https://www.death-clock.org/" target="_blank">
-            death-clock.org.
-          </a>
-        </Updated>
+      <h5>countdown</h5>
+      <p>
+        A simple reminder that I'm not going to be here forever and to
+        appreciate what I have now:
+      </p>
+      <p>
+        {timerYears === 0 ? null : `${timerYears} years`}
+        {timerMonths > 12 ? null : `, ${timerMonths} months`}
+        {timerMonths > 1 ? null : `, ${timerDays} days`}
+        {(timerHours === 0 && ' ') ||
+          (timerHours === 1 && `, ${timerHours} hour`) ||
+          `, ${timerHours} hours`}
+        {(timerMinutes === 0 && ' ') ||
+          (timerMinutes === 1 && `, ${timerMinutes} minute`) ||
+          `, ${timerMinutes} minutes`}
+        {(timerSeconds === 0 && ' ') ||
+          (timerSeconds === 1 && ` & ${timerSeconds} second `) ||
+          ` & ${timerSeconds} seconds `}
+        until I kick the bucket.
+      </p>
+      <Updated>
+        Data taken from{' '}
+        <a href="https://www.death-clock.org/" target="_blank">
+          death-clock.org.
+        </a>
+      </Updated>
 
-        <h5>location</h5>
-        <Location>
-          {location.city}, {location.country}
-        </Location>
-        <h5>day job</h5>
-        <p>
-          {job.title} at{' '}
-          <a href={job.website} target="_blank">
-            {job.company}
-          </a>
-        </p>
-        <h5>pastime</h5>
-        <h6>reading</h6>
-        <ul>
-          {books.map((item) => {
-            const { title, link } = item
-            return (
-              <li key={uuid()}>
-                <a href={link} target="_blank">
-                  {title}
-                </a>
-              </li>
-            )
-          })}
-        </ul>
-        <h6>chess rating</h6>
-        <ChessList>
-          <li>Blitz: {blitzRating}</li>
-          <li>Rapid: {rapidRating}</li>
-        </ChessList>
-        <Updated>
-          Live updates from{' '}
-          <a href="https://lichess.org" target="_blank">
-            lichess.org
-          </a>
-        </Updated>
-        {/* Add once let's chat now now now is up and running */}
-        {/* <h5>projects</h5>
+      <h5>location</h5>
+      <Location>
+        {location.city}, {location.country}
+      </Location>
+      <h5>day job</h5>
+      <p>
+        {job.title} at{' '}
+        <a href={job.website} target="_blank">
+          {job.company}
+        </a>
+      </p>
+      <h5>pastime</h5>
+      <h6>reading</h6>
+      <ul>
+        {books.map((item) => {
+          const { title, link } = item
+          return (
+            <li key={uuid()}>
+              <a href={link} target="_blank">
+                {title}
+              </a>
+            </li>
+          )
+        })}
+      </ul>
+      <h6>chess rating</h6>
+      <ChessList>
+        <li>Blitz: {blitzRating}</li>
+        <li>Rapid: {rapidRating}</li>
+      </ChessList>
+      <Updated>
+        Live updates from{' '}
+        <a href="https://lichess.org" target="_blank">
+          lichess.org
+        </a>
+      </Updated>
+      {/* Add once let's chat now now now is up and running */}
+      {/* <h5>projects</h5>
         <ul>
           {projects.map((item) => {
             const { title, link } = item
@@ -175,16 +165,14 @@ const Now = ({ rapidRating, blitzRating }) => {
             )
           })}
         </ul> */}
-        <NowDetail />
-        <Updated>
-          Last updated on {update.month} {update.day}, {update.year}. Inspired
-          by{' '}
-          <a href="https://sive.rs/nowff" target="_blank">
-            Derek Sivers
-          </a>
-        </Updated>
-      </NowWrapper>
-    </GridContainer>
+      <NowDetail />
+      <Updated>
+        Last updated on {update.month} {update.day}, {update.year}. Inspired by{' '}
+        <a href="https://sive.rs/nowff" target="_blank">
+          Derek Sivers
+        </a>
+      </Updated>
+    </Wrapper>
   )
 }
 

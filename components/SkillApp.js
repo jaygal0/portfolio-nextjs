@@ -1,5 +1,5 @@
 import React, { useRef, useEffect } from 'react'
-import { GridContainer } from '../styles'
+import { GridContainer, Wrapper } from '../styles'
 import styled from 'styled-components'
 import Image from 'next/image'
 import { gsap } from 'gsap'
@@ -113,7 +113,7 @@ const SkillApp = ({ src, subtitle, programName, level }) => {
     })
   })
   return (
-    <GridContainer>
+    <Wrapper className="skills">
       <SkillWrapper>
         <ImageWrapper
           ref={(el) => {
@@ -136,7 +136,7 @@ const SkillApp = ({ src, subtitle, programName, level }) => {
         </TextWrapper>
       </SkillWrapper>
       <LineBreak />
-    </GridContainer>
+    </Wrapper>
   )
 }
 

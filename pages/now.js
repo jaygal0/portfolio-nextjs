@@ -9,17 +9,17 @@ export default function NowPage({ data }) {
   return (
     <>
       <Metadata title="Now" desc="What Joshua Galinato is doing now" />
-      <Container>
-        <Nav />
-        <main>
-          <HeroHeading title="what i'm doing now" subtitle="joshua galinato" />
-          <Now
-            rapidRating={data.perfs.rapid.rating}
-            blitzRating={data.perfs.blitz.rating}
-          />
-        </main>
+      <Nav />
+      <main>
+        <HeroHeading title="what i'm doing now" subtitle="joshua galinato" />
+        <Now
+          rapidRating={data.perfs.rapid.rating}
+          blitzRating={data.perfs.blitz.rating}
+        />
+      </main>
+      <footer>
         <Footer />
-      </Container>
+      </footer>
     </>
   )
 }

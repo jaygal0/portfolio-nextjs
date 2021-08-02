@@ -1,6 +1,6 @@
 import React from 'react'
 import styled from 'styled-components'
-import { GridContainer } from '../styles'
+import { GridContainer, Wrapper } from '../styles'
 
 const FormWrapper = styled.section`
   grid-column: 3 / span 8;
@@ -84,7 +84,7 @@ const Button = styled.button`
 
 const FormBox = () => {
   return (
-    <GridContainer className="form-margin">
+    <Wrapper className="form-margin">
       <FormWrapper>
         <TitleWrapper>
           <h4>let's connect!</h4>
@@ -109,7 +109,7 @@ const FormBox = () => {
           <Button type="submit">submit</Button>
         </FormContainer>
       </FormWrapper>
-    </GridContainer>
+    </Wrapper>
   )
 }
 

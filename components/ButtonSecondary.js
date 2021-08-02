@@ -27,10 +27,12 @@ const Arrow = styled.span`
   margin-left: 1.6rem;
 `
 
-const ButtonSecondary = ({ title, link, marginTop }) => {
+const ButtonSecondary = ({ title, link, marginTop, blog }) => {
   return (
     <Link href={link}>
-      <Button className={marginTop === '3.2rem' ? 'margin-top' : ''}>
+      <Button
+        className={marginTop === '3.2rem' ? 'margin-top' : blog ? 'order' : ''}
+      >
         {title}
         <Arrow>&gt;</Arrow>
       </Button>

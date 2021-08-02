@@ -1,5 +1,5 @@
 import React from 'react'
-import { GridContainer } from '../styles'
+import { GridContainer, Wrapper } from '../styles'
 import Masonry from '../components/Masonry'
 import PortfolioFlex from './PortfolioFlex'
 import PortfolioSquare from './PortfolioSquare'
@@ -7,7 +7,7 @@ import PortfolioRectangle from './PortfolioRectangle'
 
 const Portfolio = () => {
   return (
-    <GridContainer>
+    <Wrapper>
       <Masonry
         topLeftImg="/input-mockup.png"
         topLeftLink="/work/input"
@@ -26,7 +26,7 @@ const Portfolio = () => {
         />
         <PortfolioRectangle href="work/photos" src="/photos-ebony.jpg" />
       </PortfolioFlex>
-    </GridContainer>
+    </Wrapper>
   )
 }
 
