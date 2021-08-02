@@ -1,6 +1,5 @@
 import React, { useState } from 'react'
 import Metadata from '../../components/Metadata'
-import { Container, GridContainer } from '../../styles'
 import Nav from '../../components/Nav'
 import Footer from '../../components/Footer'
 import PortfolioHero from '../../components/PortfolioHero'
@@ -44,90 +43,85 @@ export default function Detail({}) {
   return (
     <>
       <Metadata title="Kawaii Corner Shop" />
-      <Container>
-        <Nav />
-        <main>
-          <PortfolioHero src={kawaii.img} />
-          <ProjectInfo title={kawaii.title} text={kawaii.text} />
-          <ProjectApps apps={kawaii.appsUsed} />
-          <GridContainer>
-            <TextWrapper>
-              <FsLightbox
-                toggler={asset}
-                sources={[
-                  'http://localhost:3000/_next/image?url=%2Fkawaii-instagram.jpg&w=3840&q=75',
-                  'http://localhost:3000/_next/image?url=%2Fkawaii-asset-1.png&w=3840&q=75',
-                  'http://localhost:3000/_next/image?url=%2Fkawaii-asset-2.png&w=3840&q=75',
-                  'http://localhost:3000/_next/image?url=%2Fkawaii-asset-3.png&w=3840&q=75',
-                  'http://localhost:3000/_next/image?url=%2Fkawaii-asset-4.png&w=3840&q=75',
-                  'http://localhost:3000/_next/image?url=%2Fkawaii-asset-5.png&w=3840&q=75',
-                  'http://localhost:3000/_next/image?url=%2Fkawaii-asset-6.png&w=3840&q=75',
-                ]}
+      <Nav />
+      <main>
+        <PortfolioHero src={kawaii.img} />
+        <ProjectInfo title={kawaii.title} text={kawaii.text} />
+        <ProjectApps apps={kawaii.appsUsed} />
+        <TextWrapper>
+          <FsLightbox
+            toggler={asset}
+            sources={[
+              'http://localhost:3000/_next/image?url=%2Fkawaii-instagram.jpg&w=3840&q=75',
+              'http://localhost:3000/_next/image?url=%2Fkawaii-asset-1.png&w=3840&q=75',
+              'http://localhost:3000/_next/image?url=%2Fkawaii-asset-2.png&w=3840&q=75',
+              'http://localhost:3000/_next/image?url=%2Fkawaii-asset-3.png&w=3840&q=75',
+              'http://localhost:3000/_next/image?url=%2Fkawaii-asset-4.png&w=3840&q=75',
+              'http://localhost:3000/_next/image?url=%2Fkawaii-asset-5.png&w=3840&q=75',
+              'http://localhost:3000/_next/image?url=%2Fkawaii-asset-6.png&w=3840&q=75',
+            ]}
+          />
+          <MarginTop className="image" onClick={() => setAsset(!asset)}>
+            <Image
+              src="/kawaii-instagram.jpg"
+              width={5333}
+              height={3000}
+              className="border-image"
+            />
+          </MarginTop>
+          <SquareFlexWrapper>
+            <Square className="image" onClick={() => setAsset(!asset)}>
+              <Image
+                src="/kawaii-asset-1.png"
+                width={4501}
+                height={4500}
+                className="border-image"
               />
-              <MarginTop className="image" onClick={() => setAsset(!asset)}>
-                <Image
-                  src="/kawaii-instagram.jpg"
-                  width={5333}
-                  height={3000}
-                  className="border-image"
-                />
-              </MarginTop>
-              <SquareFlexWrapper>
-                <Square className="image" onClick={() => setAsset(!asset)}>
-                  <Image
-                    src="/kawaii-asset-1.png"
-                    width={4501}
-                    height={4500}
-                    className="border-image"
-                  />
-                </Square>
-                <Square className="image" onClick={() => setAsset(!asset)}>
-                  <Image
-                    src="/kawaii-asset-2.png"
-                    width={4501}
-                    height={4500}
-                    className="border-image"
-                  />
-                </Square>
-                <Square className="image" onClick={() => setAsset(!asset)}>
-                  <Image
-                    src="/kawaii-asset-3.png"
-                    width={4501}
-                    height={4500}
-                    className="border-image"
-                  />
-                </Square>
-                <Square className="image" onClick={() => setAsset(!asset)}>
-                  <Image
-                    src="/kawaii-asset-4.png"
-                    width={4501}
-                    height={4500}
-                    className="border-image"
-                  />
-                </Square>
-                <Square className="image" onClick={() => setAsset(!asset)}>
-                  <Image
-                    src="/kawaii-asset-5.png"
-                    width={4501}
-                    height={4500}
-                    className="border-image"
-                  />
-                </Square>
-                <Square className="image" onClick={() => setAsset(!asset)}>
-                  <Image
-                    src="/kawaii-asset-6.png"
-                    width={4501}
-                    height={4500}
-                    className="border-image"
-                  />
-                </Square>
-              </SquareFlexWrapper>
-            </TextWrapper>
-          </GridContainer>
-          <FormBox />
-        </main>
-        <Footer />
-      </Container>
+            </Square>
+            <Square className="image" onClick={() => setAsset(!asset)}>
+              <Image
+                src="/kawaii-asset-2.png"
+                width={4501}
+                height={4500}
+                className="border-image"
+              />
+            </Square>
+            <Square className="image" onClick={() => setAsset(!asset)}>
+              <Image
+                src="/kawaii-asset-3.png"
+                width={4501}
+                height={4500}
+                className="border-image"
+              />
+            </Square>
+            <Square className="image" onClick={() => setAsset(!asset)}>
+              <Image
+                src="/kawaii-asset-4.png"
+                width={4501}
+                height={4500}
+                className="border-image"
+              />
+            </Square>
+            <Square className="image" onClick={() => setAsset(!asset)}>
+              <Image
+                src="/kawaii-asset-5.png"
+                width={4501}
+                height={4500}
+                className="border-image"
+              />
+            </Square>
+            <Square className="image" onClick={() => setAsset(!asset)}>
+              <Image
+                src="/kawaii-asset-6.png"
+                width={4501}
+                height={4500}
+                className="border-image"
+              />
+            </Square>
+          </SquareFlexWrapper>
+        </TextWrapper>
+      </main>
+      <Footer />
     </>
   )
 }

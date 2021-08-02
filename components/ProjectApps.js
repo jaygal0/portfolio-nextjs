@@ -1,7 +1,6 @@
 import React from 'react'
 import styled from 'styled-components'
 import ButtonSecondary from '../components/ButtonSecondary'
-import { GridContainer } from '../styles'
 import Image from 'next/image'
 import uuid from 'react-uuid'
 
@@ -40,31 +39,29 @@ const App = styled.div`
 
 const ProjectApps = ({ apps }) => {
   return (
-    <GridContainer>
-      <AppWrapper>
-        <Title>a list of apps</Title>
-        <Text>
-          Below is a list of apps I used in order to complete the project. To
-          view my entire skill set along with my experience for each app, click
-          on the button below.
-        </Text>
-        <ButtonSecondary title="view my skills" link="/skills" />
-        <FlexAppWrapper>
-          {apps.map((item) => {
-            return (
-              <App key={uuid()}>
-                <Image
-                  src={`/${item}.svg`}
-                  alt={`logo of ${item}`}
-                  layout="fill"
-                  quality={75}
-                />
-              </App>
-            )
-          })}
-        </FlexAppWrapper>
-      </AppWrapper>
-    </GridContainer>
+    <AppWrapper>
+      <Title>a list of apps</Title>
+      <Text>
+        Below is a list of apps I used in order to complete the project. To view
+        my entire skill set along with my experience for each app, click on the
+        button below.
+      </Text>
+      <ButtonSecondary title="view my skills" link="/skills" />
+      <FlexAppWrapper>
+        {apps.map((item) => {
+          return (
+            <App key={uuid()}>
+              <Image
+                src={`/${item}.svg`}
+                alt={`logo of ${item}`}
+                layout="fill"
+                quality={75}
+              />
+            </App>
+          )
+        })}
+      </FlexAppWrapper>
+    </AppWrapper>
   )
 }
 

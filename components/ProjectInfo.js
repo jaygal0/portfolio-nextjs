@@ -1,6 +1,6 @@
 import React from 'react'
-import { GridContainer } from '../styles'
 import styled from 'styled-components'
+import { Wrapper } from '../styles'
 
 const Title = styled.h3`
   grid-column: 3 / span 8;
@@ -20,10 +20,10 @@ const Text = styled.p`
 
 const ProjectInfo = ({ title, text }) => {
   return (
-    <GridContainer>
+    <Wrapper>
       <Title>{title}</Title>
       <Text>{text}</Text>
-    </GridContainer>
+    </Wrapper>
   )
 }
 

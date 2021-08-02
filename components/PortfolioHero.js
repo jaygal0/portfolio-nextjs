@@ -1,7 +1,7 @@
 import React from 'react'
-import { GridContainer } from '../styles'
 import styled from 'styled-components'
 import Image from 'next/image'
+import { Wrapper } from '../styles'
 
 const ImageWrapper = styled.div`
   grid-column: 2 / span 10;
@@ -24,7 +24,7 @@ const ImageWrapper = styled.div`
 
 const PortfolioHero = ({ src }) => {
   return (
-    <GridContainer>
+    <Wrapper>
       <ImageWrapper>
         <Image
           src={src}
@@ -34,7 +34,7 @@ const PortfolioHero = ({ src }) => {
           className="border-image"
         />
       </ImageWrapper>
-    </GridContainer>
+    </Wrapper>
   )
 }
 
