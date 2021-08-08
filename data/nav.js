@@ -15,10 +15,10 @@ const nav = [
     text: 'blog',
     link: '/blog',
   },
-  {
-    text: 'now',
-    link: '/now',
-  },
+  // {
+  //   text: 'now',
+  //   link: '/now',
+  // },
 ]
 
 export default nav
