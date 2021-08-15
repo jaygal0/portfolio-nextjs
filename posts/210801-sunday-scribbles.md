@@ -13,7 +13,7 @@ I'm not trying to be an author, I'm not trying to build a popular blog, I'm not 
 
 This space is a way for me to put the reps in. By putting in the work on a consistent basis, I can't help but get better at my craft.
 
-To be able to express yourself in written form - and quickly for that matter - is an important skill. Communicating in general is essential, and by getting better at writing it'll tranfer to all forms of communication.
+To be able to express yourself in written form - and quickly for that matter - is an important skill. Communicating in general is essential, and by getting better at writing it'll transfer to all forms of communication.
 
 At least, that's what I hope.
 
