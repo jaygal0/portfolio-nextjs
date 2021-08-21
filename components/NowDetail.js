@@ -3,12 +3,10 @@ import React from 'react'
 const NowDetail = () => {
   return (
     <>
-      <h5>back to my normal routines</h5>
+      <h5>Grateful</h5>
       <p>
-        Since I'm back to work, my schedule has become rigid again. Which means
-        I'm able to schedule my general routines (working out, projects,
-        learning) around my work hours, allowing me to have better structure
-        with my time.
+        I don't have much to update you on, but all I can say is that I'm
+        content and grateful for where I am right now.
       </p>
     </>
   )
