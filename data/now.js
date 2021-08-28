@@ -1,11 +1,11 @@
 export default {
   update: {
-    day: '21st',
+    day: '28th',
     month: 'August',
     year: '2021',
   },
   location: {
-    city: 'Gothenburg',
+    city: 'gothenburg',
     country: 'sweden',
   },
   books: [
