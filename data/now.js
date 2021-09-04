@@ -1,7 +1,7 @@
 export default {
   update: {
-    day: '28th',
-    month: 'August',
+    day: '4th',
+    month: 'September',
     year: '2021',
   },
   location: {
@@ -10,8 +10,8 @@ export default {
   },
   books: [
     {
-      title: 'Unreasonable Success And How To Achieve It - Richard Koch',
-      link: 'https://www.amazon.com/Unreasonable-Success-How-Achieve-Unlocking/dp/1642011363',
+      title: 'Letters To A Young Athlete - Chris Bosh',
+      link: 'https://www.amazon.com/Letters-Young-Athlete-Chris-Bosh/dp/1984881787',
     },
   ],
   projects: [

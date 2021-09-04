@@ -3,11 +3,11 @@ import React from 'react'
 const NowDetail = () => {
   return (
     <>
-      <h5>Udemy Course</h5>
+      <h5>Finding balance</h5>
       <p>
-        I've been spending the past week getting stuck in with a couple of Udemy
-        courses based around the MERN stack. It even includes authentication
-        which I'm excited to learn about.
+        The past week I've been struggling with balancing work with my personal
+        life. This is a reminder to make sure that I'm aware of my priorities
+        and to stay on top of what's important.
       </p>
     </>
   )
