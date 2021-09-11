@@ -1,6 +1,6 @@
 export default {
   update: {
-    day: '4th',
+    day: '11th',
     month: 'September',
     year: '2021',
   },
@@ -10,8 +10,8 @@ export default {
   },
   books: [
     {
-      title: 'Letters To A Young Athlete - Chris Bosh',
-      link: 'https://www.amazon.com/Letters-Young-Athlete-Chris-Bosh/dp/1984881787',
+      title: 'Privacy Is Power - Carissa Véliz',
+      link: 'https://www.amazon.com/Privacy-Power-Should-Take-Control/dp/1787634043',
     },
   ],
   projects: [

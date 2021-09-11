@@ -3,11 +3,12 @@ import React from 'react'
 const NowDetail = () => {
   return (
     <>
-      <h5>Finding balance</h5>
+      <h5>Playing basketball</h5>
       <p>
-        The past week I've been struggling with balancing work with my personal
-        life. This is a reminder to make sure that I'm aware of my priorities
-        and to stay on top of what's important.
+        The past week I've found myself getting back to the hobby that I enjoy
+        most; playing basketball. Whether it's playing alone or with random
+        strangers in the only basketball court in the city centre, I've been
+        enjoying my time shaking off the rust.
       </p>
     </>
   )
