@@ -3,12 +3,12 @@ import React from 'react'
 const NowDetail = () => {
   return (
     <>
-      <h5>Playing basketball</h5>
+      <h5>Reading again</h5>
       <p>
-        The past week I've found myself getting back to the hobby that I enjoy
-        most; playing basketball. Whether it's playing alone or with random
-        strangers in the only basketball court in the city centre, I've been
-        enjoying my time shaking off the rust.
+        I've been finding myself enjoying the process of reading again. I
+        usually go through phases where I'm a reading machine and then I'm fed
+        up with reading entirely. Right now, I've been ploughing through my
+        reading list. I hope I can keep this up for as long as possible!
       </p>
     </>
   )

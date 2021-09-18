@@ -1,6 +1,6 @@
 export default {
   update: {
-    day: '11th',
+    day: '18th',
     month: 'September',
     year: '2021',
   },
@@ -10,8 +10,8 @@ export default {
   },
   books: [
     {
-      title: 'Privacy Is Power - Carissa Véliz',
-      link: 'https://www.amazon.com/Privacy-Power-Should-Take-Control/dp/1787634043',
+      title: 'Chop wood Carry Water - Joshua Medcalf',
+      link: 'https://www.amazon.com/Chop-Wood-Carry-Water-Becoming/dp/153698440X',
     },
   ],
   projects: [
