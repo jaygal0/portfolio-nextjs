@@ -1,6 +1,6 @@
 export default {
   update: {
-    day: '18th',
+    day: '25th',
     month: 'September',
     year: '2021',
   },
@@ -10,8 +10,8 @@ export default {
   },
   books: [
     {
-      title: 'Chop wood Carry Water - Joshua Medcalf',
-      link: 'https://www.amazon.com/Chop-Wood-Carry-Water-Becoming/dp/153698440X',
+      title: 'Getting To Yes - Roger Fisher',
+      link: 'https://www.amazon.com/Getting-Yes-Negotiating-Agreement-Without/dp/0143118757',
     },
   ],
   projects: [
