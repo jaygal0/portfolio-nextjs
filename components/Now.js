@@ -16,6 +16,9 @@ const Updated = styled.p`
   font-size: ${({ theme }) => theme.font.desktop.meta};
   margin-top: 1.6rem;
 `
+const OneLiner = styled.p`
+  margin-top: 0.8rem;
+`
 
 const Now = ({ rapidRating, blitzRating }) => {
   // To figure out my age
@@ -151,20 +154,20 @@ const Now = ({ rapidRating, blitzRating }) => {
           lichess.org
         </a>
       </Updated>
-      {/* Add once let's chat now now now is up and running */}
-      {/* <h5>projects</h5>
-        <ul>
-          {projects.map((item) => {
-            const { title, link } = item
-            return (
-              <li key={uuid()}>
-                <a href={link} target="_blank">
-                  {title}
-                </a>
-              </li>
-            )
-          })}
-        </ul> */}
+      <h6>personal projects</h6>
+      <ul>
+        {projects.map((item) => {
+          const { title, link, oneLiner } = item
+          return (
+            <li key={uuid()}>
+              <a href={link} target="_blank">
+                {title}
+              </a>
+              <OneLiner>{oneLiner}</OneLiner>
+            </li>
+          )
+        })}
+      </ul>
       <NowDetail />
       <Updated>
         Last updated on {update.month} {update.day}, {update.year}. Inspired by{' '}

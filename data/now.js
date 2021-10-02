@@ -1,7 +1,7 @@
 export default {
   update: {
-    day: '25th',
-    month: 'September',
+    day: '2nd',
+    month: 'October',
     year: '2021',
   },
   location: {
@@ -13,11 +13,16 @@ export default {
       title: 'Getting To Yes - Roger Fisher',
       link: 'https://www.amazon.com/Getting-Yes-Negotiating-Agreement-Without/dp/0143118757',
     },
+    {
+      title: 'The Mamba Mentality - Kobe Bryant',
+      link: 'https://www.amazon.com/Mamba-Mentality-How-Play/dp/0374201234',
+    },
   ],
   projects: [
     {
-      title: "let's chat now now now",
-      link: '',
+      title: 'Commonplace Book',
+      oneLiner: 'An app to remind myself of my many book highlights',
+      link: 'https://commonplacebook.vercel.app/',
     },
   ],
   job: {

@@ -15,7 +15,12 @@ const skills = [
     level: 'six',
   },
   {
-    programName: 'css',
+    programName: 'CSS',
+    subtitle: '',
+    level: 'nine-five',
+  },
+  {
+    programName: 'CSS-modules',
     subtitle: '',
     level: 'nine-five',
   },
@@ -41,7 +46,7 @@ const skills = [
     level: 'six',
   },
   {
-    programName: 'html',
+    programName: 'HTML',
     subtitle: '',
     level: 'nine-five',
   },
