@@ -24,7 +24,7 @@ const Post = ({ heading, subheading, published, children }) => {
     <Wrapper>
       <Heading>{heading}</Heading>
       <Subheading>{subheading}</Subheading>
-      <p>{`Published: ${published}`}</p>
+      <p>{published}</p>
       {children}
     </Wrapper>
   )
