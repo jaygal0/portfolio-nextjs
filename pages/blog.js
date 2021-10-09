@@ -21,7 +21,7 @@ export default function Blog({ posts, content }) {
       <main>
         <HeroHeading
           title="my space to think"
-          subtitle="design, tech &amp; general thoughts"
+          subtitle="thoughts on design, code &amp; technology"
         />
         {posts.map((item) => {
           return (

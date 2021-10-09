@@ -1,6 +1,6 @@
 export default {
   update: {
-    day: '2nd',
+    day: '9th',
     month: 'October',
     year: '2021',
   },
@@ -14,8 +14,8 @@ export default {
       link: 'https://www.amazon.com/Getting-Yes-Negotiating-Agreement-Without/dp/0143118757',
     },
     {
-      title: 'The Mamba Mentality - Kobe Bryant',
-      link: 'https://www.amazon.com/Mamba-Mentality-How-Play/dp/0374201234',
+      title: 'Change By Design - Tim Brown',
+      link: 'https://www.amazon.com/Change-Design-Transforms-Organizations-Innovation/dp/0061766089',
     },
   ],
   projects: [

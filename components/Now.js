@@ -16,8 +16,9 @@ const Updated = styled.p`
   font-size: ${({ theme }) => theme.font.desktop.meta};
   margin-top: 1.6rem;
 `
-const OneLiner = styled.p`
+const OneLiner = styled.span`
   margin-top: 0.8rem;
+  font-style: italic;
 `
 
 const Now = ({ rapidRating, blitzRating }) => {
@@ -163,7 +164,7 @@ const Now = ({ rapidRating, blitzRating }) => {
               <a href={link} target="_blank">
                 {title}
               </a>
-              <OneLiner>{oneLiner}</OneLiner>
+              <OneLiner>{` - ${oneLiner}`}</OneLiner>
             </li>
           )
         })}
