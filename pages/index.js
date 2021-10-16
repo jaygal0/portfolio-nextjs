@@ -5,6 +5,7 @@ import RecentWork from '../components/RecentWork'
 import HeadingAndText from '../components/HeadingAndText'
 import Footer from '../components/Footer'
 import Face from '../components/Face'
+import Logo from '../components/Logo'
 
 export default function Home() {
   return (
@@ -15,6 +16,7 @@ export default function Home() {
         <HeroHeadingIndex>
           <Face />
         </HeroHeadingIndex>
+        <Logo />
         <RecentWork />
         <HeadingAndText title="creative problem solver">
           <p>
