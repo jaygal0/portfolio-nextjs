@@ -168,9 +168,9 @@ blockquote {
   background: ${({ theme }) => theme.color.grey};
   padding: 2.4rem;
   margin-bottom: 2.4rem;
+  border-left: 4px solid ${({ theme }) => theme.color.lightGreen};
 }
 blockquote p {
-  margin-bottom: 1.6rem;
 }
 
 ul {
@@ -190,6 +190,19 @@ font-size: ${({ theme }) => theme.font.desktop.p};
 }
 ol li {
  margin-bottom : 1.6rem ;
+}
+
+pre {
+  font-family: Consolas, "Andale Mono WT", "Andale Mono", "Lucida Console", "Lucida Sans Typewriter", "DejaVu Sans Mono", "Bitstream Vera Sans Mono", "Liberation Mono", "Nimbus Mono L", Monaco, "Courier New", Courier, monospace;
+  overflow-x: auto;
+  tab-size: 2;
+  background: ${({ theme }) => theme.color.black};
+  color: ${({ theme }) => theme.color.white};
+  padding: 3.2rem;
+
+  font-size: ${({ theme }) => theme.font.desktop.p};
+  line-height: ${({ theme }) => theme.lineHeight.desktop.p};
+  margin-bottom: 1.6rem;
 }
 
 // For the button order in the blog list

@@ -38,3 +38,7 @@ I've now turned my focus to backend programming. I know that if I want to build 
 I'm actually watching a few tutorials on it now and have a project that I'm working on in parallel. I find that I learn better by doing, so I'm trying to build an application that utilises databases, authentication as well as API calls.
 
 Similar to front-end programming, I'm hoping I can say that I'll be comfortable with back-end programming in a few months time. I've been in this situation before, I'm positive that I'll get there soon.
+
+```javascript
+const josh = null
+```
