@@ -1,13 +1,9 @@
 import React from 'react'
-import { Wrapper } from '../styles'
+import { Wrapper, Text } from '../styles'
 import styled from 'styled-components'
 import ButtonSecondary from '../components/ButtonSecondary'
 import Masonry from './Masonry'
 
-const Text = styled.p`
-  text-transform: capitalize;
-  font-weight: 700;
-`
 const RecentWork = () => {
   return (
     <Wrapper>

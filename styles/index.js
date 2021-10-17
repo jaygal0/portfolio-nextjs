@@ -1,5 +1,10 @@
 import styled, { keyframes } from 'styled-components'
 
+export const Text = styled.p`
+  text-transform: capitalize;
+  font-weight: 700;
+`
+
 export const Wrapper = styled.div`
   grid-column: 3 / span 8;
   margin: 3.2rem 0;
