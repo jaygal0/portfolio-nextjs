@@ -2,7 +2,6 @@ import Metadata from '../components/Metadata'
 import Nav from '../components/Nav'
 import HeroHeading from '../components/HeroHeading'
 import Footer from '../components/Footer'
-import FormBox from '../components/FormBox'
 import Portfolio from '../components/Portfolio'
 
 export default function Work() {
