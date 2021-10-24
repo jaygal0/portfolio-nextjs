@@ -3,14 +3,19 @@ import React from 'react'
 const NowDetail = () => {
   return (
     <>
-      <h5>NBA 2k16</h5>
+      <h5>Prioritising</h5>
       <p>
-        The workload at work has been a little overwhelming lately. Rather than
-        working on my personal projects in my off-time, I decided to blow off
-        some steam by playing computer games again. More specifically, NBA 2k16.
-        It's the only game that was available that I enjoyed.
+        I like to develop myself in many aspects of life. Which is why I have
+        quite a few on-going projects running simultaneously. Lately, I have
+        found myself struggling to keep up with it all and have realised that
+        it's best to reduce the workload, otherwise, I'm not going to progress
+        in any project.
       </p>
-      <p>It has been ages since I played video games. </p>
+      <p>
+        It's time to focus on one project at a time, it'll be beneficial for my
+        well-being, development as well as the project itself.
+      </p>
+      <p>Time to start prioritising.</p>
     </>
   )
 }

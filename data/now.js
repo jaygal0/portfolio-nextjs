@@ -1,18 +1,14 @@
 export default {
   update: {
-    day: '16th',
+    day: '24th',
     month: 'October',
     year: '2021',
   },
   location: {
-    city: 'gothenburg',
+    city: 'partille',
     country: 'sweden',
   },
   books: [
-    {
-      title: 'Getting To Yes - Roger Fisher',
-      link: 'https://www.amazon.com/Getting-Yes-Negotiating-Agreement-Without/dp/0143118757',
-    },
     {
       title: 'Change By Design - Tim Brown',
       link: 'https://www.amazon.com/Change-Design-Transforms-Organizations-Innovation/dp/0061766089',
