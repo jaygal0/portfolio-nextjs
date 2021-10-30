@@ -1,6 +1,6 @@
 export default {
   update: {
-    day: '24th',
+    day: '30th',
     month: 'October',
     year: '2021',
   },
@@ -10,8 +10,8 @@ export default {
   },
   books: [
     {
-      title: 'Change By Design - Tim Brown',
-      link: 'https://www.amazon.com/Change-Design-Transforms-Organizations-Innovation/dp/0061766089',
+      title: 'Org Design for Design Orgs -  Peter Merholz',
+      link: 'https://www.amazon.com/Org-Design-Orgs-Building-House/dp/1491938404',
     },
   ],
   projects: [
