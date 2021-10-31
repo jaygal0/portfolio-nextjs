@@ -8,13 +8,13 @@ export default function Work() {
   return (
     <>
       <Metadata
-        title="Work"
-        desc="An online portfolio of Joshua Galinato's work"
+        title="Projects"
+        desc="An online portfolio of Joshua Galinato's projects"
       />
       <Nav />
       <main>
         <HeroHeading
-          title="work &amp; personal projects"
+          title="my creative hub"
           subtitle="an ever-growing portfolio"
         />
         <Portfolio />

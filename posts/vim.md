@@ -1,6 +1,6 @@
 ---
 title: 'Sticking with Vim'
-subtitle: 'The only text-editor I use.'
+subtitle: 'The only text editor I use.'
 date: 'Octover 31, 2021'
 tags: 'tech code vim'
 ---
@@ -13,7 +13,7 @@ However, just when I thought I'd lost all hope, I finally settled with one text 
 
 ##### Vim, my go-to text editor
 
-I am nowhere near recommending this [text-editor](https://www.vim.org/). It's dated, complex and there's a steep learning curve. You're going to need to dedicate a lot of time just to write a couple of lines.
+I am nowhere near recommending this [text editor](https://www.vim.org/). It's dated, complex and there's a steep learning curve. You're going to need to dedicate a lot of time just to write a couple of lines.
 
 Yet, for some reason. I cannot seem to move away from it.
 
@@ -339,7 +339,7 @@ endfunction
 
 ##### Sticking with Vim
 
-I'm not trying to sway you to choose Vim over Google Docs or whatever text-editor you're using right now. I just wanted to explain to you why I've settled for Vim and how it has benefited me.
+I'm not trying to sway you to choose Vim over Google Docs or whatever text editor you're using right now. I just wanted to explain to you why I've settled for Vim and how it has benefited me.
 
 The ability to keep my hands resting on the keyboard the entire time allows me to focus on my writing, which in turn allows me to create better work - at least that's what I hope!
 

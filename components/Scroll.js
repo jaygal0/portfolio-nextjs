@@ -13,6 +13,10 @@ const ImageWrapper = styled.div`
   transition: ${({ theme }) => theme.transition.scrollDisappear};
   -webkit-transform: scale(0.7);
 
+  &:hover {
+    cursor: pointer;
+  }
+
   &.show-scroll {
     opacity: 1;
     transition: ${({ theme }) => theme.transition.scrollAppear};

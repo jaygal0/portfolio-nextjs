@@ -10,13 +10,13 @@ const RecentWork = () => {
       <Text>recent work</Text>
       <Masonry
         topLeftImg="/input-mockup.png"
-        topLeftLink="/work/input"
+        topLeftLink="/projects/input"
         btmLeftImg="/5-prototype.gif"
-        btmLeftLink="/work/5"
+        btmLeftLink="/projects/5"
         rightImg="/tmi.gif"
-        rightLink="/work/tmi"
+        rightLink="/projects/tmi"
       />
-      <ButtonSecondary title="view work" link="/work" marginTop="3.2rem" />
+      <ButtonSecondary title="view work" link="/projects" marginTop="3.2rem" />
     </Wrapper>
   )
 }

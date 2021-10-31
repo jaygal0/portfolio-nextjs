@@ -4,8 +4,8 @@ const nav = [
     link: '/',
   },
   {
-    text: 'work',
-    link: '/work',
+    text: 'projects',
+    link: '/projects',
   },
   {
     text: 'skills',

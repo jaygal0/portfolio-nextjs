@@ -10,21 +10,24 @@ const Portfolio = () => {
     <Wrapper>
       <Masonry
         topLeftImg="/input-mockup.png"
-        topLeftLink="/work/input"
+        topLeftLink="/projects/input"
         btmLeftImg="/bind-thumbnail.png"
-        btmLeftLink="/work/bind"
+        btmLeftLink="/projects/bind"
         rightImg="/tmi.gif"
-        rightLink="/work/tmi"
+        rightLink="/projects/tmi"
       />
       <PortfolioFlex>
-        <PortfolioRectangle href="/work/5" src="/5-prototype-wide.gif" />
-        <PortfolioRectangle href="/work/vol" src="/vol-banner.jpg" />
-        <PortfolioSquare href="/work/reload-sessions" src="/reload-logo.svg" />
+        <PortfolioRectangle href="/projects/5" src="/5-prototype-wide.gif" />
+        <PortfolioRectangle href="/projects/vol" src="/vol-banner.jpg" />
         <PortfolioSquare
-          href="/work/kawaii-corner-shop"
+          href="/projects/reload-sessions"
+          src="/reload-logo.svg"
+        />
+        <PortfolioSquare
+          href="/projects/kawaii-corner-shop"
           src="/kawaii-asset-2.png"
         />
-        <PortfolioRectangle href="work/photos" src="/photos-ebony.jpg" />
+        <PortfolioRectangle href="projects/photos" src="/photos-ebony.jpg" />
       </PortfolioFlex>
     </Wrapper>
   )

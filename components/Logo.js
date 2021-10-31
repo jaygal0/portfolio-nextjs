@@ -12,6 +12,11 @@ const Container = styled.div`
   justify-content: space-between;
   border-radius: 1.5rem;
   margin-bottom: 3.2rem;
+
+  @media screen and (max-width: ${({ theme }) => theme.breakPoint.tablet}) {
+    flex-direction: column;
+    height: 48rem;
+  }
 `
 
 const Logo = () => {
@@ -19,9 +24,14 @@ const Logo = () => {
     <Wrapper>
       <Text>pushed pixels for</Text>
       <Container>
-        <Image src="/volvo.svg" width={104} height={103.79} />
-        <Image src="/delaval.svg" width={232} height={40.41} />
-        <Image src="/star-republic.svg" width={232} height={93.9} />
+        <Image className="logo" src="/volvo.svg" width={104} height={103.79} />
+        <Image className="logo" src="/delaval.svg" width={232} height={40.41} />
+        <Image
+          className="logo"
+          src="/star-republic.svg"
+          width={232}
+          height={93.9}
+        />
       </Container>
     </Wrapper>
   )

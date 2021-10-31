@@ -190,19 +190,39 @@ font-size: ${({ theme }) => theme.font.desktop.p};
 }
 ol li {
  margin-bottom : 1.6rem ;
+ margin-left: 2.4rem;
 }
 
 pre {
   font-family: Consolas, "Andale Mono WT", "Andale Mono", "Lucida Console", "Lucida Sans Typewriter", "DejaVu Sans Mono", "Bitstream Vera Sans Mono", "Liberation Mono", "Nimbus Mono L", Monaco, "Courier New", Courier, monospace;
   overflow-x: auto;
   tab-size: 2;
-  background: ${({ theme }) => theme.color.black};
-  color: ${({ theme }) => theme.color.white};
-  padding: 3.2rem;
-
+  background: ${({ theme }) => theme.color.grey};
+  color: ${({ theme }) => theme.color.black};
+  padding: 1.6rem;
   font-size: ${({ theme }) => theme.font.desktop.p};
   line-height: ${({ theme }) => theme.lineHeight.desktop.p};
   margin-bottom: 1.6rem;
+  border: .1px grey solid;
+  border-radius: 5px;
+}
+
+code {
+  font-family: Consolas, "Andale Mono WT", "Andale Mono", "Lucida Console", "Lucida Sans Typewriter", "DejaVu Sans Mono", "Bitstream Vera Sans Mono", "Liberation Mono", "Nimbus Mono L", Monaco, "Courier New", Courier, monospace;
+  letter-spacing: -0.05em;
+  background: ${({ theme }) => theme.color.grey};
+  color: ${({ theme }) => theme.color.black};
+  border: .1px grey solid;
+  border-radius: 5px;
+  padding: 0rem .4rem;
+}
+
+pre code {
+  padding: 0rem;
+  background: none;
+  border: none;
+  background: ${({ theme }) => theme.color.grey};
+  color: ${({ theme }) => theme.color.black};
 }
 
 // For the button order in the blog list
@@ -241,6 +261,7 @@ pre {
   margin: 0;
   }
 }
+
 #rcc-confirm-button {
   background: ${({ theme }) => theme.color.darkGreen};
   color: ${({ theme }) => theme.color.white};
@@ -251,6 +272,6 @@ pre {
   width: 100%;
   border: none;
 }
-`
 
+`
 export default GlobalStyle
