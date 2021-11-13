@@ -11,6 +11,10 @@ const Metadata = ({ title, desc }) => {
         href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;700;900&family=Libre+Barcode+39&family=Lora&display=swap"
         rel="stylesheet"
       />
+      <link
+        href="https://fonts.googleapis.com/css2?family=Share+Tech+Mono&display=swap"
+        rel="stylesheet"
+      />
       <meta name="description" content={desc} />
       <meta name="robots" content="index, follow" />
     </Head>
