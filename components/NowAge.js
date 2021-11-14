@@ -13,6 +13,9 @@ const Container = styled.div`
   display: flex;
   justify-content: space-between;
 
+  @media screen and (max-width: ${({ theme }) => theme.breakPoint.tablet}) {
+    padding: 3.2rem;
+  }
   @media screen and (max-width: ${({ theme }) => theme.breakPoint.phoneLarge}) {
     display: flex;
     flex-direction: column;

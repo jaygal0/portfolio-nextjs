@@ -16,6 +16,10 @@ const SquareWrapper = styled.div`
   display: flex;
   flex-wrap: wrap;
   gap: 3.2rem;
+
+  @media screen and (max-width: ${({ theme }) => theme.breakPoint.phoneLarge}) {
+    gap: 1.6rem;
+  }
 `
 
 const Now = ({ rapidRating, blitzRating }) => {

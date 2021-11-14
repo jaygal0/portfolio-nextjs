@@ -29,6 +29,10 @@ const Wrapper = styled.a`
       left: -7px;
     }
   }
+
+  @media screen and (max-width: ${({ theme }) => theme.breakPoint.phoneLarge}) {
+    width: calc(50% - (1.6rem / 2));
+  }
 `
 const Content = styled.div`
   position: absolute;
@@ -42,26 +46,46 @@ const Content = styled.div`
 const Heading = styled.h5`
   margin-bottom: 4.8rem;
   color: black;
+
+  @media screen and (max-width: ${({ theme }) => theme.breakPoint.phoneLarge}) {
+    margin-bottom: 1.6rem;
+  }
 `
 const Text = styled.p`
   margin-top: 3.2rem;
   text-align: center;
   color: black;
+
+  @media screen and (max-width: ${({ theme }) => theme.breakPoint.phoneLarge}) {
+    margin-top: 0rem;
+  }
 `
 const Img = styled.div`
   position: relative;
   width: 155px;
   height: 116px;
+
+  @media screen and (max-width: ${({ theme }) => theme.breakPoint.phoneLarge}) {
+    display: none;
+  }
 `
 const ImgAlt = styled.div`
   position: relative;
   width: 70%;
   height: 116px;
+
+  @media screen and (max-width: ${({ theme }) => theme.breakPoint.phoneLarge}) {
+    display: none;
+  }
 `
 const ImgReading = styled.div`
   position: relative;
   width: 116px;
   height: 100%;
+
+  @media screen and (max-width: ${({ theme }) => theme.breakPoint.phoneLarge}) {
+    display: none;
+  }
 `
 
 const NowSquare = ({ title, img, imgAlt, imgReading, text, link }) => {

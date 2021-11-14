@@ -38,12 +38,25 @@ const Rating = styled.div`
   font-size: 4.8rem;
   line-height: 5.6rem;
   margin-bottom: 3.2rem;
+
+  @media screen and (max-width: ${({ theme }) => theme.breakPoint.phoneLarge}) {
+    font-size: 1.6rem;
+    line-height: 2.4rem;
+    margin-bottom: 0rem;
+  }
 `
 const Label = styled.p`
   text-align: center;
+
+  @media screen and (max-width: ${({ theme }) => theme.breakPoint.phoneLarge}) {
+  }
 `
 const Heading = styled.h5`
   margin-bottom: 4.8rem;
+
+  @media screen and (max-width: ${({ theme }) => theme.breakPoint.phoneLarge}) {
+    margin-bottom: 1.6rem;
+  }
 `
 const Text = styled.p`
   font-size: 1.2rem;
@@ -61,6 +74,10 @@ const Text = styled.p`
     border-radius: 7.5px;
     background-color: ${({ theme }) => theme.color.lightGreen};
     margin-right: 0.8rem;
+  }
+
+  @media screen and (max-width: ${({ theme }) => theme.breakPoint.phoneLarge}) {
+    display: none;
   }
 `
 
