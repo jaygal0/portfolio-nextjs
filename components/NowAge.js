@@ -12,6 +12,11 @@ const Wrapper = styled.div`
 const Container = styled.div`
   display: flex;
   justify-content: space-between;
+
+  @media screen and (max-width: ${({ theme }) => theme.breakPoint.phoneLarge}) {
+    display: flex;
+    flex-direction: column;
+  }
 `
 const NumAndLabel = styled.div`
   font-family: 'Share Tech Mono', monospace;
@@ -19,10 +24,21 @@ const NumAndLabel = styled.div`
   &.fade {
     opacity: 0.1;
   }
+
+  @media screen and (max-width: ${({ theme }) => theme.breakPoint.phoneLarge}) {
+    display: flex;
+  }
 `
 const Num = styled.div`
   font-size: 6.4rem;
   line-height: 7.2rem;
+
+  @media screen and (max-width: ${({ theme }) => theme.breakPoint.phoneLarge}) {
+    font-size: 4.8rem;
+    line-height: 5.6rem;
+    width: min-content;
+    margin-bottom: 1.6rem;
+  }
 `
 const Label = styled.div`
   margin-top: 0.8rem;
@@ -30,6 +46,14 @@ const Label = styled.div`
   line-height: 2.4rem;
   text-align: center;
   text-transform: uppercase;
+
+  @media screen and (max-width: ${({ theme }) => theme.breakPoint.phoneLarge}) {
+    margin-top: 0rem;
+    margin-left: 1.6rem;
+    font-size: 4.8rem;
+    line-height: 5.6rem;
+    width: min-content;
+  }
 `
 
 const NowAge = () => {
