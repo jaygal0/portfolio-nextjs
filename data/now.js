@@ -1,6 +1,6 @@
 export default {
   update: {
-    day: '13th',
+    day: '20th',
     month: 'November',
     year: '2021',
   },
@@ -10,9 +10,9 @@ export default {
     img: 'sweden-flag.png',
   },
   books: {
-    title: 'Org Design for Design Orgs -  Peter Merholz',
-    link: 'https://www.amazon.com/Org-Design-Orgs-Building-House/dp/1491938404',
-    img: 'https://images-na.ssl-images-amazon.com/images/I/51fWM49HkfL._SX331_BO1,204,203,200_.jpg',
+    title: 'Lean UX - Jeff Gothelf',
+    link: 'https://www.amazon.com/Lean-UX-Applying-Principles-Experience/dp/1449311652',
+    img: 'https://images-na.ssl-images-amazon.com/images/I/41JWTd4PCWL._SX331_BO1,204,203,200_.jpg',
   },
   job: {
     title: 'UX/UI Designer',

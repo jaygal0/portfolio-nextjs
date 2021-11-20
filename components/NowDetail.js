@@ -12,10 +12,10 @@ const Wrapper = styled.div`
 const NowDetail = () => {
   return (
     <Wrapper>
-      <h5>healthy habits</h5>
+      <h5>Working out</h5>
       <p>
-        Lately, I've been pretty poor with keeping up with my healthy habits.
-        It's time to hit the reset button and take action.
+        I've been making my health a priority again and have been working out
+        first thing in the morning. I feel great!
       </p>
     </Wrapper>
   )
