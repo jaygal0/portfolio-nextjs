@@ -8,6 +8,11 @@ import PortfolioRectangle from './PortfolioRectangle'
 const Portfolio = () => {
   return (
     <Wrapper>
+      <PortfolioRectangle
+        href="projects/commonplace-book"
+        src="/commonplace-book.png"
+        marginBottom
+      />
       <Masonry
         topLeftImg="/input-mockup.png"
         topLeftLink="/projects/input"

@@ -3,11 +3,17 @@ import { Wrapper, Text } from '../styles'
 import styled from 'styled-components'
 import ButtonSecondary from '../components/ButtonSecondary'
 import Masonry from './Masonry'
+import PortfolioRectangle from './PortfolioRectangle'
 
 const RecentWork = () => {
   return (
     <Wrapper>
       <Text>recent work</Text>
+      <PortfolioRectangle
+        href="projects/commonplace-book"
+        src="/commonplace-book.png"
+        marginBottom
+      />
       <Masonry
         topLeftImg="/input-mockup.png"
         topLeftLink="/projects/input"

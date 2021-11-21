@@ -86,15 +86,15 @@ const HeroHeadingIndex = ({ children }) => {
         </h2>
         <h1>
           i{' '}
-          <Link href="/work">
+          <Link href="/projects">
             <Design>design</Design>
           </Link>
           , <br />
-          <Link href="/work">
+          <Link href="/projects">
             <Code>code</Code>
           </Link>{' '}
           &amp; <br />
-          <Link href="/work">
+          <Link href="/projects">
             <SolveProblems>
               solve
               <br /> problems

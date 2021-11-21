@@ -1,8 +1,24 @@
 export default {
+  commonplaceBook: {
+    title: 'commonplace book',
+    text: 'I read a lot of books and highlight sections that resonate with me on my Kindle Paperwhite. I wanted to create my own personal app where I could collate all of my notes as well as remind myself of my highlights, so I designed and developed my own app that would do just that.',
+    img: '/commonplace-book.png',
+    appsUsed: [
+      'css-modules',
+      'express.js',
+      'figma',
+      'html',
+      'mongoDB',
+      'next.js',
+      'node.js',
+      'postman',
+      'react',
+      'visual studio code',
+    ],
+  },
   tmi: {
     title: 'testing my ideas',
-    text:
-      "Testing My Ideas is a personal blog that I designed and built from scratch. I wanted to create a blog to hold myself accountable to designing, building, and testing out products. For every new product that I release, I will measure it's performance and move on from the idea if I can see that it's failing.",
+    text: "Testing My Ideas is a personal blog that I designed and built from scratch. I wanted to create a blog to hold myself accountable to designing, building, and testing out products. For every new product that I release, I will measure it's performance and move on from the idea if I can see that it's failing.",
     img: '/tmi-banner.png',
     appsUsed: [
       'contentful',
@@ -17,8 +33,7 @@ export default {
   },
   bind: {
     title: 'bind',
-    text:
-      "There was a time when my parents weren't the best with computers. Since I understood the importance of staying up-to-date with technology, I didn't want my parents to fall by the wayside, and so I set time aside to tutor them with one-on-one lessons. Out of those lessons came an idea to design and develop a game to help them learn essential keyboard shortcuts.",
+    text: "There was a time when my parents weren't the best with computers. Since I understood the importance of staying up-to-date with technology, I didn't want my parents to fall by the wayside, and so I set time aside to tutor them with one-on-one lessons. Out of those lessons came an idea to design and develop a game to help them learn essential keyboard shortcuts.",
     img: {
       banner: '/bind-banner.png',
       sketch: '/bind-sketches.jpg',
@@ -38,8 +53,7 @@ export default {
   },
   input: {
     title: 'input',
-    text:
-      "Input, was a project where I was scratching my own itch. Since I love to learn new skills (no matter how random), I decided to take on the challenge of learning Korean. Since I've had previous experience of learning languages, I knew that it was important to increase my data input of a language. With this thinking, I designed an app to help me learn new words, as well as get better at typing in another language.",
+    text: "Input, was a project where I was scratching my own itch. Since I love to learn new skills (no matter how random), I decided to take on the challenge of learning Korean. Since I've had previous experience of learning languages, I knew that it was important to increase my data input of a language. With this thinking, I designed an app to help me learn new words, as well as get better at typing in another language.",
     img: '/input-banner.png',
     appsUsed: [
       'css',
@@ -52,15 +66,13 @@ export default {
   },
   vol: {
     title: 'vegans of LDN',
-    text:
-      ' Vegans of LDN is one of the largest Instagram accounts in London that promotes a vegan lifestyle. I came onboard to rebrand the company as well as design and create multiple assets to help grow the account. From designing decks to generating assets tailored for Instagram, I had worked closely with the small team and helped build a strong online brand.',
+    text: ' Vegans of LDN is one of the largest Instagram accounts in London that promotes a vegan lifestyle. I came onboard to rebrand the company as well as design and create multiple assets to help grow the account. From designing decks to generating assets tailored for Instagram, I had worked closely with the small team and helped build a strong online brand.',
     img: '/vol-banner.jpg',
     appsUsed: ['illustrator', 'photoshop', 'indesign', 'after effects'],
   },
   reload: {
     title: 'reload sessions ltd',
-    text:
-      'Reload Sesssions Ltd was a multimedia production company that I co-founded and worked on for over 5 years. I had built the company from scratch and was the sole designer on the team. It was up to me to design every asset, edit every video as well as figure out creative methods to build and grow the company. It was a great learning experience, not only did it allow me to be better at my craft, but it allowed to me to understand how to grow a business and sell products.',
+    text: 'Reload Sesssions Ltd was a multimedia production company that I co-founded and worked on for over 5 years. I had built the company from scratch and was the sole designer on the team. It was up to me to design every asset, edit every video as well as figure out creative methods to build and grow the company. It was a great learning experience, not only did it allow me to be better at my craft, but it allowed to me to understand how to grow a business and sell products.',
     img: '/reload-banner.png',
     appsUsed: [
       'after effects',
@@ -73,22 +85,19 @@ export default {
   },
   kawaii: {
     title: 'kawaii corner shop ltd',
-    text:
-      "Kawaii Corner Shop is an eCommerce store selling 'cute' items. The store was in need of a total rebrand as well as a handful of assets for their social media accounts. Working closely with the company I was able to rebrand and design social media assets for their personal use.",
+    text: "Kawaii Corner Shop is an eCommerce store selling 'cute' items. The store was in need of a total rebrand as well as a handful of assets for their social media accounts. Working closely with the company I was able to rebrand and design social media assets for their personal use.",
     img: '/kawaii-banner.png',
     appsUsed: ['illustrator', 'photoshop'],
   },
   photos: {
     title: 'a collection of photos',
-    text:
-      "Below are a few photos that I've taken on several different projects throughout my career. From the Alps to the Sahara desert, I've been fortunate enough to shoot at a variety of different locations.",
+    text: "Below are a few photos that I've taken on several different projects throughout my career. From the Alps to the Sahara desert, I've been fortunate enough to shoot at a variety of different locations.",
     img: '/photos-sahara-walk.jpg',
     appsUsed: ['lightroom classic', 'photoshop'],
   },
   five: {
     title: '5',
-    text:
-      '5 is a personal project that tackles the difficult concept of the circle of fifths in music. Since I struggle with remembering certain keys and scales, I wanted to build an app that will help me understand music theory better.',
+    text: '5 is a personal project that tackles the difficult concept of the circle of fifths in music. Since I struggle with remembering certain keys and scales, I wanted to build an app that will help me understand music theory better.',
     img: '/5-banner.png',
     appsUsed: ['figma', 'illustrator'],
   },

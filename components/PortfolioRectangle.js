@@ -13,6 +13,10 @@ const RectangleStyling = styled.div`
   transition: 0.2s ease-in all;
   background: ${({ theme }) => theme.color.grey};
 
+  &.margin-bottom {
+    margin-bottom: 3.2rem;
+  }
+
   &:hover {
     cursor: pointer;
     box-shadow: 15px 15px 0 -3px ${({ theme }) => theme.color.lightGreen};
@@ -25,10 +29,10 @@ const RectangleStyling = styled.div`
     padding-top: 100%;
   }
 `
-const PortfolioRectangle = ({ href, src }) => {
+const PortfolioRectangle = ({ href, src, marginBottom }) => {
   return (
     <Link href={href}>
-      <RectangleStyling>
+      <RectangleStyling className={marginBottom ? 'margin-bottom' : null}>
         <Image
           className="border-image"
           src={src}
