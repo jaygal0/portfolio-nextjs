@@ -1,6 +1,6 @@
 export default {
   update: {
-    day: '20th',
+    day: '27th',
     month: 'November',
     year: '2021',
   },
@@ -10,9 +10,10 @@ export default {
     img: 'sweden-flag.png',
   },
   books: {
-    title: 'Lean UX - Jeff Gothelf',
-    link: 'https://www.amazon.com/Lean-UX-Applying-Principles-Experience/dp/1449311652',
-    img: 'https://images-na.ssl-images-amazon.com/images/I/41JWTd4PCWL._SX331_BO1,204,203,200_.jpg',
+    title:
+      'How To Be A Graphic Designer Without Losing Your Soul - Adrian Shaughnessy',
+    link: 'https://www.amazon.com/Graphic-Designer-without-Losing-Expanded/dp/1568989830',
+    img: 'https://images-na.ssl-images-amazon.com/images/I/51mzgcHeBuL._SX411_BO1,204,203,200_.jpg',
   },
   job: {
     title: 'UX/UI Designer',
