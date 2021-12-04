@@ -1,5 +1,5 @@
 import React from 'react'
-import { GridContainer, Wrapper } from '../styles'
+import { Wrapper } from '../styles'
 import Masonry from '../components/Masonry'
 import PortfolioFlex from './PortfolioFlex'
 import PortfolioSquare from './PortfolioSquare'

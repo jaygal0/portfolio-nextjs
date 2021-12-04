@@ -12,11 +12,10 @@ const Wrapper = styled.div`
 const NowDetail = () => {
   return (
     <Wrapper>
-      <h5>Brazilian Jujitsu</h5>
+      <h5>Sticking to my routines</h5>
       <p>
-        I had spent my morning rolling with BJJ. My body is aching and I'm sure
-        I'm going to feel like this for the rest of the weekend. Still, it's
-        great to be training again.
+        Over the past few days I've been consistent with my habits and I feel
+        great about it. Hopefully, I can keep it up!
       </p>
     </Wrapper>
   )

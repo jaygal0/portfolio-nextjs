@@ -1,7 +1,7 @@
 export default {
   update: {
-    day: '27th',
-    month: 'November',
+    day: '4th',
+    month: 'December',
     year: '2021',
   },
   location: {
@@ -10,10 +10,9 @@ export default {
     img: 'sweden-flag.png',
   },
   books: {
-    title:
-      'How To Be A Graphic Designer Without Losing Your Soul - Adrian Shaughnessy',
-    link: 'https://www.amazon.com/Graphic-Designer-without-Losing-Expanded/dp/1568989830',
-    img: 'https://images-na.ssl-images-amazon.com/images/I/51mzgcHeBuL._SX411_BO1,204,203,200_.jpg',
+    title: 'Seductive Interaction Design by Stephen P. Anderson',
+    link: 'https://www.amazon.com/Seductive-Interaction-Design-Effective-Experiences/dp/0321725522',
+    img: 'https://images-na.ssl-images-amazon.com/images/I/414peBUilpL._SX218_BO1,204,203,200_QL40_FMwebp_.jpg',
   },
   job: {
     title: 'UX/UI Designer',
