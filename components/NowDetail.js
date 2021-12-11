@@ -12,10 +12,11 @@ const Wrapper = styled.div`
 const NowDetail = () => {
   return (
     <Wrapper>
-      <h5>Sticking to my routines</h5>
+      <h5>Working on my own projects</h5>
       <p>
-        Over the past few days I've been consistent with my habits and I feel
-        great about it. Hopefully, I can keep it up!
+        Whenever there's free time I try to work on my own projects. It's
+        difficult balancing work and everything else, but it's important that I
+        do this otherwise I will go mad.
       </p>
     </Wrapper>
   )
