@@ -48,7 +48,7 @@ const Now = ({ rapidRating, blitzRating }) => {
           link={books.link}
         />
         <NowChess
-          title="Lichess Rating"
+          title="Chess Rating"
           blitz={blitzRating}
           rapid={rapidRating}
         />
