@@ -12,11 +12,12 @@ const Wrapper = styled.div`
 const NowDetail = () => {
   return (
     <Wrapper>
-      <h5>Working on my own projects</h5>
+      <h5>Recovering</h5>
       <p>
-        Whenever there's free time I try to work on my own projects. It's
-        difficult balancing work and everything else, but it's important that I
-        do this otherwise I will go mad.
+        I was supposed to spend the past 2 weeks resting, celebrating the
+        festivities and working on my own projects. In the end, I spent majority
+        of my time sick with Covid. Thankfully, I've recovered from the worst of
+        it all. I just need take it easy until I'm fully healed.
       </p>
     </Wrapper>
   )

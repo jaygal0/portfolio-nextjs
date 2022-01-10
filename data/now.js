@@ -1,8 +1,8 @@
 export default {
   update: {
-    day: '19th',
-    month: 'December',
-    year: '2021',
+    day: '10th',
+    month: 'January',
+    year: '2022',
   },
   location: {
     city: 'Göteborg',
