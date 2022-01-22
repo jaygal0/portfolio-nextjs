@@ -12,12 +12,10 @@ const Wrapper = styled.div`
 const NowDetail = () => {
   return (
     <Wrapper>
-      <h5>Recovering</h5>
+      <h5>Back to the grind</h5>
       <p>
-        I was supposed to spend the past 2 weeks resting, celebrating the
-        festivities and working on my own projects. In the end, I spent majority
-        of my time sick with Covid. Thankfully, I've recovered from the worst of
-        it all. I just need take it easy until I'm fully healed.
+        It's my second week back from the holidays, I'm slowly getting back to
+        the swing of work life.
       </p>
     </Wrapper>
   )
