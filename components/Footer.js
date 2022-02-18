@@ -84,7 +84,7 @@ const Footer = () => {
       </NameWrapper>
       <ContactWrapper>
         <Text>contact</Text>
-        <ATag href="mailto:hi@joshuagalinato.com">email me</ATag>
+        <ATag href="mailto:joshuagalinato@gmail.com">email me</ATag>
       </ContactWrapper>
       <AllRightsWrapper>
         <Text>copyright &copy; {moment().format('YYYY')}</Text>
