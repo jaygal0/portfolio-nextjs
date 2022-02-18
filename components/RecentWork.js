@@ -10,17 +10,19 @@ const RecentWork = () => {
     <Wrapper>
       <Text>recent work</Text>
       <PortfolioRectangle
+        href="projects/galinato"
+        src="/galinato-cover.png"
+        marginBottom
+      />
+      <PortfolioRectangle
+        href="projects/link"
+        src="/link-cover.png"
+        marginBottom
+      />
+      <PortfolioRectangle
         href="projects/commonplace-book"
         src="/commonplace-book.png"
         marginBottom
-      />
-      <Masonry
-        topLeftImg="/input-mockup.png"
-        topLeftLink="/projects/input"
-        btmLeftImg="/5-prototype.gif"
-        btmLeftLink="/projects/5"
-        rightImg="/tmi.gif"
-        rightLink="/projects/tmi"
       />
       <ButtonSecondary title="view work" link="/projects" marginTop="3.2rem" />
     </Wrapper>

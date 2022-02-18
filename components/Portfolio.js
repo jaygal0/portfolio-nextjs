@@ -9,6 +9,16 @@ const Portfolio = () => {
   return (
     <Wrapper>
       <PortfolioRectangle
+        href="projects/galinato"
+        src="/galinato-cover.png"
+        marginBottom
+      />{' '}
+      <PortfolioRectangle
+        href="projects/link"
+        src="/link-cover.png"
+        marginBottom
+      />
+      <PortfolioRectangle
         href="projects/commonplace-book"
         src="/commonplace-book.png"
         marginBottom

@@ -1,7 +1,7 @@
 export default {
   update: {
-    day: '22nd',
-    month: 'January',
+    day: '18th',
+    month: 'February',
     year: '2022',
   },
   location: {
@@ -15,7 +15,7 @@ export default {
     img: 'https://images-na.ssl-images-amazon.com/images/I/414peBUilpL._SX218_BO1,204,203,200_QL40_FMwebp_.jpg',
   },
   job: {
-    title: 'UX/UI Designer',
+    title: 'UX/UI Designer & Competence Lead',
     company: 'Star Republic',
     website: 'https://www.starrepublic.com/en/',
     img: 'star-republic.svg',

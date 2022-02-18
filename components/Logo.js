@@ -22,7 +22,7 @@ const Container = styled.div`
 const Logo = () => {
   return (
     <Wrapper>
-      <Text>pushed pixels for</Text>
+      <Text>Previously designed for</Text>
       <Container>
         <Image className="logo" src="/volvo.svg" width={104} height={103.79} />
         <Image className="logo" src="/delaval.svg" width={232} height={40.41} />

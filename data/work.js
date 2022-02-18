@@ -101,4 +101,25 @@ export default {
     img: '/5-banner.png',
     appsUsed: ['figma', 'illustrator'],
   },
+  galinato: {
+    title: 'galina.to',
+    text: "Galina.to is my little corner of the internet where I get to express who I am, what I've done and what I would like to do. It's the current website that you're viewing right now. It's a sandbox for me to try out new things, break a few things along the way and learn from all of my experimenting. Just like every project I work on, I define my needs and work in a structured manner to be able to get the best out of every product. This is my personal website that I have built from the ground-up, no one can tell me that I've done things wrong in my little world.",
+    img: '/galinato-cover.png',
+    appsUsed: [
+      'css',
+      'figma',
+      'html',
+      'illustrator',
+      'next.js',
+      'react',
+      'styled components',
+      'visual studio code',
+    ],
+  },
+  link: {
+    title: 'link',
+    text: 'Link is my attempt at building a new personal CRM. Understanding the importance of building networks and keeping in touch I wanted to design a product that would solve these problems.',
+    img: '/link-cover.png',
+    appsUsed: ['figma'],
+  },
 }
