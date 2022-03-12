@@ -12,11 +12,11 @@ const Wrapper = styled.div`
 const NowDetail = () => {
   return (
     <Wrapper>
-      <h5>visiting the family</h5>
+      <h5>Settling into the new house</h5>
       <p>
-        Living in a different country it&#39;s always difficult to keep in touch
-        with your family. After 2 years, I&#39;m finally heading back for the
-        weekend to visit them. I&#39;m looking forward to it!
+        We moved into the new house about 2 weeks ago and I'm finally starting
+        to feel that we're settling in. We still have loads to do, but I'm sure
+        we'll get there sure enough!
       </p>
     </Wrapper>
   )
