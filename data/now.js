@@ -1,6 +1,6 @@
 export default {
   update: {
-    day: '12th',
+    day: '19th',
     month: 'March',
     year: '2022',
   },
@@ -10,9 +10,9 @@ export default {
     img: 'sweden-flag.png',
   },
   books: {
-    title: 'Seductive Interaction Design by Stephen P. Anderson',
-    link: 'https://www.amazon.com/Seductive-Interaction-Design-Effective-Experiences/dp/0321725522',
-    img: 'https://images-na.ssl-images-amazon.com/images/I/414peBUilpL._SX218_BO1,204,203,200_QL40_FMwebp_.jpg',
+    title: 'Design Sprint - Richard Banfield',
+    link: 'https://www.amazon.com/Design-Sprint-Practical-Guidebook-Building/dp/1491923172',
+    img: 'https://images-na.ssl-images-amazon.com/images/I/51rr3EbaKTL._SY498_BO1,204,203,200_.jpg',
   },
   job: {
     title: 'UX/UI Designer & Competence Lead',
