@@ -12,12 +12,12 @@ const Wrapper = styled.div`
 const NowDetail = () => {
   return (
     <Wrapper>
-      <h5>Settling In</h5>
+      <h5>Sorting out my office</h5>
       <p>
-        After living just over a month in our newly bought house, I feel like
-        we're slowly settling in. There's still an enless amount of tasks to do,
-        which sometimes feels overwhelming, but all we can do is work on one
-        task at a time.
+        After weeks of having all of my stuff on the floor in my new office, I
+        finally made some progress by getting a desk, putting up some shelves
+        and organising my room. I still have a long way to go, but at least I
+        have some sort of order in my office now.
       </p>
     </Wrapper>
   )

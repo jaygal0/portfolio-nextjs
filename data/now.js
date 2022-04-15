@@ -1,6 +1,6 @@
 export default {
   update: {
-    day: '9th',
+    day: '15th',
     month: 'April',
     year: '2022',
   },
@@ -10,9 +10,9 @@ export default {
     img: 'sweden-flag.png',
   },
   books: {
-    title: 'Design Sprint - Richard Banfield',
-    link: 'https://www.amazon.com/Design-Sprint-Practical-Guidebook-Building/dp/1491923172',
-    img: 'https://images-na.ssl-images-amazon.com/images/I/51rr3EbaKTL._SY498_BO1,204,203,200_.jpg',
+    title: 'Lean UX - Jeff Gothelf',
+    link: 'https://www.amazon.com/Lean-UX-Applying-Principles-Experience/dp/1449311652',
+    img: 'https://images-na.ssl-images-amazon.com/images/I/41JWTd4PCWL._SX331_BO1,204,203,200_.jpg',
   },
   job: {
     title: 'UX/UI Designer & Competence Lead',
