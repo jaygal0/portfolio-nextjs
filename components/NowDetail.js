@@ -12,12 +12,10 @@ const Wrapper = styled.div`
 const NowDetail = () => {
   return (
     <Wrapper>
-      <h5>Sorting out my office</h5>
+      <h5>bought a car</h5>
       <p>
-        After weeks of having all of my stuff on the floor in my new office, I
-        finally made some progress by getting a desk, putting up some shelves
-        and organising my room. I still have a long way to go, but at least I
-        have some sort of order in my office now.
+        After hours of driving across Sweden, we finally have our very first car
+        that we purchased sitting on the driveway.
       </p>
     </Wrapper>
   )

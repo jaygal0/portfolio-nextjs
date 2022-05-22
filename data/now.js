@@ -1,7 +1,7 @@
 export default {
   update: {
-    day: '23rd',
-    month: 'April',
+    day: '22rd',
+    month: 'May',
     year: '2022',
   },
   location: {
