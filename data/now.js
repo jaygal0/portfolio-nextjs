@@ -1,7 +1,7 @@
 export default {
   update: {
-    day: '22rd',
-    month: 'May',
+    day: '9th',
+    month: 'July',
     year: '2022',
   },
   location: {
@@ -10,15 +10,14 @@ export default {
     img: 'sweden-flag.png',
   },
   books: {
-    title: 'Lean UX - Jeff Gothelf',
-    link: 'https://www.amazon.com/Lean-UX-Applying-Principles-Experience/dp/1449311652',
-    img: 'https://images-na.ssl-images-amazon.com/images/I/41JWTd4PCWL._SX331_BO1,204,203,200_.jpg',
+    title: 'Steve Jobs - Walter Isaacson',
+    link: 'https://www.amazon.se/Steve-Jobs-Exclusive-Walter-Isaacson/dp/034914043X/ref=sr_1_5?keywords=steve+jobs&link_code=qs&qid=1657352207&sourceid=Mozilla-search&sr=8-5',
+    img: 'https://images-na.ssl-images-amazon.com/images/I/51mHDriUacL._SX548_BO1,204,203,200_.jpg',
   },
   job: {
-    title: 'UX/UI Designer & Competence Lead',
-    company: 'Star Republic',
-    website: 'https://www.starrepublic.com/en/',
-    img: 'star-republic.svg',
+    title: 'UX Lead Designer at Orbi',
+    website: 'https://www.orbiapp.io/',
+    img: 'orbi.svg',
   },
   // projects: [
   //   {
