@@ -1,6 +1,6 @@
 export default {
   update: {
-    day: '18th',
+    day: '23rd',
     month: 'July',
     year: '2022',
   },
@@ -10,9 +10,9 @@ export default {
     img: 'sweden-flag.png',
   },
   books: {
-    title: 'Steve Jobs - Walter Isaacson',
-    link: 'https://www.amazon.se/Steve-Jobs-Exclusive-Walter-Isaacson/dp/034914043X/ref=sr_1_5?keywords=steve+jobs&link_code=qs&qid=1657352207&sourceid=Mozilla-search&sr=8-5',
-    img: 'https://images-na.ssl-images-amazon.com/images/I/51mHDriUacL._SX548_BO1,204,203,200_.jpg',
+    title: 'The Automatic Customer - John Warrillow',
+    link: 'https://www.amazon.com/Automatic-Customer-Creating-Subscription-Business/dp/159184746X',
+    img: 'https://images-na.ssl-images-amazon.com/images/I/811wtQk47KL.jpg',
   },
   job: {
     title: 'UX Lead Designer at Orbi',
