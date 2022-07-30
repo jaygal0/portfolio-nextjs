@@ -25,17 +25,19 @@ const BirthdayPosts = () => {
   return (
     <PostWrapper>
       <i>All birthday posts:</i>
-      <Link href="/blog/210730-32">
+      <Link href="/blog/32">
         <Posts>32</Posts>
       </Link>
-      {/* <Link href='/blog/220730-32'><p>33</p></Link> */}
-      {/* <Link href='/blog/230730-32'><p>34</p></Link> */}
-      {/* <Link href='/blog/240730-32'><p>35</p></Link> */}
-      {/* <Link href='/blog/250730-32'><p>36</p></Link> */}
-      {/* <Link href='/blog/260730-32'><p>37</p></Link> */}
-      {/* <Link href='/blog/270730-32'><p>38</p></Link> */}
-      {/* <Link href='/blog/280730-32'><p>39</p></Link> */}
-      {/* <Link href='/blog/290730-32'><p>40</p></Link> */}
+      <Link href="/blog/33">
+        <Posts>33</Posts>
+      </Link>
+      {/* <Link href='/blog/34'><Posts>34</Posts></Link> */}
+      {/* <Link href='/blog/35'><Posts>35</Posts></Link> */}
+      {/* <Link href='/blog/36'><Posts>36</Posts></Link> */}
+      {/* <Link href='/blog/37'><Posts>37</Posts></Link> */}
+      {/* <Link href='/blog/38'><Posts>38</Posts></Link> */}
+      {/* <Link href='/blog/39'><Posts>39</Posts></Link> */}
+      {/* <Link href='/blog/40'><Posts>40</Posts></Link> */}
     </PostWrapper>
   )
 }
