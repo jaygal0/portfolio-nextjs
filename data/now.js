@@ -1,6 +1,6 @@
 export default {
   update: {
-    day: '23rd',
+    day: '31st',
     month: 'July',
     year: '2022',
   },
@@ -10,9 +10,9 @@ export default {
     img: 'sweden-flag.png',
   },
   books: {
-    title: 'The Automatic Customer - John Warrillow',
-    link: 'https://www.amazon.com/Automatic-Customer-Creating-Subscription-Business/dp/159184746X',
-    img: 'https://images-na.ssl-images-amazon.com/images/I/811wtQk47KL.jpg',
+    title: 'Principles - Ray Dalio',
+    link: 'https://www.amazon.com/Principles-Life-Work-Ray-Dalio/dp/1501124021',
+    img: 'https://images-na.ssl-images-amazon.com/images/I/81XmIP9r7EL.jpg',
   },
   job: {
     title: 'UX Lead Designer at Orbi',
