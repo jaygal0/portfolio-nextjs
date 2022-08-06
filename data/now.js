@@ -1,7 +1,7 @@
 export default {
   update: {
-    day: '31st',
-    month: 'July',
+    day: '6th',
+    month: 'August',
     year: '2022',
   },
   location: {
