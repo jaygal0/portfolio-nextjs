@@ -12,11 +12,12 @@ const Wrapper = styled.div`
 const NowDetail = () => {
   return (
     <Wrapper>
-      <h5>Taking it easy</h5>
+      <h5>Cleaning up all of my projects</h5>
       <p>
-        It's the last few days of my holiday and so I thought I'd take it easy,
-        clean up a few of my files, finish off a few tasks and hang out with my
-        partner. Nothing more.
+        I want to refactor/redesign a few old projects that I've done in the
+        past before I start anything new. It's pretty interesting to look back
+        and review my work, sometimes I question what I was thinking at the
+        time.
       </p>
     </Wrapper>
   )
