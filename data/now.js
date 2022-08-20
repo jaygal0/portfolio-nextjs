@@ -12,7 +12,7 @@ export default {
   books: {
     title: 'Build - Tony Fadell',
     link: 'https://www.amazon.com/Build-Unorthodox-Guide-Making-Things-ebook/dp/B09BNJ6GBV',
-    img: 'https://images-na.ssl-images-amazon.com/images/I/81XmIP9r7EL.jpg',
+    img: 'https://m.media-amazon.com/images/I/41oyvwEp3NL.jpg',
   },
   job: {
     title: 'UX Lead Designer at Orbi',
