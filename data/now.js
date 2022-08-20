@@ -1,6 +1,6 @@
 export default {
   update: {
-    day: '13',
+    day: '20th',
     month: 'August',
     year: '2022',
   },
@@ -10,8 +10,8 @@ export default {
     img: 'sweden-flag.png',
   },
   books: {
-    title: 'Principles - Ray Dalio',
-    link: 'https://www.amazon.com/Principles-Life-Work-Ray-Dalio/dp/1501124021',
+    title: 'Build - Tony Fadell',
+    link: 'https://www.amazon.com/Build-Unorthodox-Guide-Making-Things-ebook/dp/B09BNJ6GBV',
     img: 'https://images-na.ssl-images-amazon.com/images/I/81XmIP9r7EL.jpg',
   },
   job: {

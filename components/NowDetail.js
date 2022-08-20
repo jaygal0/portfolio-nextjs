@@ -12,12 +12,11 @@ const Wrapper = styled.div`
 const NowDetail = () => {
   return (
     <Wrapper>
-      <h5>Cleaning up all of my projects</h5>
+      <h5>Redesigning this site</h5>
       <p>
-        I want to refactor/redesign a few old projects that I've done in the
-        past before I start anything new. It's pretty interesting to look back
-        and review my work, sometimes I question what I was thinking at the
-        time.
+        I'm in the process of redesigning this website, I've always wanted to do
+        it, I just never had the time. Now this is prioritised, I get to play
+        with both design and development again.
       </p>
     </Wrapper>
   )
